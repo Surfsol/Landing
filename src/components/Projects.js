@@ -13,140 +13,161 @@ import subReddit from "../assets/images/subreddit.png";
 const Projects = () => {
   return (
     <>
-      <section class="body-content">
-        <div class="content">
-          <h1>SubReddit</h1>
-          <h3>Task</h3>
-          <p>
-            Design and build a backend with PostgreSql for production, so users can register, 
-            login, and perform CRUD operations on the database.
-          </p>
-          <h3>Tecnologies used</h3>
-          <ul>
-            <a>Express</a>
-            <a>BcryptJS</a>
-            <a>jsonwebtoken</a>
-            <a>PostgreSql</a>
-            <a>sqlite3</a>
-          </ul>
-          <ul class="link">
-            <a href="https://github.com/BuildWeek-PostHere-Subreddit" class="button">
-              Get the Code
-            </a>
-          </ul>
-        </div>
-        <div class="image-body">
+      <section className="body-content">
+        <div className="image-body">
           <img src={subReddit} />
+        </div>
+        <div className="content">
+          <div className="content-box">
+            <h1>SubReddit</h1>
+            <h3>Task</h3>
+            <p>
+              Design and implement a <strong>BACKEND</strong> with <strong>Nodejs</strong> and
+              <strong>PostgreSql</strong> for production, so users can register,
+              login, and perform <strong>CRUD</strong> operations on the
+              database.
+              Register, Login, .post, .get, .delete, forms, responsive design</p>
+            <h3>Tecnologies applied:</h3>
+            <ul style={{ listStyle: "none" }}>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Knex</li>
+              <li>BcryptJS</li>
+              <li>jsonwebtoken</li>
+              <li>PostgreSql</li>
+            </ul>
+            <ul class="link">
+              <a
+                href="https://github.com/BuildWeek-PostHere-Subreddit"
+                class="button"
+              >
+                Get the Code
+              </a>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="body-content">
+        <div class="content">
+          <div class="content-box">
+            <h1>Yelp</h1>
+            <h3>Task</h3>
+            <p>
+              Design and implement the Frontend architecture using{" "}
+              <strong>React</strong> and <strong>Redux</strong>. Collaborated
+              with backend and Data Science teams.
+            Register, Login, .post, .get, .put, .delete, forms, responsive design.</p>
+            <h3>Tecnologies applied:</h3>
+            <ul style={{ listStyle: "none" }}>
+              <li>React</li>
+              <li>Redux</li>
+              <li>PREPROCESSING</li>
+              <li>Forms</li>
+            </ul>
+            <ul class="link">
+              <a href="https://github.com/BW-YELP-FEELERS" class="button">
+                Get the Code
+              </a>
+            </ul>
+          </div>
+        </div>
+
         <div class="image-body">
           <img src={yelp} />
         </div>
-
-        <div class="content">
-          <h1>VR Funding</h1>
-          <h3>Task</h3>
-          <p>
-            Design a fully responsive Landing page for our group project VR
-            Funding.
-          </p>
-          <h3>Tecnologies used</h3>
-          <ul>
-            <a>HTML</a>
-            <a>CSS</a>
-            <a>PREPROCESSING</a>
-          </ul>
-          <ul class="link">
-            <a href="https://github.com/BW-YELP-FEELERS" class="button">
-              Get the Code
-            </a>
-          </ul>
-        </div>
       </section>
 
       <section class="body-content">
-        <div class="content">
-          <h1>Air Bnb</h1>
-          <h3>Task</h3>
-          <p>
-            Design a fully responsive Landing page for our group project VR
-            Funding.
-          </p>
-          <h3>Tecnologies used</h3>
-          <ul>
-            <a>HTML</a>
-            <a>CSS</a>
-            <a>Javascript</a>
-          </ul>
-
-          <h3>Functionality</h3>
-          <ul>
-            <a>Registration</a>
-            <a>Login</a>
-            <a>.get, .post</a>
-            <a>forms</a>
-            <a>responsive</a>
-          </ul>
-          <ul class="link">
-            <a href="https://github.com/AirBNBOptimalPrice" class="button">
-              Get the Code
-            </a>
-          </ul>
-        </div>
         <div class="image-body">
           <img src={airbnb} />
         </div>
+
+        <div class="content">
+          <div class="content-box">
+            <h1>Air Bnb</h1>
+            <h3>Task</h3>
+            <p>
+              Frontend architecture implementation using <strong>React</strong>.
+              To perform <strong>CRUD</strong>
+              operations on the database. 
+              Register, Login, .post, .get, forms, responsive design.
+            </p>
+            <h3>Tecnologies applied:</h3>
+            <ul style={{ listStyle: "none" }}>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+
+
+            <ul class="link">
+              <a href="https://github.com/AirBNBOptimalPrice" class="button">
+                Get the Code
+              </a>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section class="body-content">
+        <div class="content">
+          <div class="content-box">
+            <h1>VR Funding</h1>
+            <h3>Task</h3>
+            <p>
+              Design a fully responsive Landing page for desktop and mobile
+              using preprocessing.
+            </p>
+            <h3>Tecnologies applied:</h3>
+            <ul style={{ listStyle: "none" }}>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>PREPROCESSING LESS</li>
+            </ul>
+            <ul class="link">
+              <a
+                href="https://github.com/Build-Week-VR-Funding-Platform"
+                class="button"
+              >
+                Get the Code
+              </a>
+            </ul>
+          </div>
+        </div>
+
         <div class="image-body">
           <img src={vr} />
         </div>
-
-        <div class="content">
-          <h1>VR Funding</h1>
-          <h3>Task</h3>
-          <p>
-            Design a fully responsive Landing page for our group project VR
-            Funding.
-          </p>
-          <h3>Tecnologies used</h3>
-          <ul>
-            <a>HTML</a>
-            <a>CSS</a>
-            <a>PREPROCESSING</a>
-          </ul>
-          <ul class="link">
-            <a
-              href="https://github.com/Build-Week-VR-Funding-Platform"
-              class="button"
-            >
-              Get the Code
-            </a>
-          </ul>
-        </div>
       </section>
 
       <section class="body-content">
-        <div class="content">
-          <h1>Responsive Design</h1>
-          <p>
-            Checkout this responsive site that adjust for tablet and mobile
-            devices.
-          </p>
-          <ul class="link">
-            <a
-              href="https://github.com/Surfsol/responsive-web-design-I/tree/russell-terry"
-              class="button"
-            >
-              Get the Code
-            </a>
-          </ul>
-        </div>
         <div class="image-body">
           <img src={responsive} />
+        </div>
+
+        <div class="content">
+          <div class="content-box">
+            <h1>Responsive Design</h1>
+            <p>
+              Checkout this responsive site that adjust for tablet and mobile
+              devices.
+            </p>
+            <h3>Tecnologies applied:</h3>
+            <ul style={{ listStyle: "none" }}>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+            <ul class="link">
+              <a
+                href="https://github.com/Surfsol/responsive-web-design-I/tree/russell-terry"
+                class="button"
+              >
+                Get the Code
+              </a>
+            </ul>
+          </div>
         </div>
       </section>
     </>
