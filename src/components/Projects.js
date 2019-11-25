@@ -33,8 +33,7 @@ const Projects = () => {
               <li>Knex</li>
               <li>BcryptJS</li>
               <li>jsonwebtoken</li>
-              <li>PostgreSql</li>
-              <li>Sqlite3</li>
+              <li>PostgreSql / Sqlite3</li>
               <li>Heroku</li>
             </ul>
             <ul class="link">
@@ -156,8 +155,7 @@ const Projects = () => {
           <div class="content-box">
             <h1>Responsive Design</h1>
             <p>
-              Checkout this responsive site that adjust for tablet and mobile
-              devices.
+              Design a fully responsive static site.
             </p>
             
             <ul style={{ listStyle: "none" }}>

@@ -1,10 +1,9 @@
-$phone: 700px;
+$phone: 800px;
 
 .body-content {
   width: 70%;
   height: 550px;
   background: yellow;
-  border: 1px solid black;
   margin: 10% auto;
   display: flex;
   justify-content: center;
@@ -15,6 +14,7 @@ $phone: 700px;
     padding: 0;
     flex-direction: column;
     justify-content: center;
+    border: 1.5px solid #2c74e0;
   }
 
   .content,
@@ -37,23 +37,34 @@ $phone: 700px;
   }
 
   .content-box {
-    width: 80%;
-    height: 100%;
+    width: 80%; //total width of box
+    height: 100%; //to cover 100% of box
     margin: auto;
+    padding: 4vh 0; //vertically centers
    
 
     @media (max-width: $phone) {
       width: 100%;
+      padding: 10px 0;
     }
 
-    h1,
+    h1{
+      font-size: 2rem;
+      font-size: 2vh;
+
+      @media(max-width: $phone) {
+          display: none;
+      }
+    }
+
+    
     h3,
     p {
       text-align: center;
       vertical-align: middle;
       line-height: 2vh;
       font-size: 1rem;
-      font-size: 1.5vh;
+      font-size: 1.75vh;
 
       @media (max-width: $phone) {
         display: none;
@@ -78,7 +89,6 @@ $phone: 700px;
   width: 70%;
   height: 550px;
   background: yellow;
-  border: 1px solid black;
   margin: 10% auto;
   display: flex;
   justify-content: center;
@@ -90,6 +100,7 @@ $phone: 700px;
     flex-direction: column;
     flex-flow: column-reverse;
     justify-content: center;
+    
   }
 
   .content,
@@ -101,6 +112,7 @@ $phone: 700px;
     @media (max-width: $phone) {
       width: 100%;
       background: whitesmoke;
+      
     }
   }
 
@@ -114,19 +126,29 @@ $phone: 700px;
     width: 80%;
     height: 100%;
     margin: auto;
+    padding: 4vh 0; //vertically centers
+    
 
     @media (max-width: $phone) {
       width: 100%;
+      padding: 10px 0;
     }
 
-    h1,
+    h1{
+      font-size: 2rem;
+      font-size: 2vh;
+
+      @media(max-width: $phone) {
+          display: none;
+      }
+    }
+
     h3,
     p {
       text-align: center;
-      vertical-align: middle;
       line-height: 2vh;
       font-size: 1rem;
-      font-size: 1.5vh;
+      font-size: 1.75vh;
 
       @media (max-width: $phone) {
         display: none;
