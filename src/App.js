@@ -1,13 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import Projects from './components/Projects'
+import NewProject from './components/NewProject'
 
 function App() {
   return (
     <div className="App">
       <Projects />
-     
+     <NewProject/>
     </div>
   );
 }
