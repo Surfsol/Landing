@@ -23,7 +23,7 @@ const Techs = (props) => {
 }
 const mapStateToProps = state => {
     return {
-     allTechs : state.techReducer
+     allTechs : state.techReducer.techs
     }; 
   };
   
