@@ -48,8 +48,10 @@ body {
 }
 
 .header-content {
-  z-index: 2;//make text appear in front
-  margin:auto; //center text
+  z-index: 2; //make text appear in front
+  margin: auto; //center text
+  display: flex;
+  flex-direction: column;
 
   h1 {
     font-size: 50px;
@@ -59,7 +61,6 @@ body {
   p {
     font-size: 2rem;
     display: block;
-    padding-bottom: 2rem;
   }
   .btn {
     background: #34ba30;
@@ -67,5 +68,22 @@ body {
     font-size: 1.2rem;
     padding: 1rem 2rem;
     text-decoration: none;
+    margin: 1vh;
+  }
+  .git {
+    height: 2rem;
+    margin: 1vh;
+    line-height: 0vh;
+
+    
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+    p{
+        font-size:1.5rem;
+       
+    }
   }
 }
