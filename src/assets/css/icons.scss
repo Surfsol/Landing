@@ -1,8 +1,19 @@
-.icons{
-    display:flex;
+h2 {
+  color: red;
+  font-size: 5vh;
+}
 
-    img{
-        width:2rem;
-        height:2.5rem;
-    }
+.active:hover {
+  background: #3e98d8;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 4rem;
+    height: 4.5rem;
+    margin: 0 1rem;
+  }
 }
