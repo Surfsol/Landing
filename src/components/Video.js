@@ -1,7 +1,14 @@
 import React from 'react'
+import Icons from './Icons'
+import Techs from './Techs'
 import videoDolphin from '../assets/images/Dolphin.mp4'
 
 import '../assets/css/video.scss'
+
+import git from '../assets/icons/github.png'
+
+import { Link } from "react-router-dom";
+
 
 const Video = () => {
 
@@ -13,12 +20,21 @@ const Video = () => {
             </div>
             <div class="header-overlay"></div>
             <div class="header-content">
-                <h1>Overlay</h1>
-                <p>Come in</p>
-                <a href="#" class="btn">See my projects</a>
+                <h1>Russell Terry</h1>
+                <a href="#ICON" class="btn">My Skills</a>
+                <a href="/group" class="btn">Group Projects</a>
+                <div class="git">
+                <a href="https://github.com/Surfsol" target="_blank">
+                    <img src={git}/>
+                    <p>Github/surfsol</p>
+                    </a>
+                </div>
             </div>
             
         </header>
+        <Icons />
+        <div id="ICON"/>
+        <Techs/>
         </>
     )
 }

@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import { fetchAdd } from "../actions/addProject";
 
+import NewProject from './NewProject'
+
 import '../App.css'
 
 import { withStyles } from "@material-ui/core/styles";
@@ -311,6 +313,7 @@ const AddProject = props => {
           />
         </FormGroup>
       </div>
+      <NewProject/>
     </>
   );
 };

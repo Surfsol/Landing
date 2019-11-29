@@ -25,7 +25,8 @@ const Projects = () => {
               Design and implement a <strong>BACKEND</strong> server with a database so users can perform 
                 <strong> CRUD</strong> operations:
               Register, Login, .post, .get, .delete, forms, responsive design</p>
-            
+              
+              {/* listStyle: "none", no bullet points */}
             <ul style={{ listStyle: "none" }}>
             <h4>Tecnologies applied:</h4>
               <li>Node.js</li>
