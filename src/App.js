@@ -24,7 +24,7 @@ function App() {
         <Link to="/addproject">Manage Projects</Link>
       </li>
       <Switch>
-        <Route path="/video" component={Video}/>
+        <Route exact path="/" component={Video}/>
         <Route path="/addproject" component={AddProject}/>
         <Route path="/group" component={Projects}/>
       </Switch>
