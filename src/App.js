@@ -3,11 +3,9 @@ import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom"
 
 import './App.css';
 import Projects from './components/Projects'
-import NewProject from './components/NewProject'
-import Techs from './components/Techs'
 import AddProject from './components/AddProject'
 import Video from './components/Video'
-import Icons from './components/Icons'
+
 
 
 function App() {

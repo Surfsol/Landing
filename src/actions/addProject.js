@@ -6,9 +6,9 @@ export const ADD_SUCCESS = 'ADD_SUCCESS'
 export const ADD_FAILURE = 'ADD_FAILURE'
 
 export const fetchAdd= (details) => dispatch => {
-
+console.log(`action addproject`,details)
     axios  
-        .get('localhost:4001/project', details)
+        .get('localhost:4001/pt', details)
         .then(res => {
             console.log(`action/add`, res.data)
             dispatch({type:ADD_SUCCESS, payload: res.data})
