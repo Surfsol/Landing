@@ -15,28 +15,30 @@ import django from "../assets/icons/django.png";
 
 import "../assets/css/icons.scss";
 
+import IconCard from './IconCard'
+
 import { NavLink } from "react-router-dom";
 
 import { connect } from "react-redux";
 
 const Icons = props => {
-  console.log(`icon`, props.tLink);
+  console.log(`iconCard`, props);
 
   return (
     <>
       <h2>Discover projects by technologies:</h2>
       <div className="icons">
-        <NavLink className="active" to={`/tech/React`}>
+        <NavLink className="active" to={`/techInProject/1`}>
           <img src={react} alt="react" />
           <h5>React</h5>
         </NavLink>
 
-        <NavLink className="active" to={`/tech/Redux`}>
+        <NavLink className="active" to={`/tech/2`}>
           <img src={redux} alt="redux" />
           <h5>Redux</h5>
         </NavLink>
 
-        <NavLink className="active" to={`/tech/Node.js`}>
+        <NavLink className="active" to={`/tech/18`}>
           <img src={node} alt="node.js" />
           <h5> Node.js</h5>
         </NavLink>

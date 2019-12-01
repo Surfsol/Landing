@@ -1,7 +1,9 @@
 import React from 'react'
 import Icons from './Icons'
 import Techs from './Techs'
+
 import videoDolphin from '../assets/images/Dolphin.mp4'
+
 
 import '../assets/css/video.scss'
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Video from './Video'
 
 //css
 import "../assets/css/projects.scss";
@@ -13,6 +14,7 @@ import subReddit from "../assets/images/subreddit.png";
 const Projects = () => {
   return (
     <>
+    <Video/>
       <section className="body-content">
         <div className="image-body">
           <img src={subReddit} />
@@ -25,7 +27,7 @@ const Projects = () => {
               Design and implement a <strong>BACKEND</strong> server with a database so users can perform 
                 <strong> CRUD</strong> operations:
               Register, Login, .post, .get, .delete, forms, responsive design</p>
-              
+
               {/* listStyle: "none", no bullet points */}
             <ul style={{ listStyle: "none" }}>
             <h4>Tecnologies applied:</h4>
