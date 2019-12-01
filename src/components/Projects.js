@@ -1,5 +1,5 @@
 import React from "react";
-import Video from './Video'
+import Nav from './Nav'
 
 //css
 import "../assets/css/projects.scss";
@@ -14,7 +14,7 @@ import subReddit from "../assets/images/subreddit.png";
 const Projects = () => {
   return (
     <>
-    <Video/>
+    <Nav/>
       <section className="body-content">
         <div className="image-body">
           <img src={subReddit} />
