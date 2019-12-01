@@ -10,11 +10,17 @@ import yelp from "../assets/images/yelp.png";
 import airbnb from "../assets/images/air2.png";
 import vr from "../assets/images/vr.png";
 import subReddit from "../assets/images/subreddit.png";
+import VerticalSpace from "./VerticalSpace"
 
 const Projects = () => {
   return (
     <>
     <Nav/>
+    <VerticalSpace/>
+    {/* to apply vertical spacing */}
+    {/* https://medium.com/fed-or-dead/handling-spacing-in-a-ui-component-library-70f3b22ec89 */}
+    <br/>
+    <>
       <section className="body-content">
         <div className="image-body">
           <img src={subReddit} />
@@ -177,6 +183,7 @@ const Projects = () => {
           </div>
         </div>
       </section>
+      </>
     </>
   );
 };
