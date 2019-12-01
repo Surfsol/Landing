@@ -3,7 +3,7 @@ import Icons from './Icons'
 import Techs from './Techs'
 
 import videoDolphin from '../assets/images/Dolphin.mp4'
-import Turtle from '../assets/images/turtle.mov'
+
 
 import '../assets/css/video.scss'
 
@@ -18,7 +18,7 @@ const Video = () => {
         <>
         <header class="header container">
             <div class="fullscreen">
-                <video src={Turtle} autoPlay="true" loop="true"></video>
+                <video src={videoDolphin} autoPlay="true" loop="true"></video>
             </div>
             <div class="header-overlay"></div>
             <div class="header-content">
