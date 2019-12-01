@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <li>
+      {/* <li>
         <Link to="/">Home</Link>
       </li>
       <li>
@@ -21,7 +21,7 @@ function App() {
       </li>
       <li>
         <Link to="/addproject">Manage Projects</Link>
-      </li>
+      </li> */}
       <Switch>
         <Route exact path="/" component={Video}/>
         <Route path="/addproject" component={AddProject}/>
