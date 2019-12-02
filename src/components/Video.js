@@ -2,7 +2,7 @@ import React from 'react'
 import Icons from './Icons'
 import Techs from './Techs'
 
-import videoDolphin from '../assets/images/Dolphin.mp4'
+import videoDolphin from '../assets/images/dolp2.mp4'
 
 
 import '../assets/css/video.scss'
@@ -36,6 +36,7 @@ const Video = () => {
             
         </header>
         <Icons />
+        {/* to navigate to Icon area on page */}
         <div id="ICON"/>
         <Techs/>
         </>
