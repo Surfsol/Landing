@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { fetchAdd } from "../actions/addProject";
 
 import NewProject from "./NewProject";
+import Nav from './Nav'
 
 import "../App.css";
 
@@ -61,8 +62,14 @@ const AddProject = props => {
 
   const classes = useStyles();
 
+  const listStyle = {
+    marginTop: "25vh"
+  }
+
   return (
     <>
+    <Nav/>
+    <div style={listStyle}>
       <div className="AddProject">
         <h1>Submit a new Project</h1>
         <form className={classes.container} noValidate autoComplete="off">
@@ -343,6 +350,7 @@ const AddProject = props => {
       </div>
 
       <NewProject />
+      </div>
     </>
   );
 };
