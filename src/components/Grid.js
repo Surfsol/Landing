@@ -60,7 +60,10 @@ const Grid = props => {
               Project: {props.list.project}
             </Typography>
             <Typography>
-            <a href="{props.list.description}" target="_blank">{props.list.description}</a>
+            <a href="{props.list.github}" target="_blank">{props.list.github}</a>
+            </Typography>
+            <Typography className={classes.title}>
+              Project: {props.list.description}
             </Typography>
           </CardContent>
         </Card>
