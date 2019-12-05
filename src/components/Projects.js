@@ -16,11 +16,19 @@ const Projects = () => {
   return (
     <>
     <Nav/>
-    <VerticalSpace/>
+    {/* <VerticalSpace/> */}
     {/* to apply vertical spacing */}
     {/* https://medium.com/fed-or-dead/handling-spacing-in-a-ui-component-library-70f3b22ec89 */}
-    <br/>
+    
     <>
+    
+    <div className="project">
+    <div className="lambda">
+      <div className="lambdaBox">
+      <h1>Lambda School Group Projects</h1>
+      </div>
+    </div>
+    
       <section className="body-content">
         <div className="image-body">
           <img src={subReddit} />
@@ -182,7 +190,9 @@ const Projects = () => {
             </ul>
           </div>
         </div>
+      
       </section>
+      </div>
       </>
     </>
   );

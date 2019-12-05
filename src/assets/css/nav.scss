@@ -1,4 +1,8 @@
-$phone: 850px;
+$phone: 800px;
+$sea1:#96c4de;
+$sea2: #486591;
+$sea3:#d6e6f3;
+
 * {
     box-sizing: border-box;
   }
@@ -53,7 +57,7 @@ $phone: 850px;
     position: absolute;
     top: 0;
     left: 0;
-    background: #225470;
+    background: $sea1;
     z-index: 1; //positioning of content
     opacity: 0.85; //%see through
 
@@ -88,8 +92,8 @@ $phone: 850px;
       display: block;
     }
     .nav-btn {
-      background: #34ba30;
-      color: #fff;
+        background: $sea2;
+      color: $sea3;
       font-size: 1.2rem;
       padding: 1rem 2rem;
       text-decoration: none;
@@ -100,10 +104,12 @@ $phone: 850px;
       height: 2rem;
       margin: 1vh;
       line-height: 0vh;
-      background: #34ba30;
+    //   background: #34ba30;
+    background: $sea2;
       
       p{
-        color: #34ba30;
+        // color: #34ba30;
+        background: $sea2;
       }
   
       
