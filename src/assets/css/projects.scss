@@ -1,11 +1,43 @@
 $phone: 800px;
+$sea1:#96c4de;
+$sea2: #486591;
+$sea3:#d6e6f3;
+
+
+.project{
+  margin-top:20vh;
+  background: $sea2;
+  
+  
+
+  @media (max-width: $phone){
+    margin-top:40vh
+  }
+}
+
+.lambda{
+  color:$sea3;
+  background: $sea2;
+  display:flex;
+  justify-content: center;
+  margin: 5%;
+
+  .lambdaBox{
+    width:80%;
+    height: 80%;
+    background:$sea1;
+    justify-content: center;
+    margin:5%
+  }
+  
+}
 
 .body-content {
 
   width: 70%;
   height: 550px;
   background: yellow;
-  margin: 10% auto;
+  margin:auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +54,7 @@ $phone: 800px;
   .content,
   .image-body {
     width: 50%;
-    background: #2c74e0;
+    background: $sea1;
     height: 100%;
     
 
@@ -112,7 +144,7 @@ $phone: 800px;
   .content,
   .image-body {
     width: 50%;
-    background: #2c74e0;
+    background: $sea1;
     height: 100%;
 
     @media (max-width: $phone) {
