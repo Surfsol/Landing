@@ -6,22 +6,24 @@ import { fecthIconCard } from "../actions/iconCard-actions";
 import Grid from "./Grid";
 
 const IconCard = props => {
-  console.log(`IconCard props.match`, props.match);
+  console.log(`IconCard props.match`, props.match.url);
   console.log(`iconCard projects`, props.projects);
 
-  const id = props.match.params.id;
+  const id = props.match.params;
 
   useEffect(() => {
-    props.fecthIconCard(props.match.params.id);
+    props.fecthIconCard(props.match.url);
   }, id);
 
   return (
     <>
       <div>
-        <h1></h1>
+        <h1>Projects</h1>
+        <h1>
         {props.projects.map(e => (
           <Grid key={e.id} list={e} />
         ))}
+        </h1>
       </div>
     </>
   );

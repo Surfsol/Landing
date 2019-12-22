@@ -24,7 +24,7 @@ const Video = () => {
             <div class="header-content">
                 <h1>Russell Terry</h1>
                 <a href="/skills" class="btn">My Skills</a>
-                <a href="/group" class="btn">Group Projects</a>
+                <a href="/team" class="btn">Team Projects</a>
                 <a href="/addproject" class="btn">Manage Projects</a>
                 <div class="git">
                 <a href="https://github.com/Surfsol" target="_blank">

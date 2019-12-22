@@ -56,7 +56,7 @@ const Icons = props => {
 
         <div className="icon-group">
           <h2>Frontend</h2>
-          <NavLink className="active" to={`/techInProject/1`}>
+          <NavLink className="active" to={`/techsProject/React`}>
             <img src={react} alt="react" />
             <h5>React</h5>
           </NavLink>

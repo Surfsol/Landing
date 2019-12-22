@@ -25,7 +25,7 @@ const NavBar = () => {
                 <h1>Russell Terry</h1>
                 <a href="/" class="nav-btn">Home</a>
                 <a href="/skills" class="nav-btn">My Skills</a>
-                <a href="/group" class="nav-btn">Group Projects</a>
+                <a href="/team" class="nav-btn">Team Projects</a>
                 <a href="/addproject" class="nav-btn">Manage Projects</a>
                 <div class="git">
                 <a href="https://github.com/Surfsol" target="_blank">
