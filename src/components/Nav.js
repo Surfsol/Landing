@@ -24,7 +24,7 @@ const NavBar = () => {
             <div class="nav-content">
                 <h1>Russell Terry</h1>
                 <a href="/" class="nav-btn">Home</a>
-                <a href="#ICON" class="nav-btn">My Skills</a>
+                <a href="/skills" class="nav-btn">My Skills</a>
                 <a href="/group" class="nav-btn">Group Projects</a>
                 <a href="/addproject" class="nav-btn">Manage Projects</a>
                 <div class="git">

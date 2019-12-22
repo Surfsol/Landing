@@ -1,19 +1,36 @@
-h2 {
-  color: red;
-  font-size: 5vh;
-}
+$sea1: #96c4de;
+$sea2: #486591;
+$sea3: #d6e6f3;
 
-.active:hover {
-  background: #3e98d8;
-}
 
-.icons {
-  display: flex;
-  justify-content: center;
+.icon-wrapper {
+    margin:10%;
+    background: $sea2;
 
-  img {
-    width: 4rem;
-    height: 4.5rem;
-    margin: 0 1rem;
+  h2 {
+    color:$sea1;
+    font-size: 5vh;
+  }
+
+  .active:hover {
+    background: #3e98d8;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .icon-group {
+      display: flex;
+      justify-content: center;
+      margin: 3%;
+
+      img {
+        width: 4rem;
+        height: 4.5rem;
+        margin: 0 1rem;
+      }
+    }
   }
 }
