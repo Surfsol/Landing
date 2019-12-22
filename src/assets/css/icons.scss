@@ -1,11 +1,27 @@
+$phone: 800px;
 $sea1: #96c4de;
 $sea2: #486591;
 $sea3: #d6e6f3;
 
-
+.navSkills{
+  margin-bottom: 0;
+}
 .icon-wrapper {
-    margin:10%;
-    background: $sea2;
+  margin-top: 20vh;
+  background: $sea3;
+  width: 100%;
+  
+
+  @media (max-width: $phone) {
+    margin-top:40vh;
+}
+  
+  h1 {
+    font-family: 'Bree Serif', serif;
+    color:$sea2;
+    font-size: 5vh;
+    padding-top: 3%;
+  }
 
   h2 {
     color:$sea1;
@@ -27,8 +43,8 @@ $sea3: #d6e6f3;
       margin: 3%;
 
       img {
-        width: 4rem;
-        height: 4.5rem;
+        width: 7rem;
+        height: 7rem;
         margin: 0 1rem;
       }
     }

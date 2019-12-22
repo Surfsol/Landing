@@ -1,3 +1,7 @@
+$sea1: #96c4de;
+$sea2: #486591;
+$sea3: #d6e6f3;
+
 * {
   box-sizing: border-box;
 }
@@ -35,8 +39,6 @@ body {
   }
 }
 
-
-
 //overlay video with background color
 .header-overlay {
   height: 100vh;
@@ -65,32 +67,28 @@ body {
     display: block;
   }
   .btn {
-    background: #34ba30;
-    color: #fff;
+    background: $sea1;
+    color: $sea2;
     font-size: 1.2rem;
     padding: 1rem 2rem;
     text-decoration: none;
     margin: 1vh;
   }
   .git {
-    height: 2rem;
     margin: 1vh;
-    line-height: 0vh;
-    background: #34ba30;
-    
-    p{
-      color: #34ba30;
-    }
+    background: $sea1;
+    color: $sea2;
 
-    
+    p {
+      color: $sea2;
+    }
 
     img {
       width: 2rem;
       height: 2rem;
     }
-    p{
-        font-size:1.5rem;
-       
+    p {
+      font-size: 1.5rem;
     }
   }
 }

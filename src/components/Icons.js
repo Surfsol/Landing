@@ -29,10 +29,11 @@ const Icons = props => {
 
   return (
     <>
-
+    <div className="navSkills">
     <Nav/>
+    </div>
     <div className="icon-wrapper">
-      <h2>Click to Discover projects by technologies:</h2>
+      <h1>Click to discover projects by technologies:</h1>
       <div className="icons">
         <div className="icon-group">
           <h2>HTML / CSS</h2>
