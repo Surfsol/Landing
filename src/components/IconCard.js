@@ -18,11 +18,13 @@ const IconCard = props => {
   return (
     <>
       <div>
-        <h1>Projects</h1>
+        <h1></h1>
         <h1>
-        {props.projects.map(e => (
-          <Grid key={e.id} list={e} />
-        ))}
+          {props.projects.map(e => (
+            <React.Fragment key={e.id}>
+              <Grid list={e} />
+            </React.Fragment>
+          ))}
         </h1>
       </div>
     </>
