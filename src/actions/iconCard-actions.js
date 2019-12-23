@@ -9,7 +9,7 @@ export const fecthIconCard = (tech) => dispatch => {
     console.log(`action id`,tech)
     axios
         //must use `` when have ${}
-        .get(`http://localhost:4001${tech}`)
+        .get(`https://landingbe.herokuapp.com${tech}`)
         .then(res => {
             console.log(`action/iconCard`,res.data)
             dispatch({type: ICONCARD_SUCCESS, payload: res.data})
