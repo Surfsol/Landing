@@ -1,127 +1,117 @@
 $phone: 800px;
-$sea1:#96c4de;
+$sea1: #96c4de;
 $sea2: #486591;
-$sea3:#d6e6f3;
+$sea3: #d6e6f3;
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; // horizontal overflow, so no scrollbar
+}
+
+
+
+.nav {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+
+  @media (max-width: $phone) {
+    height: 40vh;
   }
+}
+
+.ncontainer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
   
-  body {
-    overflow-x: hidden; // horizontal overflow, so no scrollbar
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+
+  @media (max-width: $phone) {
+    height: 40vh;
   }
-  
-  .nav {
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    color: #fff;
+
+  video {
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+//overlay video with background color
+.nav-overlay {
+  height: 20vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $sea1;
+  z-index: 1; //positioning of content
+  opacity: 0.85; //%see through
+
+  @media (max-width: $phone) {
+    height: 40vh;
+  }
+}
+
+.nav-content {
+  z-index: 2; //make text appear in front
+  margin: auto; //center text
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  @media (max-width: $phone) {
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-family: "Bree Serif", serif;
+    font-size: 2rem;
+    margin: 1vh;
 
     @media (max-width: $phone) {
-        height:40vh;
+      font-size: 1.5;
     }
   }
-  
-  .ncontainer {
-  
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: auto;
-    text-align: center;
+
+  p {
+    font-size: 2rem;
+    display: block;
+    font-family: "Bree Serif", serif;
   }
-  
-  .nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 20vh;
-    overflow: hidden;
-
-    @media (max-width: $phone) {
-        height:40vh;
-    }
-  
-    video {
-      min-width: 100%;
-      min-height: 100%;
-    }
-  }
-  
-  
-  
-  //overlay video with background color
-  .nav-overlay {
-    height: 20vh;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: $sea1;
-    z-index: 1; //positioning of content
-    opacity: 0.85; //%see through
-
-    @media (max-width: $phone) {
-        height:40vh;
-    }
-  }
-  
-  .nav-content {
-    z-index: 2; //make text appear in front
-    margin: auto; //center text
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    @media (max-width: $phone) {
-        flex-wrap: wrap;
-    }
-  
-    h1 {
-      font-family: 'Bree Serif', serif;
-      font-size: 2rem;
-      margin: 1vh;
-
-      @media (max-width: $phone) {
-        font-size: 1.5;
-    }
-    }
-
-  
-    p {
-      font-size: 2rem;
-      display: block;
-    }
-    .nav-btn {
-        background: $sea2;
-      color: $sea3;
-      font-size: 1.2rem;
-      padding: 1rem 2rem;
-      text-decoration: none;
-      margin: 1vh;
-    //   height:3.5rem;
-    }
-    .git {
-      height: 2rem;
-      margin: 1vh;
-      line-height: 0vh;
-    //   background: #34ba30;
+  .nav-btn {
     background: $sea2;
-      
-      p{
-        // color: #34ba30;
-        background: $sea2;
-      }
-  
-      
-  
-      img {
-        width: 2rem;
-        height: 2rem;
-      }
-      p{
-          font-size:1.5rem;
-         
-      }
+    color: $sea3;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    margin: 1vh;
+    //   height:3.5rem;
+  }
+  .git {
+    margin: 1vh;
+    color: $sea2;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
     }
   }
+}

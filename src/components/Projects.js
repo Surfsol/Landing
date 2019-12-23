@@ -24,7 +24,7 @@ const Projects = () => {
         <div className="project-wrap">
           <div className="lambdatitle">
             
-              <h1>Lambda School Group Projects</h1>
+              <h1>Lambda Team Projects</h1>
             
           </div>
 
