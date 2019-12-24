@@ -2,8 +2,7 @@ import React from 'react'
 import Icons from './Icons'
 import Techs from './Techs'
 
-import videoDolphin from '../assets/images/dolp2.mp4'
-
+import videoDolphin from '../assets/images/Dolphin.mp4'
 
 import '../assets/css/video.scss'
 
@@ -18,7 +17,7 @@ const Video = () => {
         <>
         <header class="header container">
             <div class="fullscreen">
-                <video src={videoDolphin} autoPlay="true" loop="true"></video>
+                <video src={videoDolphin} autoPlay="true" loop="true" startTime="1100"></video>
             </div>
             <div class="header-overlay"></div>
             <div class="header-content">

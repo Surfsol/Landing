@@ -8,6 +8,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
+
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
@@ -21,49 +22,40 @@ const useStyles = makeStyles({
 });
 
 const Grid = props => {
-  console.log(`Grid`, props.list);
+  console.log(`Grid`, props.list.github);
   const classes = useStyles();
 
   const listStyle = {
     margin: "auto",
     marginTop: "25vh",
-    width:"70%",
-    justifyContent: "center",
-    
+    width: "70%",
+    justifyContent: "center"
   };
+
+
+
+ 
   return (
     <>
       <div>
         <Nav />
       </div>
-
       <div style={listStyle}>
-        {/* <Card className={classes.card}>
+        <Card className={classes.card}>
           <CardContent>
             <Typography className={classes.title}>
-              Technology: {props.list.tech}
+              Technology : {props.list.tech}
             </Typography>
             <Typography className={classes.title}>
-              Project: {props.list.project}
+              Project : {props.list.project}
             </Typography>
             <Typography>
-            <a href="{props.list.description}" target="_blank"></a>
-            </Typography>
-          </CardContent>
-        </Card> */}
-           <Card className={classes.card}>
-          <CardContent>
-            <Typography className={classes.title}>
-              Technology: {props.list.tech}
+              <a href={props.list.github} target="_blank">
+                {props.list.github}
+              </a>
             </Typography>
             <Typography className={classes.title}>
-              Project: {props.list.project}
-            </Typography>
-            <Typography>
-            <a href="{props.list.github}" target="_blank">{props.list.github}</a>
-            </Typography>
-            <Typography className={classes.title}>
-              Project: {props.list.description}
+              Description : {props.list.description}
             </Typography>
           </CardContent>
         </Card>

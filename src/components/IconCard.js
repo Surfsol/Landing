@@ -1,9 +1,13 @@
 import React, { useEffect } from "react";
 
-import { connect } from "react-redux";
 import { fecthIconCard } from "../actions/iconCard-actions";
 
+import { useSelector, useDispatch } from "react-redux";
+import redux from "../assets/icons/reduxlogo.png";
+
 import Grid from "./Grid";
+
+import "../assets/css/iconCard.scss";
 
 const IconCard = props => {
   console.log(`IconCard props.match`, props.match.url);
@@ -11,26 +15,39 @@ const IconCard = props => {
 
   const id = props.match.params;
 
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    props.fecthIconCard(props.match.url);
+    dispatch(fecthIconCard(props.match.url));
   }, id);
+
+  //show loading
+  const projects = useSelector(state => state.iconCardReducer);
+
+  if (projects.list.length === 0) {
+    return (
+      <div>
+        <p>loading...</p>
+         <img className="loading" src={redux} alt="redux" />
+         <p>Redux</p>
+      </div>
+    );
+  }
 
   return (
     <>
       <div>
-        <h1>Projects</h1>
+        <h1></h1>
         <h1>
-        {props.projects.map(e => (
-          <Grid key={e.id} list={e} />
-        ))}
+          {projects.list.map(e => (
+            <React.Fragment key={e.id}>
+              <Grid list={e} />
+            </React.Fragment>
+          ))}
         </h1>
       </div>
     </>
   );
 };
-const mapStateToProps = state => {
-  return {
-    projects: state.iconCard.list
-  };
-};
-export default connect(mapStateToProps, { fecthIconCard })(IconCard);
+
+export default IconCard;
