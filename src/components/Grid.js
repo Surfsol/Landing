@@ -41,10 +41,10 @@ const Grid = props => {
         <Card className={classes.card}>
           <CardContent>
             <Typography className={classes.title}>
-              Technology: {props.list.tech}
+              Technology : {props.list.tech}
             </Typography>
             <Typography className={classes.title}>
-              Project: {props.list.project}
+              Project : {props.list.project}
             </Typography>
             <Typography>
               <a href={props.list.github} target="_blank">
@@ -52,7 +52,7 @@ const Grid = props => {
               </a>
             </Typography>
             <Typography className={classes.title}>
-              Project: {props.list.description}
+              Description : {props.list.description}
             </Typography>
           </CardContent>
         </Card>
