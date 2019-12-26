@@ -14,7 +14,7 @@ export const fetchPro= () => dispatch => {
 
   // from thunk (see below) do some async action and dispatch an error or success action
   axios
-      .get('localhost:4001/project')
+      .get(`${process.env.REACT_APP_HOST}/project`)
       .then(res => {
          console.log(`action-project`,res)
         dispatch({ type: PRO_SUCCESS, payload: res.data})

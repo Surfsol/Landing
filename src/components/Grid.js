@@ -22,7 +22,6 @@ const useStyles = makeStyles({
 });
 
 const Grid = props => {
-  console.log(`Grid`, props.list.github);
   const classes = useStyles();
 
   const listStyle = {
