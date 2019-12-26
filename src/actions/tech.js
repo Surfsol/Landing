@@ -14,7 +14,7 @@ export const fetchTechs= () => dispatch => {
 
   // from thunk (see below) do some async action and dispatch an error or success action
   axios
-      .get('localhost:4001/tech')
+      .get(`${process.env.REACT_APP_HOST}/tech`)
       .then(res => {
          console.log(`action-tech`,res)
         dispatch({ type: TECH_SUCCESS, payload: res.data})
