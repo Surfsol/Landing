@@ -10,6 +10,7 @@ import yelp from "../assets/images/yelp.png";
 import airbnb from "../assets/images/air2.png";
 import vr from "../assets/images/vr.png";
 import subReddit from "../assets/images/subreddit.png";
+import welldone from "../assets/images/welldone.png";
 import VerticalSpace from "./VerticalSpace";
 
 const Projects = () => {
@@ -23,10 +24,53 @@ const Projects = () => {
       <>
         <div className="project-wrap">
           <div className="lambdatitle">
-            
-              <h1>Lambda Team Projects</h1>
-            
+            <h1>Lambda Team Projects</h1>
           </div>
+
+          <section class="body-content-2">
+            <div class="content">
+              <div class="content-box">
+                <h1>Well Done</h1>
+
+                <p>
+                  Our team made additions to the Frontend and Backend
+                  architecture. Stakeholder is a NGO that develops sensors for
+                  remote well pumps. We converted frontend to Redux, added
+                  modals for crud operations, added an Admin and Organizational
+                  dashboard, user permissions, etc.
+                </p>
+
+                <ul style={{ listStyle: "none" }}>
+                  <h4>Tecnologies applied:</h4>
+                  <li>React / Redux</li>
+                  <li>React-map</li>
+                  <li>Node.js</li>
+                  <li>Heroku</li>
+                  <li>PostgreSQL</li>
+                </ul>
+                <ul class="link">
+                  <a
+                    href="https://github.com/Lambda-School-Labs/well-done-fe"
+                    target="_blank"
+                    class="button"
+                  >
+                    Frontend Github Code
+                  </a>
+                  <br></br>
+                  <a
+                    href="https://github.com/Lambda-School-Labs/well-done-be"
+                    target="_blank"
+                    class="button"
+                  >
+                    Backend Github Code
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <div class="image-body">
+              <img src={welldone} />
+            </div>
+          </section>
 
           <section className="body-content">
             <div className="image-body">
@@ -35,7 +79,7 @@ const Projects = () => {
             <div className="content">
               <div className="content-box">
                 <h1>SubReddit</h1>
-                
+
                 <p>
                   Design and implement a <strong>BACKEND</strong> server with a
                   database so users can perform
@@ -71,7 +115,7 @@ const Projects = () => {
             <div class="content">
               <div class="content-box">
                 <h1>Yelp</h1>
-               
+
                 <p>
                   Design and implement the Frontend architecture using{" "}
                   <strong>React</strong> and <strong>Redux</strong>.
@@ -112,7 +156,7 @@ const Projects = () => {
             <div class="content">
               <div class="content-box">
                 <h1>Air Bnb</h1>
-               
+
                 <p>
                   Frontend architecture implementation using{" "}
                   <strong>React</strong>. To perform <strong>CRUD</strong>
@@ -145,7 +189,7 @@ const Projects = () => {
             <div class="content">
               <div class="content-box">
                 <h1>VR Funding</h1>
-                
+
                 <p>
                   Design a fully responsive Landing page for desktop and mobile
                   using preprocessing.
