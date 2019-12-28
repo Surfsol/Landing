@@ -188,6 +188,7 @@ const Projects = () => {
                   <h4>Tecnologies applied:</h4>
                   <li>HTML</li>
                   <li>CSS</li>
+                  <li>LESS</li>
                 </ul>
                 <ul class="link">
                   <a
