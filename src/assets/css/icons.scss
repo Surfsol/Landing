@@ -14,7 +14,11 @@ $sea3: #d6e6f3;
 
   @media (max-width: $phone) {
     margin-top:40vh;
-}
+  }
+
+  .tlink{
+    margin:.5rem;
+  }
   
   h1 {
     font-family: 'Bree Serif', serif;
@@ -39,6 +43,7 @@ $sea3: #d6e6f3;
 
     .icon-group {
       display: flex;
+      flex-wrap:wrap;
       justify-content: center;
       margin: 3%;
 
@@ -46,6 +51,9 @@ $sea3: #d6e6f3;
         width: 7rem;
         height: 7rem;
         margin: 0 1rem;
+        @media (max-width: $phone) {
+          margin: 1.5rem;
+        }
         
       }
     }
