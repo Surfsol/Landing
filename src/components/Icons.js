@@ -33,6 +33,7 @@ const Icons = props => {
     <Nav/>
     </div>
     <div className="icon-wrapper">
+     
       <h1>Click to discover projects by technologies:</h1>
       <div className="icons">
         <div className="icon-group">
@@ -104,7 +105,7 @@ const Icons = props => {
           <h2>Database</h2>
           <NavLink className="active" to={`/techsProject/Postgresql`}>
             <img src={postgresql} alt="postgresql" />
-            <h5>Postgresql </h5>
+            <h5>PostgreSQL </h5>
           </NavLink>
 
           <NavLink className="active" to={`/techsProject/sql`}>
