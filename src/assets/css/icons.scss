@@ -14,7 +14,11 @@ $sea3: #d6e6f3;
 
   @media (max-width: $phone) {
     margin-top:40vh;
-}
+  }
+
+  .tlink{
+    margin:.5rem;
+  }
   
   h1 {
     font-family: 'Bree Serif', serif;
