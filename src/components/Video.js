@@ -2,6 +2,8 @@ import React from 'react'
 import Icons from './Icons'
 import Techs from './Techs'
 
+import ContactModal from './ContactModal'
+
 import videoDolphin from '../assets/images/Dolphin.mp4'
 
 import '../assets/css/video.scss'
@@ -32,9 +34,9 @@ const Video = () => {
                     </a>
                 </div>
             </div>
-            
+            <ContactModal/>
         </header>
-        <Techs/>
+        
         </>
     )
 }
