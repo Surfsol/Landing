@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
@@ -16,11 +16,23 @@ const useStyles = makeStyles(theme => ({
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
   },
+  button:{
+      background: '$sea1',
+      color: '$sea2',
+      fontSize: '2rem',
+      fontFamily: 'Bree Serif, serif',
+  }
 }));
 
 export default function ContactModal() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+
+  const [contact, setContact] = useState([])
+
+  const handleChange = event => {
+    setContact({ ...contact, [event.target.name]: event.target.value })
+  }
 
   const handleOpen = () => {
     setOpen(true);
@@ -32,9 +44,9 @@ export default function ContactModal() {
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
-        react-transition-group
-      </button>
+      <h3 className={classes.button} onClick={handleOpen}>
+        Contact Me
+      </h3>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -49,8 +61,22 @@ export default function ContactModal() {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="transition-modal-title">Transition modal</h2>
+          <h2>
+                <label for='Name'>Name</label>
+                <br></br>
+                <input
+                  type='text'
+                  id='name'
+                  placeholder='name'
+                  name='name'
+                  value={contact.name}
+                  onChange={handleChange}
+                />
+              </h2>
+          
+            <h2 id="transition-modal-title">Email me a message.</h2>
             <p id="transition-modal-description">react-transition-group animates me.</p>
+           
           </div>
         </Fade>
       </Modal>

@@ -26,7 +26,7 @@ const Video = () => {
                 <h1>Russell Terry</h1>
                 <a href="/skills" class="btn">My Skills</a>
                 <a href="/team" class="btn">Team Projects</a>
-                <a href="/addproject" class="btn">Manage Projects</a>
+                <a class="btn"><ContactModal/></a>
                 <div class="git">
                 <a href="https://github.com/Surfsol" target="_blank">
                     <img src={git}/>
@@ -34,7 +34,7 @@ const Video = () => {
                     </a>
                 </div>
             </div>
-            <ContactModal/>
+         
         </header>
         
         </>
