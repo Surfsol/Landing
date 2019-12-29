@@ -28,6 +28,9 @@ const useStyles = makeStyles(theme => ({
       color: '$sea2',
       fontSize: '2rem',
       fontFamily: 'Bree Serif, serif',
+  },
+  textarea:{
+    height:'150px'
   }
 }));
 
@@ -111,7 +114,8 @@ export default function ContactModal() {
               <h2>
                 <label for='Message'>Message</label>
                 <br></br>
-                <input
+                <textarea
+                className={classes.textarea}
                   type='text'
                   id='message'
                   placeholder='message'
