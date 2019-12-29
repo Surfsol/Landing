@@ -1,8 +1,12 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
+import axios from 'axios';
+
+import {useDispatch} from 'react-redux'
+import {postModal} from '../actions/modalAction'
 
 const useStyles = makeStyles(theme => ({
   modal: {
@@ -15,6 +19,9 @@ const useStyles = makeStyles(theme => ({
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
+  },
+  top:{
+    alignContent:'center'
   },
   button:{
       background: '$sea1',
@@ -42,6 +49,14 @@ export default function ContactModal() {
     setOpen(false);
   };
 
+  const dispatch = useDispatch()
+
+  const eventHandler = event => {
+    event.preventDefault()
+    dispatch(postModal(contact))
+    
+  }
+
   return (
     <div>
       <h3 className={classes.button} onClick={handleOpen}>
@@ -61,6 +76,14 @@ export default function ContactModal() {
       >
         <Fade in={open}>
           <div className={classes.paper}>
+          <div className={classes.top}>
+            <h1>Russell Terry</h1>
+          <h1>Full Stack Developer</h1>
+          <email>surfsol@protonmail.com</email>
+          </div>
+          <br></br>
+          <div>
+          <h2>Notify me by email:</h2>
           <h2>
                 <label for='Name'>Name</label>
                 <br></br>
@@ -73,10 +96,39 @@ export default function ContactModal() {
                   onChange={handleChange}
                 />
               </h2>
+              <h2>
+                <label for='Email'>Email</label>
+                <br></br>
+                <input
+                  type='text'
+                  id='email'
+                  placeholder='email'
+                  name='email'
+                  value={contact.email}
+                  onChange={handleChange}
+                />
+              </h2>
+              <h2>
+                <label for='Message'>Message</label>
+                <br></br>
+                <input
+                  type='text'
+                  id='message'
+                  placeholder='message'
+                  name='message'
+                  value={contact.message}
+                  onChange={handleChange}
+                />
+              </h2>
+              </div>
+              <button
+              onClick={eventHandler}>
+                Send
+              </button>
           
-            <h2 id="transition-modal-title">Email me a message.</h2>
+            {/* <h2 id="transition-modal-title">Email me a message.</h2>
             <p id="transition-modal-description">react-transition-group animates me.</p>
-           
+            */}
           </div>
         </Fade>
       </Modal>
