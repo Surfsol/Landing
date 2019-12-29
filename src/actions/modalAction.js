@@ -7,6 +7,8 @@ export const MODAL_FAILURE = 'MODAL_FAILURE';
 
 export const postModal=(contact)=>dispatch => {
     console.log(`modalAction contact`,contact)
+
+    dispatch({type: MODAL_FETCH})
     axios
         .post(`${process.env.REACT_APP_HOST}`, contact)
         .then(res => {
