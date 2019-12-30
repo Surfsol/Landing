@@ -11,19 +11,29 @@ import { postModal } from "../actions/modalAction";
 import "../assets/css/modal.scss";
 
 const useStyles = makeStyles(theme => ({
+
+
+
   modal: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    
+   
   },
   paper: {
-    backgroundColor: theme.palette.background.paper,
-    border: "2px solid #000",
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3)
+    backgroundColor: '#d6e6f3',
+    color:'#486591',
+    
+    // boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
+    width:'20%',
+   
+    
   },
   top: {
-    alignContent: "center"
+    alignContent: "center",
+    fortSize:"1.5rem"
   },
   button: {
     background: "$sea1",
@@ -32,7 +42,11 @@ const useStyles = makeStyles(theme => ({
     fontFamily: "Bree Serif, serif"
   },
   textarea: {
-    height: "150px"
+    height: "150px",
+    width:"100%"
+  },
+  input: {
+    width:"100%"
   }
 }));
 
@@ -97,14 +111,17 @@ export default function ContactModal() {
               <h1>Russell Terry</h1>
               <h1>Full Stack Developer</h1>
               <email>surfsol@protonmail.com</email>
+              <h1>github.com/surfsol</h1>
             </div>
             <br></br>
             <div>
               <h2>Notify me by email:</h2>
+              <br></br>
               <h2>
                 <label for="Name">Name</label>
                 <br></br>
                 <input
+                className={classes.input}
                   type="text"
                   id="name"
                   placeholder="name"
@@ -117,6 +134,7 @@ export default function ContactModal() {
                 <label for="Email">Email</label>
                 <br></br>
                 <input
+                className={classes.input}
                   type="text"
                   id="email"
                   placeholder="email"
@@ -140,10 +158,6 @@ export default function ContactModal() {
               </h2>
             </div>
             <button onClick={eventHandler}>Send</button>
-
-            {/* <h2 id="transition-modal-title">Email me a message.</h2>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-            */}
           </div>
         </Fade>
       </Modal>

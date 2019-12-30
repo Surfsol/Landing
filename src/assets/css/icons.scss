@@ -3,32 +3,47 @@ $sea1: #96c4de;
 $sea2: #486591;
 $sea3: #d6e6f3;
 
-.navSkills{
+.modal-fix {
+  position: fixed;
+  bottom: 2rem;
+  right: 2.5rem;
+  font-size: 18px;
+ border:1px solid $sea2;
+ background:$sea2;
+ color:$sea3;
+padding:.7rem;
+}
+
+.modal-fix:hover{
+  color:$sea2;
+  background:$sea3;
+}
+
+.navSkills {
   margin-bottom: 0;
 }
 .icon-wrapper {
   margin-top: 20vh;
   background: $sea3;
   width: 100%;
-  
 
   @media (max-width: $phone) {
-    margin-top:40vh;
+    margin-top: 40vh;
   }
 
-  .tlink{
-    margin:.5rem;
+  .tlink {
+    margin: 0.5rem;
   }
-  
+
   h1 {
-    font-family: 'Bree Serif', serif;
-    color:$sea2;
+    font-family: "Bree Serif", serif;
+    color: $sea2;
     font-size: 5vh;
     padding-top: 3%;
   }
 
   h2 {
-    color:$sea1;
+    color: $sea1;
     font-size: 5vh;
   }
 
@@ -43,7 +58,7 @@ $sea3: #d6e6f3;
 
     .icon-group {
       display: flex;
-      flex-wrap:wrap;
+      flex-wrap: wrap;
       justify-content: center;
       margin: 3%;
 
@@ -54,7 +69,6 @@ $sea3: #d6e6f3;
         @media (max-width: $phone) {
           margin: 1.5rem;
         }
-        
       }
     }
   }

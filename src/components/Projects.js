@@ -1,6 +1,8 @@
 import React from "react";
 import Nav from "./Nav";
 
+import ContactModal from './ContactModal'
+
 //css
 import "../assets/css/projects.scss";
 
@@ -18,6 +20,9 @@ const Projects = () => {
       <div>
         <Nav />
       </div>
+      <div className="modal-fix">
+      <ContactModal/>
+    </div>
 
       <div className="project-wrap">
         <div className="lambdatitle">

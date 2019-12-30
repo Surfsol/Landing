@@ -2,6 +2,8 @@ import React from "react";
 
 import Nav from "./Nav";
 
+import ContactModal from './ContactModal'
+
 import sql from "../assets/icons/sql.png";
 import sass from "../assets/icons/sass.png";
 import heroku from "../assets/icons/heroku.png";
@@ -29,6 +31,9 @@ const Icons = props => {
 
   return (
     <>
+    <div className="modal-fix">
+      <ContactModal/>
+    </div>
       <div className="navSkills">
         <Nav />
       </div>

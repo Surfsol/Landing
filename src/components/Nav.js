@@ -1,6 +1,7 @@
 import React from 'react'
 import Icons from './Icons'
 import Techs from './Techs'
+import ModalContact from './ContactModal'
 
 import videoDolphin from '../assets/images/Dolphin.mp4'
 

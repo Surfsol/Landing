@@ -128,6 +128,22 @@ $sea1: #96c4de;
 $sea2: #486591;
 $sea3: #d6e6f3;
 
+.modal-fix {
+  position: fixed;
+  bottom: 2rem;
+  right: 2.5rem;
+  font-size: 18px;
+ border:1px solid $sea2;
+ background:$sea2;
+ color:$sea3;
+padding:.7rem;
+}
+
+.modal-fix:hover{
+  color:$sea2;
+  background:$sea3;
+}
+
 .project-wrap {
   margin-top: 20vh;
   background: $sea3;
