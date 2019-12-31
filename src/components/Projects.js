@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 
-import ContactModal from './ContactModal'
+import ContactModal from "./ContactModal";
 
 //css
 import "../assets/css/projects.scss";
@@ -20,13 +20,10 @@ const Projects = () => {
       <div>
         <Nav />
       </div>
-      <div className="modal-fix">
-      <ContactModal/>
-    </div>
 
       <div className="project-wrap">
         <div className="lambdatitle">
-          <h1>Lambda Team Projects</h1>
+          <h1>Team Projects</h1>
         </div>
 
         <section class="body-content-2">
@@ -35,11 +32,10 @@ const Projects = () => {
               <h1>Well Done</h1>
 
               <p>
-                Our team made additions to the Frontend and Backend
-                architecture. Stakeholder is a NGO that develops sensors for
-                remote well pumps. We converted frontend to Redux, added modals
-                for crud operations, added an Admin and Organizational
-                dashboard, user permissions, etc.
+                Stakeholder is a NGO that develops sensors for
+                well pumps in remote locations.
+                Tasks include adding functionality to Frontend and Backend
+                architectures, currently in development.  
               </p>
 
               <ul style={{ listStyle: "none" }}>
@@ -83,18 +79,16 @@ const Projects = () => {
               <h1>SubReddit</h1>
 
               <p>
-                Design and implement a <strong>BACKEND</strong> server with a
-                database so users can perform
-                <strong> CRUD</strong> operations: Register, Login, .post, .get,
-                .delete, forms, responsive design
+                Our task was to design and implement a Node.js<strong>BACKEND</strong> server with a
+                database to enable users to perform
+                <strong> CRUD</strong> operations: Register, Login, .post, .get, and
+                .delete.  I also assisted the React Frontend developer set up the Redux architecture.
               </p>
 
               {/* listStyle: "none", no bullet points */}
               <ul style={{ listStyle: "none" }}>
                 <h4>Tecnologies applied:</h4>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>Knex</li>
+                <li>Node.js / Express</li>
                 <li>BcryptJS</li>
                 <li>jsonwebtoken</li>
                 <li>PostgreSql / Sqlite3</li>
@@ -119,10 +113,10 @@ const Projects = () => {
               <h1>Yelp</h1>
 
               <p>
-                Design and implement the Frontend architecture using{" "}
-                <strong>React</strong> and <strong>Redux</strong>. Collaborated
-                with backend and Data Science teams. Register, Login, .post,
-                .get, .put, .delete, forms, responsive design.
+                My task was to design and implement the Frontend architecture using
+                <strong>React</strong> and <strong>Redux</strong>. I Collaborated
+                with backend and Data Science teams. Functionality includes: Register, Login, .post,
+                .get, .put, .delete, submission forms, and a responsive design.
               </p>
 
               <ul style={{ listStyle: "none" }}>
@@ -162,7 +156,7 @@ const Projects = () => {
               <p>
                 Frontend architecture implementation using{" "}
                 <strong>React</strong>. To perform <strong>CRUD</strong>
-                operations on the database. Register, Login, .post, .get, forms,
+                operations on the database. Tasks included: Register, Login, .post, .get, forms,
                 responsive design.
               </p>
 
@@ -194,14 +188,14 @@ const Projects = () => {
 
               <p>
                 Design a fully responsive Landing page for desktop and mobile
-                using preprocessing.
+                using LESS for preprocessing.
               </p>
 
               <ul style={{ listStyle: "none" }}>
                 <h4>Tecnologies applied:</h4>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>PREPROCESSING LESS</li>
+                <li>LESS</li>
               </ul>
               <ul class="link">
                 <a

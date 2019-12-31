@@ -1,7 +1,7 @@
 import {MODAL_FETCH, MODAL_SUCCESS, MODAL_FAILURE} from '../actions/modalAction'
 
 const initialState = {
-    sentInfo:{},
+    sentInfo:[],
     isfetching:false,
     error:""
 }

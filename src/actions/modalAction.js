@@ -14,7 +14,7 @@ export const postModal=(contact)=>dispatch => {
     axios
         .get(`${process.env.REACT_APP_HOST}/twilio`, contact)
         .then(res => {
-            console.log(`action-project`, res)
+            console.log(`twilio action`,res)
             dispatch({type: MODAL_SUCCESS, payload:res.data})
         })
         .catch(err => dispatch({type: PRO_FAILURE, payload:err}))
@@ -26,9 +26,9 @@ export const mailerModal=(contact)=>dispatch => {
 
     dispatch({type: MODAL_FETCH})
     axios
-        .post(`${process.env.REACT_APP_HOST}/mailer`, contact)
+        .post(`https://landingbe.herokuapp.com/mailer`, contact)
         .then(res => {
-            console.log(`action-project`, res)
+            console.log(`action-nodemailer`, res)
             dispatch({type: MODAL_SUCCESS, payload:res.data})
         })
         .catch(err => dispatch({type: PRO_FAILURE, payload:err}))

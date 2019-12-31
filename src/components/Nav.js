@@ -27,7 +27,7 @@ const NavBar = () => {
                 <a href="/" class="nav-btn">Home</a>
                 <a href="/skills" class="nav-btn">My Skills</a>
                 <a href="/team" class="nav-btn">Team Projects</a>
-                <a href="/addproject" class="nav-btn">Manage Projects</a>
+                <a  class="nav-btn"><ModalContact/></a>
                 <div class="git">
                 <a href="https://github.com/Surfsol" target="_blank">
                     <img src={git}/>
