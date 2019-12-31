@@ -26,7 +26,7 @@ export const mailerModal=(contact)=>dispatch => {
 
     dispatch({type: MODAL_FETCH})
     axios
-        .post(`https://landingbe.herokuapp.com/mailer`, contact)
+        .post(`${process.env.REACT_APP_HOST}/mailer`, contact)
         .then(res => {
             console.log(`action-nodemailer`, res)
             dispatch({type: MODAL_SUCCESS, payload:res.data})

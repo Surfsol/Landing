@@ -88,6 +88,7 @@ const ContactModal= (props) => {
     );
   }
 
+  //with this after sent, modal will be closed
   if (modalReducer.sentInfo.length != 0){
     return(
       <>
