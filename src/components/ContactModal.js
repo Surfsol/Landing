@@ -6,7 +6,10 @@ import Fade from "@material-ui/core/Fade";
 import axios from "axios";
 
 import { useDispatch, useSelector } from "react-redux";
-import { postModal } from "../actions/modalAction";
+import { postModal, mailerModal } from "../actions/modalAction";
+
+//to redirect after message is sent, gives ContactModal access to routes
+import {withRouter} from 'react-router'
 
 import "../assets/css/modal.scss";
 
@@ -35,12 +38,7 @@ const useStyles = makeStyles(theme => ({
     alignContent: "center",
     fortSize:"1.5rem"
   },
-  button: {
-    background: "$sea1",
-    color: "$sea2",
-    fontSize: "2rem",
-    fontFamily: "Bree Serif, serif"
-  },
+  
   textarea: {
     height: "150px",
     width:"100%"
@@ -50,7 +48,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function ContactModal() {
+const ContactModal= (props) => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -69,10 +67,12 @@ export default function ContactModal() {
   };
 
   const dispatch = useDispatch();
-
+  
+  //postModal is for Twilio, mailerModal is for nodemailer
   const eventHandler = event => {
     event.preventDefault();
-    dispatch(postModal(contact));
+    dispatch(mailerModal(contact));
+    
   };
 
   const modalReducer = useSelector(state => state.modalReducer);
@@ -88,10 +88,20 @@ export default function ContactModal() {
     );
   }
 
+  if (modalReducer.sentInfo.length != 0){
+    return(
+      <>
+      <div className="messageSent">
+        <h2>Message sent</h2>
+      </div>
+      </>
+    )
+  }
+
   return (
     <div>
-      <h3 className={classes.button} onClick={handleOpen}>
-        Contact Me
+      <h3 onClick={handleOpen}>
+        Contact
       </h3>
       <Modal
         aria-labelledby="transition-modal-title"
@@ -118,15 +128,28 @@ export default function ContactModal() {
               <h2>Notify me by email:</h2>
               <br></br>
               <h2>
-                <label for="Name">Name</label>
+                <label for="your_name">Name</label>
                 <br></br>
                 <input
                 className={classes.input}
                   type="text"
-                  id="name"
-                  placeholder="name"
-                  name="name"
-                  value={contact.name}
+                  id="your_name"
+                  placeholder="Name"
+                  name="your_name"
+                  value={contact.recipient}
+                  onChange={handleChange}
+                />
+              </h2>
+              <h2>
+                <label for="phone">phone</label>
+                <br></br>
+                <input
+                className={classes.input}
+                  type="text"
+                  id="phone"
+                  placeholder="phone"
+                  name="phone"
+                  value={contact.message}
                   onChange={handleChange}
                 />
               </h2>
@@ -139,7 +162,7 @@ export default function ContactModal() {
                   id="email"
                   placeholder="email"
                   name="email"
-                  value={contact.email}
+                  value={contact.message}
                   onChange={handleChange}
                 />
               </h2>
@@ -149,10 +172,10 @@ export default function ContactModal() {
                 <textarea
                   className={classes.textarea}
                   type="text"
-                  id="message"
+                  id="textmessage"
                   placeholder="message"
-                  name="message"
-                  value={contact.message}
+                  name="textmessage"
+                  value={contact.textmessage}
                   onChange={handleChange}
                 />
               </h2>
@@ -164,3 +187,4 @@ export default function ContactModal() {
     </div>
   );
 }
+export default withRouter(ContactModal)
