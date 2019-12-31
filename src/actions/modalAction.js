@@ -5,12 +5,28 @@ export const MODAL_FETCH = 'MODAL_FETCH';
 export const MODAL_SUCCESS = 'MODAL_SUCCESS';
 export const MODAL_FAILURE = 'MODAL_FAILURE';
 
+//for Twilio whatsapp
+//cannot post to Twilio
 export const postModal=(contact)=>dispatch => {
     console.log(`modalAction contact`,contact)
 
     dispatch({type: MODAL_FETCH})
     axios
-        .post(`${process.env.REACT_APP_HOST}`, contact)
+        .get(`${process.env.REACT_APP_HOST}/twilio`, contact)
+        .then(res => {
+            console.log(`action-project`, res)
+            dispatch({type: MODAL_SUCCESS, payload:res.data})
+        })
+        .catch(err => dispatch({type: PRO_FAILURE, payload:err}))
+}
+
+//for nodemailer
+export const mailerModal=(contact)=>dispatch => {
+    console.log(`modalAction mailer`,contact)
+
+    dispatch({type: MODAL_FETCH})
+    axios
+        .post(`${process.env.REACT_APP_HOST}/mailer`, contact)
         .then(res => {
             console.log(`action-project`, res)
             dispatch({type: MODAL_SUCCESS, payload:res.data})

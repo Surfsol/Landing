@@ -6,7 +6,7 @@ import Fade from "@material-ui/core/Fade";
 import axios from "axios";
 
 import { useDispatch, useSelector } from "react-redux";
-import { postModal } from "../actions/modalAction";
+import { postModal, mailerModal } from "../actions/modalAction";
 
 import "../assets/css/modal.scss";
 
@@ -70,9 +70,10 @@ export default function ContactModal() {
 
   const dispatch = useDispatch();
 
+  //postModal is for Twilio, mailerModal is for nodemailer
   const eventHandler = event => {
     event.preventDefault();
-    dispatch(postModal(contact));
+    dispatch(mailerModal(contact));
   };
 
   const modalReducer = useSelector(state => state.modalReducer);
@@ -118,15 +119,28 @@ export default function ContactModal() {
               <h2>Notify me by email:</h2>
               <br></br>
               <h2>
-                <label for="Name">Name</label>
+                <label for="your_name">your_name</label>
                 <br></br>
                 <input
                 className={classes.input}
                   type="text"
-                  id="name"
-                  placeholder="name"
-                  name="name"
-                  value={contact.name}
+                  id="your_name"
+                  placeholder="Name"
+                  name="your_name"
+                  value={contact.recipient}
+                  onChange={handleChange}
+                />
+              </h2>
+              <h2>
+                <label for="phone">phone</label>
+                <br></br>
+                <input
+                className={classes.input}
+                  type="text"
+                  id="phone"
+                  placeholder="phone"
+                  name="phone"
+                  value={contact.message}
                   onChange={handleChange}
                 />
               </h2>
@@ -139,7 +153,7 @@ export default function ContactModal() {
                   id="email"
                   placeholder="email"
                   name="email"
-                  value={contact.email}
+                  value={contact.message}
                   onChange={handleChange}
                 />
               </h2>
@@ -149,10 +163,10 @@ export default function ContactModal() {
                 <textarea
                   className={classes.textarea}
                   type="text"
-                  id="message"
-                  placeholder="message"
-                  name="message"
-                  value={contact.message}
+                  id="textmessage"
+                  placeholder="textmessage"
+                  name="textmessage"
+                  value={contact.textmessage}
                   onChange={handleChange}
                 />
               </h2>
