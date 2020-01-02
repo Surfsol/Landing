@@ -17,6 +17,8 @@ import http from "../assets/icons/http.png";
 import redux from "../assets/icons/reduxlogo.png";
 import less from "../assets/icons/less.png";
 import django from "../assets/icons/django.png";
+import aws from "../assets/icons/aws-icon.png"
+import check from "../assets/icons/check.png"
 
 import "../assets/css/icons.scss";
 
@@ -47,6 +49,9 @@ const Icons = props => {
           </a>
           <a href="#Database" class="tlink">
             Database
+          </a>
+          <a href="#Hosting" class="tlink">
+            Hosting
           </a>
         </div>
         <h1>Click to Discover Projects by Technology:</h1>
@@ -110,9 +115,9 @@ const Icons = props => {
               <h5>django</h5>
             </NavLink>
 
-            <NavLink className="active" to={`/techsProject/Heroku`}>
-              <img src={heroku} alt="heroku" />
-              <h5>Heroku</h5>
+            <NavLink className="active" to={`/techsProject/testing`}>
+              <img src={check} alt="testing" />
+              <h5>Testing</h5>
             </NavLink>
           </div>
 
@@ -128,6 +133,18 @@ const Icons = props => {
               <h5>Sql</h5>
             </NavLink>
           </div>
+          <div className="icon-group">
+            <h2 id="Hosting">Hosting</h2>
+            <NavLink className="active" to={`/techsProject/Heroku`}>
+              <img src={heroku} alt="heroku" />
+              <h5>Heroku</h5>
+            </NavLink>
+
+            <NavLink className="active" to={`/techsProject/aws`}>
+              <img src={aws} alt="aws" />
+              <h5>Aws</h5>
+            </NavLink>
+            </div>
         </div>
       </div>
     </>
