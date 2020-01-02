@@ -59,17 +59,17 @@ const Icons = props => {
           <div className="icon-group">
             <h2>HTML / CSS</h2>
 
-            <NavLink className="active" to={`/techsProject/html`}>
+            <NavLink className="active" to={`/techsProject/HTML`}>
               <img src={html5} alt="html" />
               <h5>HTML </h5>
             </NavLink>
 
-            <NavLink className="active" to={`/techsProject/sass`}>
+            <NavLink className="active" to={`/techsProject/SASS`}>
               <img src={sass} alt="sass" />
               <h5>SASS</h5>
             </NavLink>
 
-            <NavLink className="active" to={`/techsProject/less`}>
+            <NavLink className="active" to={`/techsProject/LESS`}>
               <img src={less} alt="less" />
               <h5>LESS</h5>
             </NavLink>
@@ -86,7 +86,7 @@ const Icons = props => {
               <img src={redux} alt="redux" />
               <h5>Redux</h5>
             </NavLink>
-            <NavLink className="active" to={`/techsProject/js`}>
+            <NavLink className="active" to={`/techsProject/Javascript`}>
               <img src={js} alt="javascript" />
               <h5>Javascript</h5>
             </NavLink>
@@ -95,27 +95,27 @@ const Icons = props => {
           <div className="icon-group">
             <h2 id="Backend">Backend</h2>
 
-            <NavLink className="active" to={`/techsProject/http`}>
+            <NavLink className="active" to={`/techsProject/Http-requests`}>
               <img src={http} alt="http-requests" />
               <h5>Http-requests</h5>
             </NavLink>
 
-            <NavLink className="active" to={`/techsProject/18`}>
+            <NavLink className="active" to={`/techsProject/Node.js`}>
               <img src={node} alt="node.js" />
               <h5> Node.js</h5>
             </NavLink>
 
-            <NavLink className="active" to={`/techsProject/python`}>
+            <NavLink className="active" to={`/techsProject/Python`}>
               <img src={python} alt="python" />
               <h5>Python</h5>
             </NavLink>
 
-            <NavLink className="active" to={`/techsProject/django`}>
+            <NavLink className="active" to={`/techsProject/Django`}>
               <img src={django} alt="django" />
               <h5>django</h5>
             </NavLink>
 
-            <NavLink className="active" to={`/techsProject/testing`}>
+            <NavLink className="active" to={`/techsProject/Testing`}>
               <img src={check} alt="testing" />
               <h5>Testing</h5>
             </NavLink>
@@ -123,12 +123,12 @@ const Icons = props => {
 
           <div className="icon-group">
             <h2 id="Database">Database</h2>
-            <NavLink className="active" to={`/techsProject/Postgresql`}>
+            <NavLink className="active" to={`/techsProject/PostgreSQL`}>
               <img src={postgresql} alt="postgresql" />
               <h5>PostgreSQL </h5>
             </NavLink>
 
-            <NavLink className="active" to={`/techsProject/sql`}>
+            <NavLink className="active" to={`/techsProject/Sql`}>
               <img src={sql} alt="sql" />
               <h5>Sql</h5>
             </NavLink>
@@ -140,7 +140,7 @@ const Icons = props => {
               <h5>Heroku</h5>
             </NavLink>
 
-            <NavLink className="active" to={`/techsProject/aws`}>
+            <NavLink className="active" to={`/techsProject/AWS`}>
               <img src={aws} alt="aws" />
               <h5>Aws</h5>
             </NavLink>
