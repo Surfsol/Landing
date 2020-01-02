@@ -1,3 +1,7 @@
+icons
+https://www.iconfinder.com/search/?q=aws&from=navbar
+
+
 App.js: <Route path="/techsProject/:tech" component={IconCard}/>
     when NavLink is selected on icons.  Will open up path /techsProject/:tech and 
     render IconCard
