@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "name":"marketing",
+    "builds":[
+        {"src": "package.json", "use": "@now/static-build",
+        "config": {"distDir":"build"}}],
+        "routes": [
+            { "src": "/(.*)", "dest": "../marketing/$1" }
+        ]
+
+}
+
+
