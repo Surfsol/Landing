@@ -8,6 +8,8 @@ import AddProject from './components/AddProject'
 import Video from './components/Video'
 import IconCard from './components/IconCard'
 
+import ProjectsPara from './components/ProjectsPara'
+
 
 
 function App() {

@@ -36,3 +36,9 @@ terminal: yarn global add now
 
 //to delploy
 terminal:now
+
+
+Netlify
+Deploy single page app
+public/_redirects
+/* /index.html 200

@@ -133,22 +133,21 @@ $sea3: #d6e6f3;
   bottom: 2rem;
   right: 2.5rem;
   font-size: 18px;
- border:1px solid $sea2;
- background:$sea2;
- color:$sea3;
-padding:.7rem;
+  border: 1px solid $sea2;
+  background: $sea2;
+  color: $sea3;
+  padding: 0.7rem;
 }
 
-.modal-fix:hover{
-  color:$sea2;
-  background:$sea3;
+.modal-fix:hover {
+  color: $sea2;
+  background: $sea3;
 }
 
 .project-wrap {
   margin-top: 20vh;
   background: $sea3;
   width: 100%;
-  
 
   @media (max-width: $phone) {
     margin-top: 40vh;
@@ -170,7 +169,6 @@ padding:.7rem;
   }
 }
 
-
 .body-content {
   width: 70%;
   height: 550px;
@@ -186,7 +184,6 @@ padding:.7rem;
     padding: 0;
     flex-direction: column;
     justify-content: center;
-    
   }
 
   .content,
