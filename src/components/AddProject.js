@@ -8,6 +8,8 @@ import Nav from './Nav'
 
 import "../App.css";
 
+import Login from './Login'
+
 import { withStyles } from "@material-ui/core/styles";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
@@ -69,6 +71,7 @@ const AddProject = props => {
   return (
     <>
     <Nav/>
+    
     <div style={listStyle}>
       <div className="AddProject">
         <h1>Submit a new Project</h1>
@@ -350,6 +353,7 @@ const AddProject = props => {
       </div>
 
       <NewProject />
+      <Login/>
       </div>
     </>
   );
