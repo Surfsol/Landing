@@ -1,0 +1,67 @@
+$phone: 800px;
+$sea1: #96c4de;
+$sea2: #486591;
+$sea3: #d6e6f3;
+
+.container{
+    max-width: 960;
+    margin: 0 auto;
+    background: $sea1;
+    padding:0px;
+    margin-bottom:5rem;
+
+    .titlebox{
+        height:30px;
+
+        h1{
+            font-size: 2.4rem;
+        
+    }
+
+    }
+
+     
+   
+}
+
+
+
+
+
+    .image-well{
+        background: url('../images/welldone.png') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height:300px;
+        margin-top:20vh;
+    }
+    .image-subreddit{
+        background: url('../images/subreddit.png') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height:300px;
+    }
+    .image-yelp{
+        background: url('../images/yelp.png') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height:300px;
+    }
+    .image-air{
+        background: url('../images/air2.png') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height:300px;
+    }
+    .image-vr{
+        background: url('../images/vr.png') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height:300px;
+    }
+    .image-responsive{
+        background: url('../images/responsive1.png') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height:300px;
+    }
