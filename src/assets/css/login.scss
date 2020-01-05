@@ -1,0 +1,27 @@
+$phone: 800px;
+$sea1: #96c4de;
+$sea2: #486591;
+$sea3: #d6e6f3;
+
+.log-wrapper{
+    margin-top:20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: $sea2;
+
+
+    label{
+        display:flex;
+        font-size:1.5rem;
+        padding:1%;
+
+        h2{
+            margin:3%;
+        }
+
+        input{
+            margin-right: 2%;
+        }
+    }
+}

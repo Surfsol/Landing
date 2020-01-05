@@ -72,6 +72,7 @@ const AddProject = props => {
     <>
     <Nav/>
     
+    <Login/>
     <div style={listStyle}>
       <div className="AddProject">
         <h1>Submit a new Project</h1>
@@ -353,7 +354,7 @@ const AddProject = props => {
       </div>
 
       <NewProject />
-      <Login/>
+     
       </div>
     </>
   );

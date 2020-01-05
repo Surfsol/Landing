@@ -5,11 +5,13 @@ export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
 export const LOGIN_FAILURE = 'LOGIN_FAILURE'
 
 export const fetchLogin= (creds) => dispatch => {
+    console.log(creds)
     dispatch({type:LOGIN_FETCH})
 
     axios
-        .post(`${process.env.REACT_APP_HOST}/pt`, creds)
+        .post(`${process.env.REACT_APP_HOST}/auth/login`, creds)
         .then(res => {
+            console.log(res)
             dispatch({type: LOGIN_SUCCESS, payload: res.data})
         })
         .catch(err => dispatch({type:LOGIN_FAILURE, payload:err}))

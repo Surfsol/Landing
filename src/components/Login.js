@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import  '../assets/css/login.scss'
+
 import { useDispatch, useSelector } from "react-redux";
 
 import { fetchLogin } from "../actions/loginAction";
@@ -41,9 +43,10 @@ const Login = () => {
 
   return (
     <>
-      <h2>
+    <div className="log-wrapper">
+      
         <label>
-          Name
+          <h2>Name</h2>
           <input
             type="text"
             id="username"
@@ -53,10 +56,9 @@ const Login = () => {
             onChange={handleChange}
           />
         </label>
-        </h2>
-        <h2>
+       
         <label>
-          Password
+          <h2>Password</h2>
           <input
             type="text"
             id="password"
@@ -66,8 +68,9 @@ const Login = () => {
             onChange={handleChange}
           />
         </label>
-      </h2>
+     
       <button onClick={eventHandler}>Submit</button>
+      </div>
     </>
   );
 };
