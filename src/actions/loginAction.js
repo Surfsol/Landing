@@ -4,7 +4,7 @@ export const LOGIN_FETCH = 'LOGIN_FETCH'
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
 export const LOGIN_FAILURE = 'LOGIN_FAILURE'
 
-axios.defaults.withCredentials = true;
+//axios.defaults.withCredentials = true;
 
 export const fetchLogin= (creds) => dispatch => {
     console.log(creds)
