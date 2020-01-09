@@ -6,9 +6,9 @@ export const LOGIN_FAILURE = 'LOGIN_FAILURE'
 
 //axios.defaults.withCredentials = true;
 
-const transport = axios.create({
-    withCredentials: true
-  })
+// const transport = axios.create({
+//     withCredentials: true
+//   })
   
  
 
@@ -16,7 +16,7 @@ export const fetchLogin= (creds) => dispatch => {
     console.log(creds)
     dispatch({type:LOGIN_FETCH})
 
-    transport
+    axios
         .post(`${process.env.REACT_APP_HOST}`, creds)
         .then(res => {
             console.log(res)
