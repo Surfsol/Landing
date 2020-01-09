@@ -8,7 +8,7 @@ export const ADD_FAILURE = 'ADD_FAILURE'
 export const fetchAdd= (details) => dispatch => {
 console.log(`action addproject`,details)
     axios  
-        .get(`${process.env.REACT_APP_HOST}/pt`, details)
+        .post(`${process.env.REACT_APP_HOST}/projects`, details)
         .then(res => {
             console.log(`action/add`, res.data)
             dispatch({type:ADD_SUCCESS, payload: res.data})

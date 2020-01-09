@@ -10,7 +10,6 @@ const NewProjects = (props) => {
     console.log(select)
 
     const handleChange = ((e) => {
-        console.log(e)
         setSelect({
             ...select,
             [e.target.name]: e.target.value
@@ -42,7 +41,7 @@ const NewProjects = (props) => {
           />
         )}
       />
-      <Autocomplete
+      {/* <Autocomplete
         multiple
         id="tags-outlined"
         options={props.allTechs}
@@ -59,8 +58,8 @@ const NewProjects = (props) => {
             fullWidth
           />
         )}
-      />
-      <Autocomplete
+      /> */}
+      {/* <Autocomplete
         multiple
         id="tags-filled"
         options={props.allTechs.map(option => option.tech)}
@@ -81,7 +80,7 @@ const NewProjects = (props) => {
             fullWidth
           />
         )}
-      />
+      /> */}
     </div>
     </form>
   );

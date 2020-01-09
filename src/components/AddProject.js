@@ -4,11 +4,11 @@ import { connect } from "react-redux";
 import { fetchAdd } from "../actions/addProject";
 
 import NewProject from "./NewProject";
-import Nav from './Nav'
+import Nav from "./Nav";
 
 import "../App.css";
 
-import Login from './Login'
+import Login from "./Login";
 
 import { withStyles } from "@material-ui/core/styles";
 import FormGroup from "@material-ui/core/FormGroup";
@@ -29,11 +29,15 @@ const useStyles = makeStyles(theme => ({
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
     width: 200
+  },
+  git: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
+    width: 500
   }
 }));
 
 const AddProject = props => {
-  
   const [state, setState] = React.useState({
     project: "",
     description: ""
@@ -53,12 +57,10 @@ const AddProject = props => {
   };
 
   const handleSubmit = e => {
-      e.preventDefault()
-      props.fetchAdd(state)
-      console.log(`handlesub`, state)
-  }
-        
-
+    e.preventDefault();
+    props.fetchAdd(state);
+    console.log(`handlesub`, state);
+  };
 
   console.log(state);
 
@@ -66,55 +68,73 @@ const AddProject = props => {
 
   const listStyle = {
     marginTop: "25vh"
-  }
+  };
 
   return (
     <>
-    <Nav/>
-    
-    <div style={listStyle}>
-      <div className="AddProject">
-        <h1>Submit a new Project</h1>
-        <form className={classes.container} noValidate autoComplete="off">
-          <div>
-            <TextField
-              required
-              id="standard-required"
-              label="Project name"
-              className={classes.textField}
-              margin="normal"
-              onChange={handleChange("project")}
-              value={state.project}
-            />
-          </div>
-          <div>
-            <TextField
-              required
-              id="standard-required"
-              label="Github"
-              className={classes.textField}
-              margin="normal"
-              onChange={handleChange("github")}
-              value={state.github}
-            />
-          </div>
-          <div>
-            <TextField
-              required
-              id="standard-required"
-              label="Description"
-              className={classes.textField}
-              margin="normal"
-              onChange={handleChange("description")}
-              value={state.description}
-            />
-          </div>
+      <Nav />
 
+      <Login />
+      <div style={listStyle}>
+        <div className="AddProject">
+          <h1>Submit a new Project</h1>
+          <form className={classes.container} noValidate autoComplete="off">
+            <div>
+              <TextField
+                required
+                id="standard-required"
+                label="Project name"
+                className={classes.textField}
+                margin="normal"
+                onChange={handleChange("project")}
+                value={state.project}
+              />
+            </div>
+            <div>
+              <TextField
+                id="date"
+                label="Date"
+                type="date"
+                defaultValue="Today"
+                margin="normal"
+                className={classes.textField}
+                onChange={handleChange("date")}
+                value={state.date}
+                InputLabelProps={{
+                  shrink: true
+                }}
+              />
+            </div>
+            <br></br>
+            <div>
+              <TextField
+                required
+                id="standard-required"
+                label="Github"
+                className={classes.git}
+                margin="normal"
+                onChange={handleChange("github")}
+                value={state.github}
+              />
+            </div>
+            <div>
+              <TextField
+                required
+                id="standard-required"
+                label="Description"
+                margin="normal"
+                onChange={handleChange("description")}
+                value={state.description}
+                multiline //enables multiline typing
+              />
+            </div>
+          </form>
           <div>
-        <button  onClick={handleSubmit}>Submit New Project</button>
+            <button onClick={handleSubmit}>Submit New Project</button>
+          </div>
         </div>
 
-          <h1>Check main functionalities used:</h1>
+        {/* <h1>Check main functionalities used:</h1>
           <FormGroup row>
             <br></br>
             <FormControlLabel
@@ -122,7 +142,7 @@ const AddProject = props => {
                 <Checkbox
                   checked={state.React}
                   onChange={handleChange("tech1")}
-                  value="React"
+                  value="Reactp"
                   color="primary"
                 />
               }
@@ -347,13 +367,10 @@ const AddProject = props => {
                 />
               }
               label="Sqlite3"
-            />
-          </FormGroup>
-        </form>
-      </div>
+            /> */}
+        {/* </FormGroup> */}
 
-      <NewProject />
-      <Login/>
+        <NewProject />
       </div>
     </>
   );
@@ -364,7 +381,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(
-    mapStateToProps,
-     { fetchAdd }
-     )(AddProject);
+export default connect(mapStateToProps, { fetchAdd })(AddProject);
