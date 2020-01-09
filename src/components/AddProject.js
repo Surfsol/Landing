@@ -29,6 +29,11 @@ const useStyles = makeStyles(theme => ({
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
     width: 200
+  },
+  git: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
+    width: 500
   }
 }));
 
@@ -85,24 +90,12 @@ const AddProject = props => {
                 value={state.project}
               />
             </div>
-            {/* <div>
-              <TextField
-                required
-                id="standard-required"
-                label="Date"
-                className={classes.textField}
-                margin="normal"
-                onChange={handleChange("date")}
-                value={state.date}
-              />
-            </div> */}
-
             <div>
               <TextField
                 id="date"
                 label="Date"
                 type="date"
-                defaultValue="2020-02-24"
+                defaultValue="Today"
                 margin="normal"
                 className={classes.textField}
                 onChange={handleChange("date")}
@@ -112,13 +105,13 @@ const AddProject = props => {
                 }}
               />
             </div>
-
+            <br></br>
             <div>
               <TextField
                 required
                 id="standard-required"
                 label="Github"
-                className={classes.textField}
+                className={classes.git}
                 margin="normal"
                 onChange={handleChange("github")}
                 value={state.github}
@@ -129,18 +122,19 @@ const AddProject = props => {
                 required
                 id="standard-required"
                 label="Description"
-                className={classes.textField}
                 margin="normal"
                 onChange={handleChange("description")}
                 value={state.description}
+                multiline //enables multiline typing
               />
             </div>
+          </form>
+          <div>
+            <button onClick={handleSubmit}>Submit New Project</button>
+          </div>
+        </div>
 
-            <div>
-              <button onClick={handleSubmit}>Submit New Project</button>
-            </div>
-
-            {/* <h1>Check main functionalities used:</h1>
+        {/* <h1>Check main functionalities used:</h1>
           <FormGroup row>
             <br></br>
             <FormControlLabel
@@ -374,9 +368,7 @@ const AddProject = props => {
               }
               label="Sqlite3"
             /> */}
-            {/* </FormGroup> */}
-          </form>
-        </div>
+        {/* </FormGroup> */}
 
         <NewProject />
       </div>
