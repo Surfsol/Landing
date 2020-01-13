@@ -35,6 +35,8 @@ const Login = () => {
     );
     }
 
+    let error = loginR.error.message
+
   
   return (
     <>
@@ -68,6 +70,7 @@ const Login = () => {
       </div>
       <div className="welcome">
         <h2>{welcome}</h2>
+        <h2>{error}</h2>
       </div>
       </div>
     </>

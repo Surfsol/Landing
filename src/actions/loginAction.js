@@ -19,8 +19,9 @@ export const fetchLogin= (creds) => dispatch => {
     axios
         .post(`${process.env.REACT_APP_HOST}/auth/login`, creds)
         .then(res => {
-            console.log(res)
             dispatch({type: LOGIN_SUCCESS, payload: res.data})
+            // sessionStorage.setItem(res.sessionConfig.name , res.sessionConfig.secret)
         })
-        .catch(err => dispatch({type:LOGIN_FAILURE, payload:err}))
+        .catch(err => {
+            dispatch({type:LOGIN_FAILURE, payload:err})})
 }

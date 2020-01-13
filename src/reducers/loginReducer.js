@@ -7,7 +7,7 @@ import {
 const initialState = {
     user:[],
     isfetching:false,
-    error: ""
+    error: []
 }
 
 const loginReducer = (state = initialState, action) => {
@@ -26,8 +26,10 @@ const loginReducer = (state = initialState, action) => {
                 error:""
             };
         case  LOGIN_FAILURE:
+            console.log(action.payload)
             return{
                 ...state,
+                isfetching:false,
                 error: action.payload
             }
         default:
