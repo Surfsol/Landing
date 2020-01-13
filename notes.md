@@ -42,3 +42,12 @@ Netlify
 Deploy single page app
 public/_redirects
 /* /index.html 200
+
+
+How to store cookie
+How to return res.message when error
+
+
+stop program running on port
+netstat -ano | findstr :3000
+taskkill /f /pid 19996

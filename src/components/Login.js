@@ -22,8 +22,10 @@ const Login = () => {
     dispatch(fetchLogin(creds));
   };
 
+  let welcome = loginR.user.message
+
   if (loginR.isfetching === true) {
-    return (
+    welcome = (
       <>
         <div className="spin">
           <div className="spinner"></div>
@@ -31,20 +33,15 @@ const Login = () => {
         </div>
       </>
     );
-  }
+    }
 
-  if (loginR.user.length > 0) {
-    return (
-      <div>
-        <p>Welcome ${loginR.user.username}</p>
-      </div>
-    );
-  }
+    let error = loginR.error.message
 
+  
   return (
     <>
     <div className="log-wrapper">
-      
+        <div className="creds">
         <label>
           <h2>Name</h2>
           <input
@@ -70,6 +67,11 @@ const Login = () => {
         </label>
      
       <button onClick={eventHandler}>Submit</button>
+      </div>
+      <div className="welcome">
+        <h2>{welcome}</h2>
+        <h2>{error}</h2>
+      </div>
       </div>
     </>
   );

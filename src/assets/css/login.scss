@@ -3,25 +3,39 @@ $sea1: #96c4de;
 $sea2: #486591;
 $sea3: #d6e6f3;
 
-.log-wrapper{
-    margin-top:20vh;
+.log-wrapper {
+  margin-top: 20vh;
+  display: flex;
+  align-items: flex-start;
+  background: $sea2;
+
+  .creds {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     background: $sea2;
 
+    label {
+      display: flex;
+      font-size: 1rem;
+      padding: 1%;
 
-    label{
-        display:flex;
-        font-size:1.5rem;
-        padding:1%;
+      h2 {
+        margin: 3%;
+      }
 
-        h2{
-            margin:3%;
-        }
-
-        input{
-            margin-right: 2%;
-        }
+      input {
+        margin-right: 2%;
+      }
     }
+}
+    .welcome {
+        margin: auto;
+
+      h2{
+      color: $sea3;
+      font-size: large;
+      }
+    }
+  
 }
