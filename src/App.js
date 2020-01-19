@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom"
+
 import './App.css';
+import Projects from './components/Projects'
+import Icons from './components/Icons'
+import AddProject from './components/AddProject'
+import Video from './components/Video'
+import IconCard from './components/IconCard'
+
+import ProjectsPara from './components/ProjectsPara'
+
+
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path="/" component={Video}/>
+        <Route path="/skills" component={Icons}/>
+        <Route path="/addproject" component={AddProject}/>
+        <Route path="/team" component={Projects}/>
+        {/* include /:id so it renders full url on IconCard as props.match.params.url */}
+        <Route path="/techsProject/:tech" component={IconCard}/>
+      </Switch>
     </div>
+    </Router>
   );
 }
 

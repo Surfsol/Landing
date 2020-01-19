@@ -1,0 +1,42 @@
+$sea1: #96c4de;
+$sea2: #486591;
+$sea3: #d6e6f3;
+
+.spin{
+    display: flex;
+   
+
+.spinner {
+  border: 8px solid $sea3;
+  border-radius: 50%;
+  border-top: 8px solid $sea2;
+  border-bottom: 8px solid $sea2;
+  width: 2rem;
+  height: 2rem;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin-right: 1rem;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+}
+
+.messageSent{
+    color:red
+}

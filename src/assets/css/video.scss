@@ -1,0 +1,96 @@
+$sea1: #96c4de;
+$sea2: #486591;
+$sea3: #d6e6f3;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; // horizontal overflow, so no scrollbar
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  video {
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+//overlay video with background color
+.header-overlay {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #225470;
+  z-index: 1; //positioning of content
+  opacity: 0.85; //%see through
+}
+
+.header-content {
+  z-index: 2; //make text appear in front
+  margin: auto; //center text
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+    font-family: "Bree Serif", serif;
+  }
+
+  p {
+    font-size: 1.5rem;
+    display: block;
+  }
+  .btn {
+    background: $sea1;
+    color: $sea2;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    margin: 1vh;
+    font-family: "Bree Serif", serif;
+  }
+  .git {
+    margin: 1vh;
+    background: $sea1;
+    color: $sea2;
+
+    p {
+      color: $sea2;
+    }
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
