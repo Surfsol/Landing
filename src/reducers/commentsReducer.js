@@ -1,4 +1,4 @@
-import {COMMENTS_FETCH, COMMENTS_SUCCESS, COMMENTS_FAILURE} from '../actions/commentsAction'
+import {COMMENTS_FETCH, COMMENTS_SUCCESS, COMMENTS_FAILURE, COMMENTS_POST_SUCCESS} from '../actions/commentsAction'
 
 const initialState = {
     comments:[],
@@ -25,6 +25,12 @@ const commentsReducer = (state = initialState, action) => {
                 ...state,
                 error:action.payload,
                 isfetching:false
+            }
+        case COMMENTS_POST_SUCCESS:
+            return{
+                ...state,
+                isfetching: false,
+                comments: [...state.comments, action.payload]
             }
         default:
             return state;

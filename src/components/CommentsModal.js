@@ -19,14 +19,26 @@ const useStyles = makeStyles(theme => ({
   paper: {
     backgroundColor: theme.palette.background.paper,
     border: "2px solid #000",
-    boxShadow: theme.shadows[5]
-    //padding: theme.spacing(2, 4, 3),
+    boxShadow: theme.shadows[5],
+    width: "70%"
+  },
+  git: {
+    marginTop: "5%",
+    marginLeft: "15%"
+  },
+  button: {
+    background: "#96c4de",
+    "&:hover": {
+      background: "#486591",
+    }
   }
 }));
 
 export default function Comments(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+
+  console.log("props", props);
 
   const handleOpen = () => {
     setOpen(true);
@@ -46,8 +58,8 @@ export default function Comments(props) {
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
-        react-transition-group
+      <button type="button" onClick={handleOpen} className={classes.button}>
+        Project Notes and Comments
       </button>
       <Modal
         aria-labelledby="transition-modal-title"
@@ -63,6 +75,11 @@ export default function Comments(props) {
       >
         <Fade in={open}>
           <div className={classes.paper}>
+            <div className={classes.git}>
+              <a href={props.item.github} target="_blank">
+                {props.item.github}
+              </a>
+            </div>
             <h1>
               {comments.map(e => (
                 <React.Fragment key={e.id}>
