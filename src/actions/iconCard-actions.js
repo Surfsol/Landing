@@ -6,7 +6,6 @@ export const ICONCARD_SUCCESS = 'ICONCARD_SUCCESS'
 export const ICONCARD_FAILURE = 'ICONCARD_FAILURE' 
 
 export const fecthIconCard = (tech) => dispatch => {
-    console.log(`action id`,tech)
     axios
         //must use `` when have ${}
         .get(`${process.env.REACT_APP_HOST}${tech}`)

@@ -12,8 +12,6 @@ import Grid from "./Grid";
 import "../assets/css/iconCard.scss";
 
 const IconCard = props => {
-  console.log(`IconCard props.match`, props.match.url);
-  console.log(`iconCard projects`, props.projects);
 
   const id = props.match.params;
 
