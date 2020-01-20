@@ -10,6 +10,8 @@ import { fetchComments } from "../actions/commentsAction";
 
 import CommentsModalGrid from "./CommentsModalGrid";
 
+import AddCommentsModal from './AddCommentsModal'
+
 const useStyles = makeStyles(theme => ({
   modal: {
     display: "flex",
@@ -80,6 +82,8 @@ export default function Comments(props) {
                 {props.item.github}
               </a>
             </div>
+            <AddCommentsModal/>
+            
             <h1>
               {comments.map(e => (
                 <React.Fragment key={e.id}>
