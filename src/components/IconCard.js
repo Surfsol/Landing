@@ -12,7 +12,6 @@ import Grid from "./Grid";
 import "../assets/css/iconCard.scss";
 
 const IconCard = props => {
-
   const id = props.match.params;
 
   const dispatch = useDispatch();
@@ -37,15 +36,12 @@ const IconCard = props => {
   return (
     <>
       <div>
-        <h1></h1>
-        <h1>
-          {projects.list.map(e => (
-            <React.Fragment key={e.id}>
-              <Grid list={e} />
-              <Comments item={e} />
-            </React.Fragment>
-          ))}
-        </h1>
+        {projects.list.map(e => (
+          <React.Fragment key={e.id}>
+            <Grid list={e} />
+            <Comments item={e} />
+          </React.Fragment>
+        ))}
       </div>
     </>
   );

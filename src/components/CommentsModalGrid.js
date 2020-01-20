@@ -8,6 +8,9 @@ import CardContent from "@material-ui/core/CardContent";
 //import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
+import '../assets/css/commentsModalGrid.scss'
+
+import VerticalSpace from './VerticalSpace'
 
 import { Link } from "react-router-dom";
 
@@ -25,10 +28,10 @@ const CommentsModalGrid = props => {
   const classes = useStyles();
 
   const listStyle = {
-    margin: "auto",
-    marginTop: "25vh",
+    margin: "5% auto",
     width: "70%",
-    justifyContent: "center"
+    justifyContent: "center",
+    
   };
 
 
@@ -36,9 +39,10 @@ const CommentsModalGrid = props => {
  
   return (
     <>
-      <div>
+      <div className="commentModal">
         <Nav />
-      </div>
+    </div>
+    
       <div style={listStyle}>
         <Card className={classes.card}>
           <CardContent>
@@ -59,6 +63,7 @@ const CommentsModalGrid = props => {
           </CardContent>
         </Card>
       </div>
+     
     </>
   );
 };
