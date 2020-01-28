@@ -1,4 +1,15 @@
+$sea1: #96c4de;
+$sea2: #486591;
+$sea3: #d6e6f3;
+
+.spinner{
+  background:$sea2;
+
+  
+}
+
 .loading{
+   
     width:10rem;
     height:10rem;
     margin:2%;
@@ -8,4 +19,8 @@
           0% { transform: rotate(0deg); }
           100% { transform: rotate(360deg); }
         }
+}
+
+.commentModal{
+  margin-top: 25vh;
 }
