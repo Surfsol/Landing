@@ -6,30 +6,23 @@ import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 
 
+
 //import { Dropdown, Form } from "react-bootstrap";
 
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 
-import "../assets/css/commentsModalGrid.scss";
+import "../assets/css/addCommentsModal.scss";
 
 import { Link } from "react-router-dom";
 
-const useStyles = makeStyles({
-  card: {
-    minWidth: 275
-  },
 
-  title: {
-    fontSize: 20
-  }
-});
 
 const AddComments = props => {
   const [post, setPost] = useState([]);
 
   const [open, setOpen] = useState(false);
-  const classes = useStyles();
+  
 
   console.log(`props addpost`,props)
 
@@ -37,11 +30,7 @@ const AddComments = props => {
     setPost({ ...post, [event.target.name]: event.target.value });
   };
 
-  const listStyle = {
-    margin: "5% auto",
-    width: "70%",
-    justifyContent: "center"
-  };
+ 
 
   const handleSubmit = () => {
 
@@ -57,13 +46,13 @@ const AddComments = props => {
 
   return (
     <>
-      <button type="button" onClick={handleOpen} className={classes.button}>
+      <button type="button" onClick={handleOpen}>
         + comments
       </button>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
-        className={classes.modal}
+        //className={classes.modal}
         open={open}
         onClose={handleClose}
         closeAfterTransition
@@ -130,15 +119,17 @@ const AddComments = props => {
                   value={post.tech_two}
                   onChange={changeHandler}
                 />
-                <label htmlFor="Comment">Comment</label>
-                <input
-                  type="text"
-                  name="comment"
-                  id="comment"
-                  placeholder="comment"
-                  value={post.comment}
-                  onChange={changeHandler}
-                />
+                 <div>
+              <TextField
+                required
+                id="standard-required"
+                label="Comment"
+                margin="normal"
+               onChange={changeHandler}
+                value={post.comment}
+                multiline //enables multiline typing
+              />
+            </div>
 
                 <div className="buttonBox">
                   <button

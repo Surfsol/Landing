@@ -10,7 +10,7 @@ import { fetchComments } from "../actions/commentsAction";
 
 import CommentsModalGrid from "./CommentsModalGrid";
 
-import AddCommentsModal from './AddCommentsModal'
+import AddCommentsModal from "./AddCommentsModal";
 
 const useStyles = makeStyles(theme => ({
   modal: {
@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
   button: {
     background: "#96c4de",
     "&:hover": {
-      background: "#486591",
+      background: "#486591"
     }
   }
 }));
@@ -82,8 +82,9 @@ export default function Comments(props) {
                 {props.item.github}
               </a>
             </div>
-            <AddCommentsModal/>
-            
+            <div className={classes.git}>
+              <AddCommentsModal />
+            </div>
             <h1>
               {comments.map(e => (
                 <React.Fragment key={e.id}>
