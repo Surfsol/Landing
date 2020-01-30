@@ -25,14 +25,42 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
 
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
+      rel="stylesheet"
+    />
     <title>React App</title>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+
+      .shell .title {
+        background-color: #96c4de;
+        color: #486591;
+        text-align: center;
+        font: 32px sans-serif;
+        height: 2em;
+        font-size: 2em;
+        padding-top: 0.5em;
+        font-weight: bold;
+      }
+    </style>
     <!-- add for material ui font-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div class="shell">
+      <div class="title">loading...</div>
+      <div class="title">Russell Terry</div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
