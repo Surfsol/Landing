@@ -53,6 +53,19 @@ pwa
 1. manifest.json
 
 2. index.html
+   can add to body
+
+3. src/index.js
+   serviceWorker.register();
+
+yarn build
+
+use Local:
+
+Improvements
+Does not redirect HTTP traffic to HTTPS
+
+# after initial cache. User will see cached information until they close.
 
 3. workbox cli
    npm install -g workbox-cli
