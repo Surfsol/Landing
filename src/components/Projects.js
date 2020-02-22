@@ -3,6 +3,8 @@ import Nav from "./Nav";
 
 import ContactModal from "./ContactModal";
 
+import Welldone from './WellDone'
+
 //css
 import "../assets/css/projects.scss";
 
@@ -169,6 +171,14 @@ const Projects = () => {
               </ul>
 
               <ul class="link">
+              <a
+                  href="https://frontend-git-master.surfsol.now.sh/"
+                  target="_blank"
+                  class="button"
+                >
+                  Deployed Site
+                </a>
+              
                 <a
                   href="https://github.com/AirBNBOptimalPrice"
                   target="_blank"
@@ -176,6 +186,7 @@ const Projects = () => {
                 >
                   Github Code
                 </a>
+
               </ul>
             </div>
           </div>

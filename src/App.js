@@ -9,6 +9,7 @@ import Video from './components/Video'
 import IconCard from './components/IconCard'
 
 import ProjectsPara from './components/ProjectsPara'
+import WellDone from './components/WellDone';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/team" component={Projects}/>
         {/* include /:id so it renders full url on IconCard as props.match.params.url */}
         <Route path="/techsProject/:tech" component={IconCard}/>
+        <Route path="/projects/welldone" component={WellDone}/>
       </Switch>
     </div>
     </Router>
