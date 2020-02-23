@@ -22,7 +22,7 @@ const Projects = () => {
 
       <div className="project-wrap">
         <div className="lambdatitle">
-          <h1>Team Projects</h1>
+          <h1>Projects</h1>
         </div>
 
         <section class="container">
