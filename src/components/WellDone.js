@@ -4,12 +4,28 @@ const WellDone = () => {
   return (
     <>
       <h1>Well Done</h1>
-      <h2>Currently deployed on Netlify: https://welldone.netlify.com/</h2>
+      <h2>Currently deployed on Netlify:</h2> <a href="https://welldone.netlify.com/" target="_blank">WellDone</a>
       <p> username: a.com , password: 123</p>
       <h2>
-        Product Vision Document:
-        https://www.notion.so/WellDone-068de827be164b9e814b636f9f36bef2#8389afde51144323bba0a3ab1ad1852e
+        <a href="https://www.notion.so/WellDone-068de827be164b9e814b636f9f36bef2#8389afde51144323bba0a3ab1ad1852e" target="_blank">Product Vision Document</a>
       </h2>
+      <ul class="link">
+                <a
+                  href="https://github.com/Lambda-School-Labs/well-done-fe"
+                  target="_blank"
+                  class="button"
+                >
+                  Frontend Github Code
+                </a>
+                <br></br>
+                <a
+                  href="https://github.com/Lambda-School-Labs/well-done-be"
+                  target="_blank"
+                  class="button"
+                >
+                  Backend Github Code
+                </a>
+              </ul>
       <p>Company Description</p>
       <h2>Stack</h2>
       <h3>React</h3>
@@ -21,6 +37,13 @@ const WellDone = () => {
       <h3>PostgreSQL</h3>
       <h3>Heroku</h3>
       <h3>Netlify</h3>
+
+      <p>
+                Stakeholder is a NGO that develops sensors for
+                well pumps in remote locations.
+                Tasks include adding functionality to Frontend and Backend
+                architectures, currently in development.  
+              </p>
 
       <h3>Objective:Organize Data Redux</h3>
       <p>

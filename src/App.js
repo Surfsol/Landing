@@ -21,10 +21,10 @@ function App() {
         <Route exact path="/" component={Video}/>
         <Route path="/skills" component={Icons}/>
         <Route path="/addproject" component={AddProject}/>
-        <Route path="/team" component={Projects}/>
+        <Route path="/projects" component={Projects}/>
         {/* include /:id so it renders full url on IconCard as props.match.params.url */}
         <Route path="/techsProject/:tech" component={IconCard}/>
-        <Route path="/projects/welldone" component={WellDone}/>
+        <Route path="/project/welldone" component={WellDone}/>
       </Switch>
     </div>
     </Router>
