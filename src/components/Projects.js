@@ -49,6 +49,7 @@ const Projects = () => {
                   <li>Heroku</li>
                   <li>PostgreSQL</li>
                 </ul>
+                <h2>See More Details</h2>
               </div>
             </div>
             <div class="image-body">
