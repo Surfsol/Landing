@@ -10,7 +10,7 @@ import IconCard from './components/IconCard'
 
 import ProjectsPara from './components/ProjectsPara'
 import WellDone from './components/WellDone';
-
+import Sauti from './components/Sauti'
 
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
         {/* include /:id so it renders full url on IconCard as props.match.params.url */}
         <Route path="/techsProject/:tech" component={IconCard}/>
         <Route path="/project/welldone" component={WellDone}/>
+        <Route path="/project/sauti" component={Sauti}/>
       </Switch>
     </div>
     </Router>
