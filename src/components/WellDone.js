@@ -72,23 +72,42 @@ const WellDone = () => {
         <div className="wellProblem">
           <h1>The Problem</h1>
           <p>
-            Although WellDone had sensors that were sending reliable data. The
-            data was almost useless because it was not being properly stored,
-            was difficult to access and was not being displayed. Therefore,
-            villages were going without fresh well water, donors were not happy,
-            and some NGO were unable to gain access to additional funding.
+            Although WellDone had successfully installed sensors which transmit reliable data. The
+            data was almost useless because it was not properly stored or displayed.</p>
+            <br></br>
+            <p> Well Done was storing the data on a Prisma backend
+            and did not have have a frontend built out to visualize the data.  When information 
+            was requested about the status of a well pump.  The Well Done staff wasted a lot
+            of time trying to search through the backend, looking through various columns to determine
+            the status of the pump.</p> 
+            <br></br>
+             <p>So information was not visually available, many well pumps would
+            stop working and no one would be alerted. This resulted in villages going without
+            fresh well water, upset donors and NGOs, and a ton of overhead for Well Done staff members.
           </p>
         </div>
         <div className="wellSolution">
           <h1>The Solution</h1>
           <p>
-            Our team created web tools to store data that could easily be
-            accessed and displayed. Graphical data quickly displays both present
-            and historical well performance, status changes, and location.
-            WellDone staff and NGO have the ability to perform crud operations
-            on the database. Data can be accessed by WellDone staff, NGOs and
-            technicians. WellDone staff has access to all data, NGOs are limited
-            to viewing only their pumps and account information. And technicians
+            Our team created a new Backend using Node.js to organize and store data so it can easily be accessed.
+            All sensor data is now being sent through an api and is being stored in a PostgreSQL 
+            database.</p> 
+            <br></br>
+            <p>A new Frontend was created using React and Redux to access and display present and historical
+             data.  Users can quickly see current and historical performance of well pumps.
+             This data is visualized using maps, charts and calendar displays.</p>
+             <br></br>
+             <p>NGOs that rely on Well Done's data can now access the site themselves. They have access to 
+               all sensor and account information related to their organization.
+             </p>
+             <br></br>
+             <p>Well Done staff now has the ability to perform all crud operations on 
+             sensors, organizations and user accounts.  
+            Data can be accessed by WellDone staff, NGOs and
+            technicians. </p>
+            <br></br>
+            <p>WellDone staff has access to all data, NGOs are limited
+            to viewing only their pumps and account information. Technicians
             are only able to access graphical pump displays and historical data
             related to pumps.
           </p>
@@ -127,9 +146,9 @@ const WellDone = () => {
               Created release canvases that were approved by the stakeholder.
             </li>
             <li>
-              Throughout development, the stakeholders did request a few changes
-              to improve the user experience, but since we had a solid agreement
-              about the outcome of the project, it was easy to accommodate them.
+              Throughout development, only minor changes were requested by the stakeholders,
+              which were easily accommodated due to our detailed planning, research and 
+              communication with the stakeholders.
             </li>
             <li>
               We also collaborated with the Android team to provide android
@@ -140,19 +159,20 @@ const WellDone = () => {
         <div className="tech">
           <h1>Tech Stack:</h1>
           <h3>
-          <span className="colorBlue">React</span>: Selected for conditional rendering, to limit access to
-            components by user permissions. Also, third party libraries used to
+          <span className="colorBlue">React</span>: Selected for fast rendering and conditional rendering, to limit access to
+            components by user permissions. Easy to build components and can be utilized in various different parts of the app.  
+            A wide array of third party libraries can be used with React to
             manage state, display graphical data and account information.
           </h3>
           <h3>
           <span className="colorBlue">Redux</span>: Selected for state management, for ease of access to data
             throughout the app. Also used for filtering and searching through
-            data, and to instantly display updated information.
+            data to instantly display filtered data without an api call.
           </h3>
           <h3>
           <span className="colorBlue">AG-Grid React</span>: For its ability to display data in a spreadsheet like
             format, which comes with a variety of built in filtering options so
-            user can easily access Account and or Sensor information. Provides
+            users can easily access Account and or Sensor information. Provides
             well organized data and a pleasant user experience.
           </h3>
           <h3>
@@ -161,7 +181,7 @@ const WellDone = () => {
           </h3>
           <h3>
           <span className="colorBlue">Node.Js</span>: For ease of use and expandability, we used a REST
-            framework.
+            framework.  Can write in Javascript.
           </h3>
           <h3>
           <span className="colorBlue">PostgreSQL</span>: Great for persisting and accessing data. Also, due to
@@ -169,7 +189,7 @@ const WellDone = () => {
           </h3>
           <h3><span className="colorBlue">Heroku</span>: Free to deploy the Backend, easy to test staging.</h3>
           <h3>
-          <span className="colorBlue">Netlify</span>: For frontend deployment, free to deploy dynamic websites.
+          <span className="colorBlue">Netlify</span>: Free and easy to deploy dynamic frontend sites.
           </h3>
         </div>
       </section>

@@ -52,36 +52,39 @@ $sea3: #d6e6f3;
     p{
         width:60%;
         margin:auto;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 .wellProblem{
     background-color: honeydew;
     padding:3%;
+    text-align: left;
+    
     h1{
         color:blue;
         font-size:3rem;
+        text-align: center;
     }
     p{
         width:60%;
         margin:auto;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
 .wellSolution{
     background-color: white;
     padding:3%;
+    text-align: left;
     h1{
         color:blue;
         font-size:3rem;
+        text-align: center;
     }
     p{
         width:60%;
         margin:auto;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
-    // width: 30%;
-    // height: 300px;
 }
 .wellTeam{
     background-color: wheat;

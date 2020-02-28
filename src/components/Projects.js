@@ -31,16 +31,14 @@ const Projects = () => {
         </div>
 
         <NavLink className="projectHover" to={`/project/welldone`}>
-          <section class="body-content-2">
-            {/* <div className="projectBackdrop">
-              <img src={welldrop} />
-            </div> */}
-            <div class="content">
-              <div class="content-box">
+          <section class="body-well">
+           
+              <div class="well-box">
                 <h1>Well Done</h1>
+                <h4>Tecnologies applied:</h4>
 
-                <ul style={{ listStyle: "none" }}>
-                  <h4>Tecnologies applied:</h4>
+                <ul>
+                 
                   <li>React</li>
                   <li>Redux</li>
                   <li>React-map</li>
@@ -51,10 +49,10 @@ const Projects = () => {
                 </ul>
                 <h2>See More Details</h2>
               </div>
-            </div>
-            <div class="image-body">
-              <img src={welldone} />
-            </div>
+              <div class="well-image-body">
+                <img src={welldone} />
+              </div>
+           
           </section>
         </NavLink>
 

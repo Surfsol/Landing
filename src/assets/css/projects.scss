@@ -351,3 +351,66 @@ $sea3: #d6e6f3;
 .projectHover:hover{
     background: #3e98d8;
 }
+
+.body-well {
+  width: 50%;
+  height: 550px;
+  background-image: image("../images/wellDoneDrop.png");
+  background: white;
+  margin: 10% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $phone) {
+    width: 90%;
+    padding: 0;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    justify-content: center;
+  }
+  
+  .well-box{
+    background-color: white;
+    width:30%;
+    height:100%;
+    padding-top:5%;
+
+    li{
+      padding: 2%;
+      
+    }
+    
+  }
+  .well-box:hover{
+    background-color: #486591;
+    color:white
+
+  }
+  .well-image-body {
+    width: 70%;
+    background: $sea1;
+    height: 100%;
+  
+
+    @media (max-width: $phone) {
+      width: 100%;
+      background: $sea1;
+    }
+  }
+  .well-image-body:hover{
+    width:90%;
+    height:90%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+}
+
+.body-well:hover{
+  
+    background-color: #486591;
+}
