@@ -1,6 +1,6 @@
 import React from "react";
 import '../assets/css/wellImage.scss'
-import wellDash from '../assets/images/wellDash.png'
+import sauti from '../assets/images/sautiData.png'
 
 const WellImage = () => {
   return (
@@ -8,10 +8,10 @@ const WellImage = () => {
     <div className="container">
       <div class="bg">
           <div className="wellImageTitle">
-          <h1>Well Done</h1>
-          <h2>React, Redux, ag-Grid-React, React-map, Node.js,  Heroku, PostgreSQL</h2>
+          <h1>SautiDataBank</h1>
+          <h2>React, GraphQL, Apollo, ag-Grid-React, Node.js, Heroku, MySQL</h2>
           </div>
-        <img src={wellDash} alt="well done" />
+        <img src={sauti} alt="well done" />
         <div class="overlay">
           <h2>
             Check This <span>Out!</span>

@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 import ContactModal from "./ContactModal";
 
-import WellImage from './WellImage'
+import WellImage from "./WellImage";
 import Welldone from "./WellDone";
 
 //css
@@ -17,13 +17,12 @@ import yelp from "../assets/images/yelp.png";
 import airbnb from "../assets/images/air2.png";
 import vr from "../assets/images/vr.png";
 import subReddit from "../assets/images/subreddit.png";
-import welldone from "../assets/images/wellMapMon.png";
-import welldrop from "../assets/images/wellDoneDrop.png";
-import WellDone from "./WellDone";
+import SautiImage from "./SautiImage";
+
 const Projects = () => {
   return (
     <>
-      <div>
+      <div className="projectsNav">
         <Nav />
       </div>
 
@@ -31,10 +30,20 @@ const Projects = () => {
         <div className="lambdatitle">
           <h1>Projects</h1>
         </div>
-
-        <NavLink className="projectHover" to={`/project/welldone`}>
-          <WellImage />
-        </NavLink>
+       
+          <div className="featuredprojects">
+            <div className="fproject">
+            <NavLink className="projectHover" to={`/project/sauti`}>
+              <SautiImage />
+            </NavLink>
+            </div>
+            <div className="fproject">
+            <NavLink className="projectHover" to={`/project/welldone`}>
+              <WellImage />
+            </NavLink>
+            </div>
+          </div>
+      
 
         <section className="body-content">
           <div className="image-body">

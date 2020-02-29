@@ -9,7 +9,7 @@ $bg: rgba(0, 0, 0, 0.2);
 }
 
 .container {
-  width: 85vw;
+  width: 100%;
   margin: 1rem auto;
 }
 
@@ -27,7 +27,6 @@ img,
 
 .bg {
   float: left;
-  max-width: 31%;
   position: relative;
   margin: .5%;
   .wellImageTitle{

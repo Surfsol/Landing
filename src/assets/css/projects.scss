@@ -128,6 +128,36 @@ $sea1: #96c4de;
 $sea2: #486591;
 $sea3: #d6e6f3;
 
+.projectsNav{
+  z-index: 10;
+}
+
+.featured{
+  display: flex;
+  direction: row;
+  justify-content: center;
+  margin:auto
+}
+.featuredprojects{
+    width:100%;
+    display: flex;
+    direction: column;
+    justify-content: space-around;
+    margin:auto;
+
+
+.fproject{
+  width: 35%;
+
+
+.projectHover:hover{
+    background: #3e98d8;
+}
+}
+}
+
+
+
 .modal-fix {
   position: fixed;
   bottom: 2rem;
@@ -348,9 +378,6 @@ $sea3: #d6e6f3;
   }
 }
 
-.projectHover:hover{
-    background: #3e98d8;
-}
 
 .body-well {
   width: 50%;
