@@ -7,8 +7,6 @@ import Icons from './components/Icons'
 import AddProject from './components/AddProject'
 import Video from './components/Video'
 import IconCard from './components/IconCard'
-
-import ProjectsPara from './components/ProjectsPara'
 import WellDone from './components/WellDone';
 import Sauti from './components/Sauti'
 

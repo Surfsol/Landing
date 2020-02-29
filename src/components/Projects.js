@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 
 import ContactModal from "./ContactModal";
 
+import WellImage from './WellImage'
 import Welldone from "./WellDone";
 
 //css
@@ -18,6 +19,7 @@ import vr from "../assets/images/vr.png";
 import subReddit from "../assets/images/subreddit.png";
 import welldone from "../assets/images/wellMapMon.png";
 import welldrop from "../assets/images/wellDoneDrop.png";
+import WellDone from "./WellDone";
 const Projects = () => {
   return (
     <>
@@ -31,29 +33,7 @@ const Projects = () => {
         </div>
 
         <NavLink className="projectHover" to={`/project/welldone`}>
-          <section class="body-well">
-           
-              <div class="well-box">
-                <h1>Well Done</h1>
-                <h4>Tecnologies applied:</h4>
-
-                <ul>
-                 
-                  <li>React</li>
-                  <li>Redux</li>
-                  <li>React-map</li>
-                  <li>ag-Grid-React</li>
-                  <li>Node.js</li>
-                  <li>Heroku</li>
-                  <li>PostgreSQL</li>
-                </ul>
-                <h2>See More Details</h2>
-              </div>
-              <div class="well-image-body">
-                <img src={welldone} />
-              </div>
-           
-          </section>
+          <WellImage />
         </NavLink>
 
         <section className="body-content">

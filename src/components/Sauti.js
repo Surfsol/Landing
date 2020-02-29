@@ -45,6 +45,12 @@ const WellDone = () => {
             </ul>
           </div>
         </div>
+        <div className="sautiTeam">
+          <h1>Our Team</h1>
+          <p>
+            Our team consisted of 6 fullstack web developers. Everyone worked remotely.
+          </p>
+        </div>
         {/* <div className="sautiPhotos">
           <div class="wellPic">
             <img src={wellDash} />
@@ -130,12 +136,7 @@ const WellDone = () => {
             pumps.
           </p>
         </div>
-        <div className="sautiTeam">
-          <h1>Our Team</h1>
-          <p>
-            Our team consisted of 6 fullstack web developers. Everyone worked remotely.
-          </p>
-        </div>
+       
         <div className="sautiProcess">
           <h1>The Process</h1>
           <ul>
