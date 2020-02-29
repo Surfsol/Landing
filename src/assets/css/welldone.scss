@@ -3,143 +3,138 @@ $sea1: #96c4de;
 $sea2: #486591;
 $sea3: #d6e6f3;
 
-
-
-.wellTitle{
-    background-color: whitesmoke;
-    padding:2%;
-    position: fixed;
-    width: 100%;
-    top:0;
-    height:30vh;
-    .back{
-        text-align: left;
-    }
-    h1{
-        color:blue;
-        font-size:5rem;
-    }
-    h2{
-        
-    }
+.wellTitle {
+  background-color: whitesmoke;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 30vh;
+  .back {
+      text-align: left;
+    padding-top: 2%;
+    padding-left: 2%;
+  }
+  h1 {
+    color: blue;
+    font-size: 5rem;
+  }
 }
-.wellBody{
-    margin-top: 30vh;
-    @media (max-width: $phone) {
-        margin-top: 40vh;
-      }
+.wellBody {
+  margin-top: 30vh;
+  @media (max-width: $phone) {
+    margin-top: 40vh;
+  }
 }
-.wellPhotos{
-    background-color: white;
-    display:flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  
+.wellPhotos {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    .wellPic{
+  .wellPic {
     width: 30%;
     height: 300px;
     margin: 2% 5%;
 
-    img{
-        width:100%;
-        height:100%;
+    img {
+      width: 100%;
+      height: 100%;
     }
-    }
+  }
 }
 
-.wellCurrent{
-    background-color: whitesmoke;
-    padding:3%;
-    h1{
-        color:blue;
-        font-size:3rem;
-    }
-    p{
-        width:60%;
-        margin:auto;
-        font-size: 2rem;
-    }
+.wellCurrent {
+  background-color: whitesmoke;
+  padding: 3%;
+  h1 {
+    color: blue;
+    font-size: 3rem;
+  }
+  p {
+    width: 60%;
+    margin: auto;
+    font-size: 2rem;
+  }
 }
-.wellProblem{
-    background-color: honeydew;
-    padding:3%;
+.wellProblem {
+  background-color: honeydew;
+  padding: 3%;
+  text-align: left;
+
+  h1 {
+    color: blue;
+    font-size: 3rem;
+    text-align: center;
+  }
+  p {
+    width: 60%;
+    margin: auto;
+    font-size: 2rem;
+  }
+}
+.wellSolution {
+  background-color: white;
+  padding: 3%;
+  text-align: left;
+  h1 {
+    color: blue;
+    font-size: 3rem;
+    text-align: center;
+  }
+  p {
+    width: 60%;
+    margin: auto;
+    font-size: 2rem;
+  }
+}
+.wellTeam {
+  background-color: wheat;
+  padding: 3%;
+  h1 {
+    color: blue;
+    font-size: 3rem;
+  }
+  p {
+    width: 60%;
+    margin: auto;
+    font-size: 1.5rem;
+  }
+}
+.wellProcess {
+  background-color: whitesmoke;
+  padding: 3%;
+  h1 {
+    color: blue;
+    font-size: 3rem;
+  }
+  ul {
+    list-style-type: square;
+  }
+  li {
+    width: 60%;
     text-align: left;
-    
-    h1{
-        color:blue;
-        font-size:3rem;
-        text-align: center;
-    }
-    p{
-        width:60%;
-        margin:auto;
-        font-size: 2rem;
-    }
-}
-.wellSolution{
-    background-color: white;
-    padding:3%;
-    text-align: left;
-    h1{
-        color:blue;
-        font-size:3rem;
-        text-align: center;
-    }
-    p{
-        width:60%;
-        margin:auto;
-        font-size: 2rem;
-    }
-}
-.wellTeam{
-    background-color: wheat;
-    padding:3%;
-    h1{
-        color:blue;
-        font-size:3rem;
-    }
-    p{
-        width:60%;
-        margin:auto;
-        font-size: 1.5rem;
-    }
-}
-.wellProcess{
-    background-color: whitesmoke;
-    padding:3%;
-    h1{
-        color:blue;
-        font-size:3rem;
-    }
-    ul{
-        list-style-type: square;
-    }
-    li{
-        width:60%;
-        text-align: left;
-        margin:auto;
-        font-size: 1.5rem;
-        padding:1%;
-    }
+    margin: auto;
+    font-size: 1.5rem;
+    padding: 1%;
+  }
 }
 
-.tech{
-    background-color: snow;
-    padding:3%;
-    h1{
-        color:blue;
-        font-size:3rem;
-    }
-    h3{
-        width:60%;
-        margin:auto;
-        text-align: left;
-        font-size: 1.5rem;
-        padding:1%;
-    }
-    .colorBlue{
-        color:blue;
-    }
+.tech {
+  background-color: snow;
+  padding: 3%;
+  h1 {
+    color: blue;
+    font-size: 3rem;
+  }
+  h3 {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 1%;
+  }
+  .colorBlue {
+    color: blue;
+  }
 }

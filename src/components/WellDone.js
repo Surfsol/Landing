@@ -68,6 +68,51 @@ const WellDone = () => {
             <img src={wellModal} />
           </div>
         </div>
+        <div className="tech">
+          <h1>Tech Stack:</h1>
+          <h3>
+            <span className="colorBlue">React</span>: Selected for fast
+            rendering and conditional rendering, to limit access to components
+            by user permissions. Easy to build components and can be utilized in
+            various different parts of the app. A wide array of third party
+            libraries can be used with React to manage state, display graphical
+            data and account information.
+          </h3>
+          <h3>
+            <span className="colorBlue">Redux</span>: Selected for state
+            management, for ease of access to data throughout the app. Also used
+            for filtering and searching through data to instantly display
+            filtered data without an api call.
+          </h3>
+          <h3>
+            <span className="colorBlue">AG-Grid React</span>: For its ability to
+            display data in a spreadsheet like format, which comes with a
+            variety of built in filtering options so users can easily access
+            Account and or Sensor information. Provides well organized data and
+            a pleasant user experience.
+          </h3>
+          <h3>
+            <span className="colorBlue"> Material-UI</span>: Easy to implement
+            modals with React so users can perform crud operations.
+          </h3>
+          <h3>
+            <span className="colorBlue">Node.Js</span>: For ease of use and
+            expandability, we used a REST framework. Can write in Javascript.
+          </h3>
+          <h3>
+            <span className="colorBlue">PostgreSQL</span>: Great for persisting
+            and accessing data. Also, due to its popularity it will be
+            convenient for future database management.{" "}
+          </h3>
+          <h3>
+            <span className="colorBlue">Heroku</span>: Free to deploy the
+            Backend, easy to test staging.
+          </h3>
+          <h3>
+            <span className="colorBlue">Netlify</span>: Free and easy to deploy
+            dynamic frontend sites.
+          </h3>
+        </div>
 
         <div className="wellCurrent">
           <h1>Background</h1>
@@ -177,51 +222,7 @@ const WellDone = () => {
             </li>
           </ul>
         </div>
-        <div className="tech">
-          <h1>Tech Stack:</h1>
-          <h3>
-            <span className="colorBlue">React</span>: Selected for fast
-            rendering and conditional rendering, to limit access to components
-            by user permissions. Easy to build components and can be utilized in
-            various different parts of the app. A wide array of third party
-            libraries can be used with React to manage state, display graphical
-            data and account information.
-          </h3>
-          <h3>
-            <span className="colorBlue">Redux</span>: Selected for state
-            management, for ease of access to data throughout the app. Also used
-            for filtering and searching through data to instantly display
-            filtered data without an api call.
-          </h3>
-          <h3>
-            <span className="colorBlue">AG-Grid React</span>: For its ability to
-            display data in a spreadsheet like format, which comes with a
-            variety of built in filtering options so users can easily access
-            Account and or Sensor information. Provides well organized data and
-            a pleasant user experience.
-          </h3>
-          <h3>
-            <span className="colorBlue"> Material-UI</span>: Easy to implement
-            modals with React so users can perform crud operations.
-          </h3>
-          <h3>
-            <span className="colorBlue">Node.Js</span>: For ease of use and
-            expandability, we used a REST framework. Can write in Javascript.
-          </h3>
-          <h3>
-            <span className="colorBlue">PostgreSQL</span>: Great for persisting
-            and accessing data. Also, due to its popularity it will be
-            convenient for future database management.{" "}
-          </h3>
-          <h3>
-            <span className="colorBlue">Heroku</span>: Free to deploy the
-            Backend, easy to test staging.
-          </h3>
-          <h3>
-            <span className="colorBlue">Netlify</span>: Free and easy to deploy
-            dynamic frontend sites.
-          </h3>
-        </div>
+        
       </div>
     </>
   );

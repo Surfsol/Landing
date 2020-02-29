@@ -11,41 +11,44 @@ import sautiAccounts from "../assets/images/sautiAccounts.png";
 import filters from "../assets/images/sautifilter.png";
 import login from "../assets/images/sautiLogin.png";
 import sautiDisplay from "../assets/images/sautiDisplay.png";
+import Backbutton from "./BackButton";
 
 const WellDone = () => {
   return (
     <>
-      <Nav />
-      <section className="sautiBody">
-        <div className="sautiTitle">
-          <div>
-            <h1>Sauti DataBank</h1>
-            <h2>Deployed site:</h2>{" "}
-            <a href="https://blissful-pare-60612f.netlify.com/" target="_blank">
-              Sauti
-            </a>
-          </div>
-          <br></br>
-          <div>
-            <ul class="link">
-              <a
-                href="https://github.com/Lambda-School-Labs/sauti-databank-fe"
-                target="_blank"
-                class="button"
-              >
-                Frontend Github Code
-              </a>
-              <br></br>
-              <a
-                href="https://github.com/Lambda-School-Labs/sauti-databank-be"
-                target="_blank"
-                class="button"
-              >
-                Backend Github Code
-              </a>
-            </ul>
-          </div>
+      <div className="sautiTitle">
+        <div className="back">
+          <Backbutton />
         </div>
+        <div>
+          <h1>Sauti DataBank</h1>
+          <h2>Deployed site:</h2>{" "}
+          <a href="https://blissful-pare-60612f.netlify.com/" target="_blank">
+            Sauti
+          </a>
+        </div>
+        <br></br>
+        <div>
+          <ul class="link">
+            <a
+              href="https://github.com/Lambda-School-Labs/sauti-databank-fe"
+              target="_blank"
+              class="button"
+            >
+              Frontend Github Code
+            </a>
+            <br></br>
+            <a
+              href="https://github.com/Lambda-School-Labs/sauti-databank-be"
+              target="_blank"
+              class="button"
+            >
+              Backend Github Code
+            </a>
+          </ul>
+        </div>
+      </div>
+      <section className="sautiBody">
         <div className="sautiTeam">
           <h1>Our Team</h1>
           <p>
@@ -87,9 +90,8 @@ const WellDone = () => {
             REST framework we would have to deal with many endpoints and do .get
             requests on large amounts of unneeded data.
           </h3>
-         
-            <img className="techsUsed" src={ag} />
-          
+
+          <img className="techsUsed" src={ag} />
 
           <h3>
             <span className="colorBlue">AG-Grid React</span>: We selected
@@ -102,9 +104,9 @@ const WellDone = () => {
             allow editing and deleting functionality of selected accounts
             displayed within the grid.
           </h3>
-         
-            <img className="techsUsed" src={material} />
-         
+
+          <img className="techsUsed" src={material} />
+
           <h3>
             <span className="colorBlue"> Material-UI</span>: We used material-ui
             to implement modals used for logging in, registering and performing
@@ -237,7 +239,6 @@ const WellDone = () => {
             </li>
           </ul>
         </div>
-        
       </section>
     </>
   );
