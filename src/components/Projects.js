@@ -3,10 +3,8 @@ import Nav from "./Nav";
 
 import { NavLink } from "react-router-dom";
 
-import ContactModal from "./ContactModal";
-
 import WellImage from "./WellImage";
-import Welldone from "./WellDone";
+
 
 //css
 import "../assets/css/projects.scss";
@@ -18,6 +16,8 @@ import airbnb from "../assets/images/air2.png";
 import vr from "../assets/images/vr.png";
 import subReddit from "../assets/images/subreddit.png";
 import SautiImage from "./SautiImage";
+
+
 
 const Projects = () => {
   return (

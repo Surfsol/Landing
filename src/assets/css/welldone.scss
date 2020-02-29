@@ -3,16 +3,18 @@ $sea1: #96c4de;
 $sea2: #486591;
 $sea3: #d6e6f3;
 
-.wellBody{
-    margin-top: 20vh;
-    @media (max-width: $phone) {
-        margin-top: 40vh;
-      }
-}
+
 
 .wellTitle{
     background-color: whitesmoke;
     padding:2%;
+    position: fixed;
+    width: 100%;
+    top:0;
+    height:30vh;
+    .back{
+        text-align: left;
+    }
     h1{
         color:blue;
         font-size:5rem;
@@ -21,7 +23,12 @@ $sea3: #d6e6f3;
         
     }
 }
-
+.wellBody{
+    margin-top: 30vh;
+    @media (max-width: $phone) {
+        margin-top: 40vh;
+      }
+}
 .wellPhotos{
     background-color: white;
     display:flex;
