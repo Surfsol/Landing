@@ -9,7 +9,7 @@ $sea3: #d6e6f3;
   position: fixed;
   width: 100%;
   top: 0;
-  height: 30vh;
+  height: 33vh;
   .back {
     text-align: left;
     padding-top: 2%;
@@ -24,7 +24,7 @@ $sea3: #d6e6f3;
   }
 }
 .sautiBody {
-  margin-top: 30vh;
+  margin-top: 33vh;
   @media (max-width: $phone) {
     margin-top: 40vh;
   }
@@ -143,9 +143,5 @@ $sea3: #d6e6f3;
   }
   .techTitle {
     text-align: left;
-  }
-  .techsUsed {
-    height: 15%;
-    width: 100px;
   }
 }
