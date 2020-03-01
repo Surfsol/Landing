@@ -13,6 +13,11 @@ import login from "../assets/images/sautiLogin.png";
 import sautiDisplay from "../assets/images/sautiDisplay.png";
 import Backbutton from "./BackButton";
 
+import netlify from '../assets/icons/netlify.png'
+import heroku from '../assets/icons/heroku.png'
+import postgres from '../assets/icons/post.png'
+import node from '../assets/icons/nodejs.png'
+
 const WellDone = () => {
   return (
     <>
@@ -22,9 +27,9 @@ const WellDone = () => {
         </div>
         <div>
           <h1>Sauti DataBank</h1>
-          <h2>Deployed site:</h2>{" "}
+          {" "}
           <a href="https://blissful-pare-60612f.netlify.com/" target="_blank">
-           <h2>Sauti</h2>
+          <h2>Deployed site: Sauti</h2>
           </a>
         </div>
         <br></br>
@@ -113,20 +118,24 @@ const WellDone = () => {
             to implement modals used for logging in, registering and performing
             crud operation on user accounts.
           </h3>
+          <img className="techsUsed" src={node} />
           <h3>
             <span className="colorBlue">Node.Js</span>: This was also inherited.
             Node.js is easy to use, because we were using javascript and it is
             expandable.;
           </h3>
+          <img className="techsUsed" src={postgres} />
           <h3>
             <span className="colorBlue">PostgreSQL</span>: Great for persisting
             and accessing data. Also, due to its popularity it will be
             convenient for future database management.{" "}
           </h3>
+          <img className="techsUsed" src={heroku} />
           <h3>
             <span className="colorBlue">Heroku</span>: Free to deploy the
             Backend, easy to test staging.
           </h3>
+          <img className="techsUsed" src={netlify} />
           <h3>
             <span className="colorBlue">Netlify</span>: Free and easy to deploy
             dynamic frontend sites.

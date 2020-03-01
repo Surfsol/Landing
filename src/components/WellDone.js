@@ -10,6 +10,15 @@ import wellStatusSensor from "../assets/images/wellStatusSensor.png";
 import wellModal from "../assets/images/wellModal.png";
 import Backbutton from "./BackButton";
 
+import ag from "../assets/images/ag-grid-react.png";
+import material from "../assets/images/material-ui.png";
+import redux from "../assets/icons/redux.jpg";
+import react from "../assets/images/react.jpg";
+import netlify from '../assets/icons/netlify.png'
+import heroku from '../assets/icons/heroku.png'
+import postgres from '../assets/icons/post.png'
+import node from '../assets/icons/nodejs.png'
+
 const WellDone = () => {
   return (
     <>
@@ -19,9 +28,9 @@ const WellDone = () => {
         </div>
         <div>
           <h1>Well Done</h1>
-          <h2>Deployed site:</h2>{" "}
+          {" "}
           <a href="https://welldone.netlify.com/" target="_blank">
-            WellDone
+          <h2>Deployed site: WellDone</h2>
           </a>
         </div>
         <br></br>
@@ -69,6 +78,7 @@ const WellDone = () => {
         </div>
         <div className="tech">
           <h1>Tech Stack:</h1>
+          <img className="techsUsed" src={react} />
           <h3>
             <span className="colorBlue">React</span>: Selected for fast
             rendering and conditional rendering, to limit access to components
@@ -77,12 +87,14 @@ const WellDone = () => {
             libraries can be used with React to manage state, display graphical
             data and account information.
           </h3>
+          <img className="techsUsed" src={redux} />
           <h3>
             <span className="colorBlue">Redux</span>: Selected for state
             management, for ease of access to data throughout the app. Also used
             for filtering and searching through data to instantly display
             filtered data without an api call.
           </h3>
+          <img className="techsUsed" src={ag} />
           <h3>
             <span className="colorBlue">AG-Grid React</span>: For its ability to
             display data in a spreadsheet like format, which comes with a
@@ -90,23 +102,28 @@ const WellDone = () => {
             Account and or Sensor information. Provides well organized data and
             a pleasant user experience.
           </h3>
+          <img className="techsUsed" src={material} />
           <h3>
             <span className="colorBlue"> Material-UI</span>: Easy to implement
             modals with React so users can perform crud operations.
           </h3>
+          <img className="techsUsed" src={node} />
           <h3>
             <span className="colorBlue">Node.Js</span>: For ease of use and
             expandability, we used a REST framework. Can write in Javascript.
           </h3>
+          <img className="techsUsed" src={postgres} />
           <h3>
             <span className="colorBlue">PostgreSQL</span>: Great for persisting
             and accessing data. Also, due to its popularity it will be
             convenient for future database management.{" "}
           </h3>
+          <img className="techsUsed" src={heroku} />
           <h3>
             <span className="colorBlue">Heroku</span>: Free to deploy the
             Backend, easy to test staging.
           </h3>
+          <img className="techsUsed" src={netlify} />
           <h3>
             <span className="colorBlue">Netlify</span>: Free and easy to deploy
             dynamic frontend sites.
