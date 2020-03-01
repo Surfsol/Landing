@@ -48,11 +48,11 @@ const Projects = () => {
           </div>
       
 
-        <section className="body-content-first">
+        <div className="body-content-first">
           <div className="image-body">
             <img src={subReddit} />
           </div>
-          <div className="content">
+          <div className="projectcontent">
             <div className="content-box">
               <h1>SubReddit</h1>
 
@@ -85,11 +85,11 @@ const Projects = () => {
               </ul>
             </div>
           </div>
-        </section>
+        </div>
 
-        <section class="body-content-2">
-          <div class="content">
-            <div class="content-box">
+        <section className="body-content-2">
+          <div className="projectcontent">
+            <div className="content-box">
               <h1>Yelp</h1>
 
               <p>
@@ -121,18 +121,18 @@ const Projects = () => {
             </div>
           </div>
 
-          <div class="image-body">
+          <div className="image-body">
             <img src={yelp} />
           </div>
         </section>
 
-        <section class="body-content">
-          <div class="image-body">
+        <section className="body-content">
+          <div className="image-body">
             <img src={airbnb} />
           </div>
 
-          <div class="content">
-            <div class="content-box">
+          <div className="projectcontent">
+            <div className="content-box">
               <h1>Air Bnb</h1>
 
               <p>
@@ -171,9 +171,9 @@ const Projects = () => {
           </div>
         </section>
 
-        <section class="body-content-2">
-          <div class="content">
-            <div class="content-box">
+        <section className="body-content-2">
+          <div className="projectcontent">
+            <div className="content-box">
               <h1>VR Funding</h1>
 
               <p>
@@ -199,18 +199,18 @@ const Projects = () => {
             </div>
           </div>
 
-          <div class="image-body">
+          <div className="image-body">
             <img src={vr} />
           </div>
         </section>
 
-        <section class="body-content-last">
-          <div class="image-body">
+        <section className="body-content-last">
+          <div className="image-body">
             <img src={responsive} />
           </div>
 
-          <div class="content">
-            <div class="content-box">
+          <div className="projectcontent">
+            <div className="content-box">
               <h1>Responsive Design</h1>
               <p>Design a fully responsive static site.</p>
 

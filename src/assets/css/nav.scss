@@ -1,4 +1,5 @@
 $phone: 800px;
+$tab:1100px;
 $sea1: #96c4de;
 $sea2: #486591;
 $sea3: #d6e6f3;
@@ -21,7 +22,7 @@ body {
 
 
   @media (max-width: $phone) {
-    height: 40vh;
+    height: 20vh;
   }
 }
 
@@ -43,7 +44,7 @@ body {
   overflow: hidden;
 
   @media (max-width: $phone) {
-    height: 40vh;
+    height: 20vh;
   }
 
   video {
@@ -84,12 +85,15 @@ body {
     font-size: 2rem;
     margin: 1vh;
 
-    @media (max-width: $phone) {
+    @media (max-width: $tab) {
       font-size: 1.5;
+    }
+    @media (max-width: $phone) {
+      font-size: 1;
     }
   }
 
-  p {
+  p{
     font-size: 2rem;
     display: block;
     font-family: "Bree Serif", serif;
@@ -101,7 +105,14 @@ body {
     padding: 1.3rem 2rem;
     text-decoration: none;
     margin: 1vh;
-    //   height:3.5rem;
+    @media (max-width: $tab) {
+      font-size: .75;
+      padding: 1rem 1.5rem;
+    }
+    @media (max-width: $phone) {
+      font-size: .25;
+      padding: .65rem .75rem;
+    }
   }
   .git {
     margin: 1vh;
@@ -110,6 +121,14 @@ body {
     img {
       width: 2rem;
       height: 2rem;
+      @media (max-width: $tab) {
+        width: 1.5rem;
+      height: 1.5rem;
+      }
+      @media (max-width: $phone) {
+        width: 1rem;
+      height: 1rem;
+      }
     }
     p {
       font-size: 1.5rem;

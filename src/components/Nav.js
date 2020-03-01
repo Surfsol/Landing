@@ -25,8 +25,8 @@ const NavBar = () => {
             <div class="nav-content">
                 <h1>Russell Terry</h1>
                 <a href="/" class="nav-btn">Home</a>
-                <a href="/skills" class="nav-btn">My Skills</a>
                 <a href="/projects" class="nav-btn">Projects</a>
+                <a href="/skills" class="nav-btn">Skills</a>
                 <a  class="nav-btn"><ModalContact/></a>
                 <div class="git">
                 <a href="https://github.com/Surfsol" target="_blank">
