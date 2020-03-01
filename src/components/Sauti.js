@@ -51,6 +51,7 @@ const WellDone = () => {
       <section className="sautiBody">
         <div className="sautiTeam">
           <h1>Our Team</h1>
+          <h1>Team Lead: Russell Terry</h1>
           <p>
             Our team consisted of 6 fullstack web developers. Everyone worked
             remotely.

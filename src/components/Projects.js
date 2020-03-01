@@ -22,9 +22,11 @@ import SautiImage from "./SautiImage";
 const Projects = () => {
   return (
     <>
-      <div className="projectsNav">
+   
+      <div className="projectsNav" >
         <Nav />
       </div>
+      
 
       <div className="project-wrap">
         <div className="lambdatitle">
@@ -36,8 +38,9 @@ const Projects = () => {
             <NavLink className="projectHover" to={`/project/sauti`}>
               <SautiImage />
             </NavLink>
-            </div>
-            <div className="fproject">
+           
+            {/* </div>
+            <div className="fproject"> */}
             <NavLink className="projectHover" to={`/project/welldone`}>
               <WellImage />
             </NavLink>

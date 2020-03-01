@@ -21,7 +21,7 @@ $bg: rgba(0, 0, 0, 0.2);
 
 img,
 .overlay {
-  transition: .3s all;
+  transition: .1s all;
   border-radius: 3px;
 }
 
@@ -29,16 +29,21 @@ img,
   float: left;
   position: relative;
   margin: .5%;
+  z-index: 1;
   .wellImageTitle{
       background-color: white;
       h1{ 
           color:blue;
+          font-size: 4rem;
+      }
+      h2{
+        font-size:2rem
       }
   }
   img {
     width: 100%;
     margin-bottom: -4px;
-    height:300px
+    height:400px
   }
   .overlay {
     position: absolute;
@@ -52,6 +57,8 @@ img,
     h2 {
       padding-top: 20%;
       font-family: 'Droid Serif', serif;
+      color: white;
+      font-size: 4rem;
     }
     p {
       font-family: 'Julius Sans One', sans-serif;

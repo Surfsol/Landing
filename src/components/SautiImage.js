@@ -14,7 +14,7 @@ const WellImage = () => {
         <img src={sauti} alt="well done" />
         <div class="overlay">
           <h2>
-            Check This <span>Out!</span>
+            Project Overview
           </h2>
         </div>
       </div>

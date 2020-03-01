@@ -128,35 +128,40 @@ $sea1: #96c4de;
 $sea2: #486591;
 $sea3: #d6e6f3;
 
-.projectsNav{
- 
+.projectsNav {
 }
 
-.featured{
+.featured {
   display: flex;
   direction: row;
   justify-content: center;
-  margin:auto
+  margin: auto;
 }
-.featuredprojects{
-    width:100%;
-    display: flex;
-    direction: column;
-    justify-content: space-around;
-    margin:auto;
+.featuredprojects {
+  width: 100%;
+  display: flex;
+  direction: row;
+  justify-content: space-around;
+  margin: auto;
+
+  @media (max-width: $phone) {
+    direction: row;
+  }
+
+  .fproject {
+    
+    .projectHover{
+      margin: 50px;
+    }
+
+    .projectHover:hover {
+      background: #3e98d8;
    
-
-.fproject{
-  width: 35%;
-
-
-.projectHover:hover{
-    background: #3e98d8;
+      width: 40%;
+    height:400px;
+    }
+  }
 }
-}
-}
-
-
 
 .modal-fix {
   position: fixed;
@@ -303,11 +308,11 @@ $sea3: #d6e6f3;
     justify-content: center;
   }
 
-  .projectBackdrop{
+  .projectBackdrop {
     position: relative;
-    width:100%;
-    height:100%;
-    z-index:1;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
   }
 
   .content,
@@ -378,7 +383,6 @@ $sea3: #d6e6f3;
   }
 }
 
-
 .body-well {
   width: 50%;
   height: 550px;
@@ -396,38 +400,34 @@ $sea3: #d6e6f3;
     flex-flow: column-reverse;
     justify-content: center;
   }
-  
-  .well-box{
+
+  .well-box {
     background-color: white;
-    width:30%;
-    height:100%;
-    padding-top:5%;
+    width: 30%;
+    height: 100%;
+    padding-top: 5%;
 
-    li{
+    li {
       padding: 2%;
-      
     }
-    
   }
-  .well-box:hover{
+  .well-box:hover {
     background-color: #486591;
-    color:white
-
+    color: white;
   }
   .well-image-body {
     width: 70%;
     background: $sea1;
     height: 100%;
-  
 
     @media (max-width: $phone) {
       width: 100%;
       background: $sea1;
     }
   }
-  .well-image-body:hover{
-    width:90%;
-    height:90%;
+  .well-image-body:hover {
+    width: 90%;
+    height: 90%;
   }
 
   img {
@@ -437,7 +437,6 @@ $sea3: #d6e6f3;
   }
 }
 
-.body-well:hover{
-  
-    background-color: #486591;
+.body-well:hover {
+  background-color: #486591;
 }
