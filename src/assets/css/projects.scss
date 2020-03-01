@@ -203,7 +203,8 @@ $sea3: #d6e6f3;
     font-family: "Bree Serif", serif;
   }
 }
-
+.body-content-first,
+.body-content-last,
 .body-content {
   width: 70%;
   height: 550px;
@@ -220,6 +221,7 @@ $sea3: #d6e6f3;
     flex-direction: column;
     justify-content: center;
   }
+
 
   .content,
   .image-body {
@@ -439,4 +441,12 @@ $sea3: #d6e6f3;
 
 .body-well:hover {
   background-color: #486591;
+}
+
+.body-content-first{
+  margin-top: 5%;
+}
+
+.body-content-last{
+  margin-bottom: 0%;
 }

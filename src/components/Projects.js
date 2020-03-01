@@ -48,7 +48,7 @@ const Projects = () => {
           </div>
       
 
-        <section className="body-content">
+        <section className="body-content-first">
           <div className="image-body">
             <img src={subReddit} />
           </div>
@@ -204,7 +204,7 @@ const Projects = () => {
           </div>
         </section>
 
-        <section class="body-content">
+        <section class="body-content-last">
           <div class="image-body">
             <img src={responsive} />
           </div>
