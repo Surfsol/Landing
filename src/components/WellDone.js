@@ -23,7 +23,6 @@ const WellDone = () => {
           <a href="https://welldone.netlify.com/" target="_blank">
             WellDone
           </a>
-          <p> username: a.com , password: 123</p>
         </div>
         <br></br>
         <div>
@@ -33,7 +32,7 @@ const WellDone = () => {
               target="_blank"
               class="button"
             >
-              Frontend Github Code
+               <h2> Frontend Github Code</h2>
             </a>
             <br></br>
             <a
@@ -41,7 +40,7 @@ const WellDone = () => {
               target="_blank"
               class="button"
             >
-              Backend Github Code
+               <h2> Backend Github Code</h2>
             </a>
           </ul>
         </div>

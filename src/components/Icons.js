@@ -19,6 +19,7 @@ import less from "../assets/icons/less.png";
 import django from "../assets/icons/django.png";
 import aws from "../assets/icons/aws-icon.png"
 import check from "../assets/icons/check.png"
+import graphql from '../assets/images/graphApollo.png'
 
 import "../assets/css/icons.scss";
 
@@ -86,6 +87,10 @@ const Icons = props => {
               <img src={redux} alt="redux" />
               <h5>Redux</h5>
             </NavLink>
+            <NavLink className="active" to={`/project/sauti`}>
+              <img src={graphql} alt="graphql apollo" />
+              <h5>GraphQl + Apollo</h5>
+            </NavLink>
             <NavLink className="active" to={`/techsProject/Javascript`}>
               <img src={js} alt="javascript" />
               <h5>Javascript</h5>
@@ -103,6 +108,11 @@ const Icons = props => {
             <NavLink className="active" to={`/techsProject/Node.js`}>
               <img src={node} alt="node.js" />
               <h5> Node.js</h5>
+            </NavLink>
+
+            <NavLink className="active" to={`/project/sauti`}>
+              <img src={graphql} alt="graphql apollo" />
+              <h5>GraphQl + Apollo</h5>
             </NavLink>
 
             <NavLink className="active" to={`/techsProject/Python`}>

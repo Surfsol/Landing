@@ -24,7 +24,7 @@ const WellDone = () => {
           <h1>Sauti DataBank</h1>
           <h2>Deployed site:</h2>{" "}
           <a href="https://blissful-pare-60612f.netlify.com/" target="_blank">
-            Sauti
+           <h2>Sauti</h2>
           </a>
         </div>
         <br></br>
@@ -35,7 +35,7 @@ const WellDone = () => {
               target="_blank"
               class="button"
             >
-              Frontend Github Code
+             <h2> Frontend Github Code</h2>
             </a>
             <br></br>
             <a
@@ -43,7 +43,7 @@ const WellDone = () => {
               target="_blank"
               class="button"
             >
-              Backend Github Code
+             <h2> Backend Github Code</h2>
             </a>
           </ul>
         </div>
