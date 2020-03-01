@@ -20,6 +20,7 @@ import django from "../assets/icons/django.png";
 import aws from "../assets/icons/aws-icon.png"
 import check from "../assets/icons/check.png"
 import graphql from '../assets/images/graphApollo.png'
+import netlify from '../assets/icons/netlify.png'
 
 import "../assets/css/icons.scss";
 
@@ -153,6 +154,10 @@ const Icons = props => {
             <NavLink className="active" to={`/techsProject/AWS`}>
               <img src={aws} alt="aws" />
               <h5>Aws</h5>
+            </NavLink>
+            <NavLink className="active" to={`/project/sauti`}>
+              <img src={netlify} alt="netlify" />
+              <h5>Netlify</h5>
             </NavLink>
             </div>
         </div>
