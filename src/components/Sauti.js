@@ -1,19 +1,18 @@
 import React from "react";
-import "../assets/css/welldone.scss";
+import "../assets/css/sauti.scss";
 
 import Nav from "./Nav";
 
-import wellSensor from "../assets/images/wellSensor.png";
-import wellDash from "../assets/images/wellDash.png";
-import wellMonitor from "../assets/images/wellDash.png";
-import wellStatusSensor from "../assets/images/wellStatusSensor.png";
-import wellModal from "../assets/images/wellModal.png";
-import Backbutton from "./BackButton";
-
 import ag from "../assets/images/ag-grid-react.png";
 import material from "../assets/images/material-ui.png";
-import redux from "../assets/icons/redux.jpg";
+import graphql from "../assets/images/graphApollo.png";
 import react from "../assets/images/react.jpg";
+import sautiAccounts from "../assets/images/sautiAccounts.png";
+import filters from "../assets/images/sautifilter.png";
+import login from "../assets/images/sautiLogin.png";
+import sautiDisplay from "../assets/images/sautiDisplay.png";
+import Backbutton from "./BackButton";
+
 import netlify from '../assets/icons/netlify.png'
 import heroku from '../assets/icons/heroku.png'
 import postgres from '../assets/icons/post.png'
@@ -22,95 +21,108 @@ import node from '../assets/icons/nodejs.png'
 const WellDone = () => {
   return (
     <>
-      <div className="wellTitle">
+      <div className="sautiTitle">
         <div className="back">
           <Backbutton />
         </div>
         <div>
-          <h1>Well Done</h1>
+          <h1>Sauti DataBank</h1>
           {" "}
-          <a href="https://welldone.netlify.com/" target="_blank">
-          <h2>Deployed site: WellDone</h2>
+          <a href="https://blissful-pare-60612f.netlify.com/" target="_blank">
+          <h2>Deployed site: Sauti</h2>
           </a>
         </div>
         <br></br>
         <div>
           <ul class="link">
             <a
-              href="https://github.com/Lambda-School-Labs/well-done-fe"
+              href="https://github.com/Lambda-School-Labs/sauti-databank-fe"
               target="_blank"
               class="button"
             >
-               <h2> Frontend Github Code</h2>
+             <h2> Frontend Github Code</h2>
             </a>
             <br></br>
             <a
-              href="https://github.com/Lambda-School-Labs/well-done-be"
+              href="https://github.com/Lambda-School-Labs/sauti-databank-be"
               target="_blank"
               class="button"
             >
-               <h2> Backend Github Code</h2>
+             <h2> Backend Github Code</h2>
             </a>
           </ul>
         </div>
       </div>
-      <div className="wellBody">
-        <div className="wellTeam">
+      <section className="sautiBody">
+        <div className="sautiTeam">
           <h1>Our Team</h1>
+          <h1>Team Lead: Russell Terry</h1>
           <p>
-            Our team consisted of 6 fullstack web developers, 2 UX designers and
-            2 android developers. Everyone worked remotely.
+            Our team consisted of 6 fullstack web developers. Everyone worked
+            remotely.
           </p>
         </div>
-        <div className="wellPhotos">
-          <div class="wellPic">
-            <img src={wellDash} />
+        <div className="sautiPhotos">
+          <div class="sautiPic">
+            <img src={sautiDisplay} />
           </div>
-          <div class="wellPic">
-            <img src={wellSensor} />
+          <div class="sautiPic">
+            <img src={login} />
           </div>
-          <div class="wellPic">
-            <img src={wellStatusSensor} />
+
+          <div class="sautiPic">
+            <img src={sautiAccounts} />
           </div>
-          <div class="wellPic">
-            <img src={wellModal} />
+          <div class="sautiPic">
+            <img src={filters} />
           </div>
         </div>
-        <div className="tech">
+        <div className="sautitech">
           <h1>Tech Stack:</h1>
           <img className="techsUsed" src={react} />
           <h3>
-            <span className="colorBlue">React</span>: Selected for fast
-            rendering and conditional rendering, to limit access to components
-            by user permissions. Easy to build components and can be utilized in
-            various different parts of the app. A wide array of third party
-            libraries can be used with React to manage state, display graphical
-            data and account information.
+            <span className="colorBlue">React</span>: When our team inherited
+            the project React was already being used. We stuck with React
+            because it was easy to build additional components on top of the
+            existing page and for Reacts ability to conditionally Render
+            components. This was especially valuable when we blocked off certain
+            functionality based on the user's tier.
           </h3>
-          <img className="techsUsed" src={redux} />
+          <img className="techsUsed" src={graphql} />
           <h3>
-            <span className="colorBlue">Redux</span>: Selected for state
-            management, for ease of access to data throughout the app. Also used
-            for filtering and searching through data to instantly display
-            filtered data without an api call.
+            <span className="colorBlue">Graphql</span>: We inherited the project
+            with graphql already implemented. Graphql was a wise decision for
+            this app due to its ability to query specific data. Whereas, on a
+            REST framework we would have to deal with many endpoints and do .get
+            requests on large amounts of unneeded data.
           </h3>
+
           <img className="techsUsed" src={ag} />
+
           <h3>
-            <span className="colorBlue">AG-Grid React</span>: For its ability to
-            display data in a spreadsheet like format, which comes with a
-            variety of built in filtering options so users can easily access
-            Account and or Sensor information. Provides well organized data and
-            a pleasant user experience.
+            <span className="colorBlue">AG-Grid React</span>: We selected
+            Ag-grid-react for its ability to display account information in a
+            spreadsheet like format, which comes with a variety of built in
+            filtering options so staff members can easily access and filter
+            through account information. The grid receives all account
+            information from the backend by making a query through
+            apollo/graphql. We also added additional columns to the grid to
+            allow editing and deleting functionality of selected accounts
+            displayed within the grid.
           </h3>
+
           <img className="techsUsed" src={material} />
+
           <h3>
-            <span className="colorBlue"> Material-UI</span>: Easy to implement
-            modals with React so users can perform crud operations.
+            <span className="colorBlue"> Material-UI</span>: We used material-ui
+            to implement modals used for logging in, registering and performing
+            crud operation on user accounts.
           </h3>
           <img className="techsUsed" src={node} />
           <h3>
-            <span className="colorBlue">Node.Js</span>: For ease of use and
-            expandability, we used a REST framework. Can write in Javascript.
+            <span className="colorBlue">Node.Js</span>: This was also inherited.
+            Node.js is easy to use, because we were using javascript and it is
+            expandable.;
           </h3>
           <img className="techsUsed" src={postgres} />
           <h3>
@@ -129,43 +141,39 @@ const WellDone = () => {
             dynamic frontend sites.
           </h3>
         </div>
-
-        <div className="wellCurrent">
+        <div className="sautiCurrent">
           <h1>Background</h1>
           <p>
-            WellDone is a NGO that develops sensors for well pumps in remote
-            locations, such as Africa and Cambodia. The sensors relay data about
-            the functionality of remote wells for partner NGOs who install and
-            maintain the wells. Data is not only critical for NGO to respond to
-            non-functioning pumps, but is also needed for analysis, predictions,
-            and to gain access to additional charitable donations.
-          </p>
-        </div>
-        <div className="wellProblem">
-          <h1>The Problem</h1>
-          <p>
-            Although WellDone had successfully installed sensors which transmit
-            reliable data. The data was almost useless because it was not
-            properly stored or displayed.
-          </p>
-          <br></br>
-          <p>
             {" "}
-            Well Done was storing the data on a Prisma backend and did not have
-            have a frontend built out to visualize the data. When information
-            was requested about the status of a well pump. The Well Done staff
-            wasted a lot of time trying to search through the backend, looking
-            through various columns to determine the status of the pump.
+            Sauti is a non-profit organization that caters to cross-boarder
+            traders who need assistance with current market prices,
+            documentation and legal procedures.
+            <a href="http://sautiafrica.org/" target="_blank" class="button">
+              Sauti's informational site
+            </a>
           </p>
           <br></br>
           <p>
-            So information was not visually available, many well pumps would
-            stop working and no one would be alerted. This resulted in villages
-            going without fresh well water, upset donors and NGOs, and a ton of
-            overhead for Well Done staff members.
+            The organization has been collecting data related to individual
+            traders of produce, goods and materials throughout a Region of
+            Africa known as Sauti since 2017. This data is very valuable to
+            Government officials, researchers and developers for insight to
+            market trends, pricing and trader demographics.
           </p>
         </div>
-        <div className="wellSolution">
+        <div className="sautiProblem">
+          <h1>The Problem</h1>
+
+          <p>
+            Sauti has not implemented a user interface with proper filtering
+            features and displays for interested parties to utilize the data.
+            They would also like to have users log into the site, and make
+            payment to gain access to special filtering and downloading
+            functions.{" "}
+          </p>
+          <br></br>
+        </div>
+        <div className="sautiSolution">
           <h1>The Solution</h1>
           <p>
             Our team created a new Backend using Node.js to organize and store
@@ -200,16 +208,19 @@ const WellDone = () => {
           </p>
         </div>
 
-        <div className="wellProcess">
+        <div className="sautiProcess">
           <h1>The Process</h1>
           <ul>
             <li>
-              First, we collaborated as a team to understand WellDone's existing
-              web architecture, business structure and goals.
+              First, we took the time to understand the existing architecture.
+              The backend consisted of Node.js, Graphql and a MySQL database.
+              The Frontend was using React, Graphql and Nivo to display charts.
             </li>
             <li>
               {" "}
-              Next we researched competitors, looking for areas of opportunity.
+              After understanding the architecture, we took the time to research
+              ways we could improve upon it. We spent a lot of time researching
+              Graphql and Apollo, and Nivo for displaying graphs.
             </li>
             <li>
               We performed user research with WellDone staff members to get
@@ -238,8 +249,7 @@ const WellDone = () => {
             </li>
           </ul>
         </div>
-        
-      </div>
+      </section>
     </>
   );
 };

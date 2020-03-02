@@ -3,7 +3,7 @@ $sea1: #96c4de;
 $sea2: #486591;
 $sea3: #d6e6f3;
 
-.wellTitle {
+.sautiTitle {
   background-color: whitesmoke;
   padding-bottom: 5%;
   position: fixed;
@@ -23,20 +23,20 @@ $sea3: #d6e6f3;
     font-size: 1.2rem;
   }
 }
-.wellBody {
+.sautiBody {
   margin-top: 33vh;
   @media (max-width: $phone) {
     margin-top: 40vh;
   }
 }
-.wellPhotos {
+.sautiPhotos {
   background-color: white;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
 
-  .wellPic {
+  .sautiPic {
     width: 30%;
     height: 300px;
     margin: 2% 5%;
@@ -48,7 +48,7 @@ $sea3: #d6e6f3;
   }
 }
 
-.wellCurrent {
+.sautiCurrent {
   background-color: whitesmoke;
   padding: 3%;
   h1 {
@@ -61,7 +61,7 @@ $sea3: #d6e6f3;
     font-size: 2rem;
   }
 }
-.wellProblem {
+.sautiProblem {
   background-color: honeydew;
   padding: 3%;
   text-align: left;
@@ -77,7 +77,7 @@ $sea3: #d6e6f3;
     font-size: 2rem;
   }
 }
-.wellSolution {
+.sautiSolution {
   background-color: white;
   padding: 3%;
   text-align: left;
@@ -92,7 +92,7 @@ $sea3: #d6e6f3;
     font-size: 2rem;
   }
 }
-.wellTeam {
+.sautiTeam {
   background-color: wheat;
   padding: 3%;
   h1 {
@@ -105,7 +105,7 @@ $sea3: #d6e6f3;
     font-size: 1.5rem;
   }
 }
-.wellProcess {
+.sautiProcess {
   background-color: whitesmoke;
   padding: 3%;
   h1 {
@@ -124,7 +124,7 @@ $sea3: #d6e6f3;
   }
 }
 
-.tech {
+.sautitech {
   background-color: snow;
   padding: 3%;
   h1 {
@@ -140,5 +140,8 @@ $sea3: #d6e6f3;
   }
   .colorBlue {
     color: blue;
+  }
+  .techTitle {
+    text-align: left;
   }
 }

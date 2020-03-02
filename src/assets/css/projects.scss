@@ -123,10 +123,45 @@ table {
   border-spacing: 0;
 }
 
-$phone: 800px;
+$phone: 1100px;
 $sea1: #96c4de;
 $sea2: #486591;
 $sea3: #d6e6f3;
+
+.projectsNav {
+}
+
+.featured {
+  display: flex;
+  direction: row;
+  justify-content: center;
+  margin: auto;
+}
+.featuredprojects {
+  width: 100%;
+  display: flex;
+  direction: row;
+  justify-content: space-around;
+  margin: auto;
+
+  @media (max-width: $phone) {
+    direction: row;
+  }
+
+  .fproject {
+    
+    .projectHover{
+      margin: 50px;
+    }
+
+    .projectHover:hover {
+      background: #3e98d8;
+   
+      width: 40%;
+    height:400px;
+    }
+  }
+}
 
 .modal-fix {
   position: fixed;
@@ -150,7 +185,7 @@ $sea3: #d6e6f3;
   width: 100%;
 
   @media (max-width: $phone) {
-    margin-top: 40vh;
+    margin-top: 20vh;
   }
 }
 
@@ -168,7 +203,8 @@ $sea3: #d6e6f3;
     font-family: "Bree Serif", serif;
   }
 }
-
+.body-content-first,
+.body-content-last,
 .body-content {
   width: 70%;
   height: 550px;
@@ -177,16 +213,18 @@ $sea3: #d6e6f3;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   // border-radius: 5%;
 
   @media (max-width: $phone) {
     width: 90%;
     padding: 0;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
   }
 
-  .content,
+
+  .projectcontent,
   .image-body {
     width: 50%;
     background: $sea1;
@@ -268,19 +306,18 @@ $sea3: #d6e6f3;
   @media (max-width: $phone) {
     width: 90%;
     padding: 0;
-    flex-direction: column;
-    flex-flow: column-reverse;
+    flex-direction: row;
     justify-content: center;
   }
 
-  .projectBackdrop{
+  .projectBackdrop {
     position: relative;
-    width:100%;
-    height:100%;
-    z-index:1;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
   }
 
-  .content,
+  .projectcontent,
   .image-body {
     width: 50%;
     background: $sea1;
@@ -348,6 +385,68 @@ $sea3: #d6e6f3;
   }
 }
 
-.projectHover:hover{
-    background: #3e98d8;
+.body-well {
+  width: 50%;
+  height: 550px;
+  background-image: image("../images/wellDoneDrop.png");
+  background: white;
+  margin: 10% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $phone) {
+    width: 90%;
+    padding: 0;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    justify-content: center;
+  }
+
+  .well-box {
+    background-color: white;
+    width: 30%;
+    height: 100%;
+    padding-top: 5%;
+
+    li {
+      padding: 2%;
+    }
+  }
+  .well-box:hover {
+    background-color: #486591;
+    color: white;
+  }
+  .well-image-body {
+    width: 70%;
+    background: $sea1;
+    height: 100%;
+
+    @media (max-width: $phone) {
+      width: 100%;
+      background: $sea1;
+    }
+  }
+  .well-image-body:hover {
+    width: 90%;
+    height: 90%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+}
+
+.body-well:hover {
+  background-color: #486591;
+}
+
+.body-content-first{
+  margin-top: 5%;
+}
+
+.body-content-last{
+  margin-bottom: 0%;
 }

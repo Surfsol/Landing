@@ -3,9 +3,8 @@ import Nav from "./Nav";
 
 import { NavLink } from "react-router-dom";
 
-import ContactModal from "./ContactModal";
+import WellImage from "./WellImage";
 
-import Welldone from "./WellDone";
 
 //css
 import "../assets/css/projects.scss";
@@ -16,53 +15,44 @@ import yelp from "../assets/images/yelp.png";
 import airbnb from "../assets/images/air2.png";
 import vr from "../assets/images/vr.png";
 import subReddit from "../assets/images/subreddit.png";
-import welldone from "../assets/images/wellMapMon.png";
-import welldrop from "../assets/images/wellDoneDrop.png";
+import SautiImage from "./SautiImage";
+
+
+
 const Projects = () => {
   return (
     <>
-      <div>
+   
+      <div className="projectsNav" >
         <Nav />
       </div>
+      
 
       <div className="project-wrap">
         <div className="lambdatitle">
           <h1>Projects</h1>
         </div>
-
-        <NavLink className="projectHover" to={`/project/welldone`}>
-          <section class="body-content-2">
-            {/* <div className="projectBackdrop">
-              <img src={welldrop} />
-            </div> */}
-            <div class="content">
-              <div class="content-box">
-                <h1>Well Done</h1>
-
-                <ul style={{ listStyle: "none" }}>
-                  <h4>Tecnologies applied:</h4>
-                  <li>React</li>
-                  <li>Redux</li>
-                  <li>React-map</li>
-                  <li>ag-Grid-React</li>
-                  <li>Node.js</li>
-                  <li>Heroku</li>
-                  <li>PostgreSQL</li>
-                </ul>
-                <h2>See More Details</h2>
-              </div>
+       
+          <div className="featuredprojects">
+            <div className="fproject">
+            <NavLink className="projectHover" to={`/project/sauti`}>
+              <SautiImage />
+            </NavLink>
+           
+            {/* </div>
+            <div className="fproject"> */}
+            <NavLink className="projectHover" to={`/project/welldone`}>
+              <WellImage />
+            </NavLink>
             </div>
-            <div class="image-body">
-              <img src={welldone} />
-            </div>
-          </section>
-        </NavLink>
+          </div>
+      
 
-        <section className="body-content">
+        <div className="body-content-first">
           <div className="image-body">
             <img src={subReddit} />
           </div>
-          <div className="content">
+          <div className="projectcontent">
             <div className="content-box">
               <h1>SubReddit</h1>
 
@@ -95,11 +85,11 @@ const Projects = () => {
               </ul>
             </div>
           </div>
-        </section>
+        </div>
 
-        <section class="body-content-2">
-          <div class="content">
-            <div class="content-box">
+        <section className="body-content-2">
+          <div className="projectcontent">
+            <div className="content-box">
               <h1>Yelp</h1>
 
               <p>
@@ -131,18 +121,18 @@ const Projects = () => {
             </div>
           </div>
 
-          <div class="image-body">
+          <div className="image-body">
             <img src={yelp} />
           </div>
         </section>
 
-        <section class="body-content">
-          <div class="image-body">
+        <section className="body-content">
+          <div className="image-body">
             <img src={airbnb} />
           </div>
 
-          <div class="content">
-            <div class="content-box">
+          <div className="projectcontent">
+            <div className="content-box">
               <h1>Air Bnb</h1>
 
               <p>
@@ -181,9 +171,9 @@ const Projects = () => {
           </div>
         </section>
 
-        <section class="body-content-2">
-          <div class="content">
-            <div class="content-box">
+        <section className="body-content-2">
+          <div className="projectcontent">
+            <div className="content-box">
               <h1>VR Funding</h1>
 
               <p>
@@ -209,18 +199,18 @@ const Projects = () => {
             </div>
           </div>
 
-          <div class="image-body">
+          <div className="image-body">
             <img src={vr} />
           </div>
         </section>
 
-        <section class="body-content">
-          <div class="image-body">
+        <section className="body-content-last">
+          <div className="image-body">
             <img src={responsive} />
           </div>
 
-          <div class="content">
-            <div class="content-box">
+          <div className="projectcontent">
+            <div className="content-box">
               <h1>Responsive Design</h1>
               <p>Design a fully responsive static site.</p>
 
