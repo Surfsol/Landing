@@ -75,9 +75,18 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center; 
 
   @media (max-width: $phone) {
-    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .menu-items{
+    margin: auto; //center text
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; 
   }
 
   h1 {
@@ -86,10 +95,10 @@ body {
     margin: 1vh;
 
     @media (max-width: $tab) {
-      font-size: 1.5;
+      font-size: 1.5rem;
     }
     @media (max-width: $phone) {
-      font-size: 1;
+      font-size: 1rem;
     }
   }
 
@@ -132,6 +141,9 @@ body {
     }
     p {
       font-size: 1.5rem;
+      @media (max-width: $phone) {
+        font-size:1rem;
+      }
     }
   }
 }

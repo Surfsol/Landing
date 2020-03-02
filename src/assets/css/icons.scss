@@ -32,10 +32,10 @@ padding:.7rem;
     margin-top: 20vh;
   }
 
-  .tlink {
-    margin: 0.5rem;
+  .techLink {
+      display: none;
+    
   }
-
   h1 {
     font-family: "Bree Serif", serif;
     color: $sea2;
@@ -61,10 +61,11 @@ padding:.7rem;
     justify-content: center;
     flex-direction: column;
 
-    .icon-group {
+    .icon-name {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      flex-direction: column;
       margin: 3%;
       h2 {
         color: $sea1;
@@ -75,6 +76,12 @@ padding:.7rem;
         @media (max-width: $phone) {
           font-size: 2rem;
         }
+      }
+      .iconsGroup{
+        display:flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: center;
       }
 
       img {
