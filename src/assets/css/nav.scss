@@ -1,5 +1,5 @@
 $phone: 800px;
-$tab:1100px;
+$tab: 1100px;
 $sea1: #96c4de;
 $sea2: #486591;
 $sea3: #d6e6f3;
@@ -12,14 +12,11 @@ body {
   overflow-x: hidden; // horizontal overflow, so no scrollbar
 }
 
-
-
 .nav {
   height: 20vh;
   display: flex;
   align-items: center;
   color: #fff;
-
 
   @media (max-width: $phone) {
     height: 20vh;
@@ -31,8 +28,7 @@ body {
   padding-right: 1rem;
   margin: auto;
   text-align: center;
-  z-index:3;
-  
+  z-index: 3;
 }
 
 .nav {
@@ -75,18 +71,18 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center; 
+  align-items: center;
 
   @media (max-width: $phone) {
     flex-direction: column;
   }
 
-  .menu-items{
+  .menu-items {
     margin: auto; //center text
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 
   h1 {
@@ -102,7 +98,7 @@ body {
     }
   }
 
-  p{
+  p {
     font-size: 2rem;
     display: block;
     font-family: "Bree Serif", serif;
@@ -115,12 +111,12 @@ body {
     text-decoration: none;
     margin: 1vh;
     @media (max-width: $tab) {
-      font-size: .75;
+      font-size: 0.75;
       padding: 1rem 1.5rem;
     }
     @media (max-width: $phone) {
-      font-size: .25;
-      padding: .65rem .75rem;
+      font-size: 0.25;
+      padding: 0.65rem 0.75rem;
     }
   }
   .git {
@@ -132,17 +128,16 @@ body {
       height: 2rem;
       @media (max-width: $tab) {
         width: 1.5rem;
-      height: 1.5rem;
+        height: 1.5rem;
       }
       @media (max-width: $phone) {
-        width: 1rem;
-      height: 1rem;
+        display: none;
       }
     }
     p {
       font-size: 1.5rem;
       @media (max-width: $phone) {
-        font-size:1rem;
+        font-size: 1rem;
       }
     }
   }
