@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import { NavLink } from "react-router-dom";
 
 import WellImage from "./WellImage";
-
+import "../assets/css/wellImage.scss";
 
 //css
 import "../assets/css/projects.scss";
@@ -17,38 +17,33 @@ import vr from "../assets/images/vr.png";
 import subReddit from "../assets/images/subreddit.png";
 import SautiImage from "./SautiImage";
 
-
-
 const Projects = () => {
   return (
     <>
-   
-      <div className="projectsNav" >
+      <div className="projectsNav">
         <Nav />
       </div>
-      
 
       <div className="project-wrap">
         <div className="lambdatitle">
           <h1>Projects</h1>
         </div>
-       
-          <div className="featuredprojects">
-            <div className="fproject">
+
+        <div className="featuredprojects">
+          <div className="fproject">
             <NavLink className="projectHover" to={`/project/sauti`}>
               <SautiImage />
             </NavLink>
-           
+
             {/* </div>
             <div className="fproject"> */}
             <NavLink className="projectHover" to={`/project/welldone`}>
               <WellImage />
             </NavLink>
-            </div>
-          </div>
+          
       
 
-        <div className="body-content-first">
+        {/* <div className="body-content-first">
           <div className="image-body">
             <img src={subReddit} />
           </div>
@@ -63,10 +58,10 @@ const Projects = () => {
                 <strong> CRUD</strong> operations: Register, Login, .post, .get,
                 and .delete. I also assisted the React Frontend developer set up
                 the Redux architecture.
-              </p>
+              </p> */}
 
-              {/* listStyle: "none", no bullet points */}
-              <ul style={{ listStyle: "none" }}>
+        {/* listStyle: "none", no bullet points */}
+        {/* <ul style={{ listStyle: "none" }}>
                 <h4>Tecnologies applied:</h4>
                 <li>Node.js / Express</li>
                 <li>BcryptJS</li>
@@ -85,9 +80,46 @@ const Projects = () => {
               </ul>
             </div>
           </div>
+        </div> */}
+      
+        <div className="pgcontainer">
+          <div class="pgbg">
+            <div className="pgwellImageTitle">
+              <h1>SubReddit</h1>
+              <h2>
+                React, Redux, BcryptJS, jsonwebtoken, Node.js, Heroku,
+                PostgreSQL
+              </h2>
+              <a
+                href="https://github.com/BuildWeek-PostHere-Subreddit"
+                target="_blank"
+                class="button"
+              >
+                <h2>Github</h2>
+              </a>
+            </div>
+            <img src={subReddit} alt="sub-Reddit" />
+          </div>
         </div>
 
-        <section className="body-content-2">
+        <div className="pgcontainer">
+          <div class="pgbg">
+            <div className="pgwellImageTitle">
+              <h1>Yelp</h1>
+              <h2>React, Redux, SAS, Forms, Zeit</h2>
+              <a
+                href="https://github.com/BW-YELP-FEELERS"
+                target="_blank"
+                class="button"
+              >
+                <h2>Github</h2>
+              </a>
+            </div>
+            <img src={yelp} alt="yelp" />
+          </div>
+        </div>
+
+        {/* <section className="body-content-2">
           <div className="projectcontent">
             <div className="content-box">
               <h1>Yelp</h1>
@@ -119,14 +151,40 @@ const Projects = () => {
                 </a>
               </ul>
             </div>
-          </div>
+          </div> */}
 
-          <div className="image-body">
+        {/* <div className="image-body">
             <img src={yelp} />
           </div>
-        </section>
+        </section> */}
+        <div className="pgcontainer">
+          <div class="pgbg">
+            <div className="pgwellImageTitle">
+              <h1>Air Bnb Price Optimizer</h1>
+              <h2>React,Context-Ui, LESS, Forms</h2>
+              <a
+                href="https://github.com/AirBNBOptimalPrice"
+                target="_blank"
+                class="button"
+              >
+                <h2>Github</h2>
+              </a>
+            </div>
+            <img src={airbnb} alt="airbnb" />
 
-        <section className="body-content">
+            <div class="pgoverlay">
+              <a
+                href="https://frontend-git-master.surfsol.now.sh/"
+                target="_blank"
+                class="button"
+              >
+                <h2> Deployed Site</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* <section className="body-content">
           <div className="image-body">
             <img src={airbnb} />
           </div>
@@ -169,9 +227,36 @@ const Projects = () => {
               </ul>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className="body-content-2">
+        <div className="pgcontainer">
+          <div class="pgbg">
+            <div className="pgwellImageTitle">
+              <h1>VR Funding</h1>
+              <h2>Fully Responsive, LESS, HTML</h2>
+              <a
+                href="https://github.com/Build-Week-VR-Funding-Platform"
+                target="_blank"
+                class="button"
+              >
+                <h2>Github</h2>
+              </a>
+            </div>
+            <img src={vr} alt="airbnb" />
+
+            <div class="pgpg">
+              {/* <a
+                  href="https://frontend-git-master.surfsol.now.sh/"
+                  target="_blank"
+                  class="button"
+                >
+                 <h2> Deployed Site</h2>
+                </a> */}
+            </div>
+          </div>
+        </div>
+
+        {/* <section className="body-content-2">
           <div className="projectcontent">
             <div className="content-box">
               <h1>VR Funding</h1>
@@ -231,7 +316,9 @@ const Projects = () => {
               </ul>
             </div>
           </div>
-        </section>
+        </section> */}
+          </div>
+        </div>
       </div>
     </>
   );
