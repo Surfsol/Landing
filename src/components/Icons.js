@@ -104,10 +104,6 @@ const Icons = props => {
           <div className="icon-name">
             <h2 id="Backend">Backend</h2>
             <div className="iconsGroup">
-              <NavLink className="active" to={`/techsProject/Http-requests`}>
-                <img src={http} alt="http-requests" />
-                <h5>Http-requests</h5>
-              </NavLink>
 
               <NavLink className="active" to={`/techsProject/Node.js`}>
                 <img src={node} alt="node.js" />
@@ -119,10 +115,10 @@ const Icons = props => {
                 <h5>GraphQl + Apollo</h5>
               </NavLink>
 
-              <NavLink className="active" to={`/techsProject/Python`}>
+              {/* <NavLink className="active" to={`/techsProject/Python`}>
                 <img src={python} alt="python" />
                 <h5>Python</h5>
-              </NavLink>
+              </NavLink> */}
 
               <NavLink className="active" to={`/techsProject/Django`}>
                 <img src={django} alt="django" />

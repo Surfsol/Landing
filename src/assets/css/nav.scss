@@ -40,7 +40,7 @@ body {
   overflow: hidden;
 
   @media (max-width: $phone) {
-    height: 20vh;
+    height: 16vh;
   }
 
   video {
@@ -61,7 +61,7 @@ body {
   opacity: 0.85; //%see through
 
   @media (max-width: $phone) {
-    height: 40vh;
+    height: 16.1vh;
   }
 }
 
@@ -111,12 +111,12 @@ body {
     text-decoration: none;
     margin: 1vh;
     @media (max-width: $tab) {
-      font-size: 0.75;
+      font-size: 1.2rem;
       padding: 1rem 1.5rem;
     }
     @media (max-width: $phone) {
-      font-size: 0.25;
-      padding: 0.65rem 0.75rem;
+      font-size: 1rem;
+      padding: 0.45rem 0.55rem;
     }
   }
   .git {
