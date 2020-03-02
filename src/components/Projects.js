@@ -40,8 +40,8 @@ const Projects = () => {
             <NavLink className="projectHover" to={`/project/welldone`}>
               <WellImage />
             </NavLink>
-          </div>
-        </div>
+          
+      
 
         {/* <div className="body-content-first">
           <div className="image-body">
@@ -81,9 +81,10 @@ const Projects = () => {
             </div>
           </div>
         </div> */}
-        <div className="container">
-          <div class="bg">
-            <div className="wellImageTitle">
+      
+        <div className="pgcontainer">
+          <div class="pgbg">
+            <div className="pgwellImageTitle">
               <h1>SubReddit</h1>
               <h2>
                 React, Redux, BcryptJS, jsonwebtoken, Node.js, Heroku,
@@ -101,9 +102,9 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="container">
-          <div class="bg">
-            <div className="wellImageTitle">
+        <div className="pgcontainer">
+          <div class="pgbg">
+            <div className="pgwellImageTitle">
               <h1>Yelp</h1>
               <h2>React, Redux, SAS, Forms, Zeit</h2>
               <a
@@ -156,9 +157,9 @@ const Projects = () => {
             <img src={yelp} />
           </div>
         </section> */}
-        <div className="container">
-          <div class="bg">
-            <div className="wellImageTitle">
+        <div className="pgcontainer">
+          <div class="pgbg">
+            <div className="pgwellImageTitle">
               <h1>Air Bnb Price Optimizer</h1>
               <h2>React,Context-Ui, LESS, Forms</h2>
               <a
@@ -171,7 +172,7 @@ const Projects = () => {
             </div>
             <img src={airbnb} alt="airbnb" />
 
-            <div class="overlay">
+            <div class="pgoverlay">
               <a
                 href="https://frontend-git-master.surfsol.now.sh/"
                 target="_blank"
@@ -228,9 +229,9 @@ const Projects = () => {
           </div>
         </section> */}
 
-        <div className="container">
-          <div class="bg">
-            <div className="wellImageTitle">
+        <div className="pgcontainer">
+          <div class="pgbg">
+            <div className="pgwellImageTitle">
               <h1>VR Funding</h1>
               <h2>Fully Responsive, LESS, HTML</h2>
               <a
@@ -243,7 +244,7 @@ const Projects = () => {
             </div>
             <img src={vr} alt="airbnb" />
 
-            <div class="overlay">
+            <div class="pgpg">
               {/* <a
                   href="https://frontend-git-master.surfsol.now.sh/"
                   target="_blank"
@@ -316,6 +317,8 @@ const Projects = () => {
             </div>
           </div>
         </section> */}
+          </div>
+        </div>
       </div>
     </>
   );
