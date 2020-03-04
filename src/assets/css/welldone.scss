@@ -9,7 +9,7 @@ $sea3: #d6e6f3;
   position: fixed;
   width: 100%;
   top: 0;
-  height: 33vh;
+  height: 35vh;
   .back {
     text-align: left;
     padding-top: 2%;
@@ -26,6 +26,18 @@ $sea3: #d6e6f3;
     font-size: 1.2rem;
     @media (max-width: $phone) {
       font-size:1rem;
+    }
+  }
+  .link{
+    display: flex;
+    margin:auto;
+    justify-content: center;
+
+    a{
+      margin:0 5%;
+    }
+    h2{
+      @phone
     }
   }
 }

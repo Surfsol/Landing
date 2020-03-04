@@ -29,13 +29,15 @@ const WellDone = () => {
         <div>
           <h1>Well Done</h1>
           {" "}
+          <h2>Deployed Site:
           <a href="https://welldone.netlify.com/" target="_blank">
-          <h2>Deployed site: WellDone</h2>
+           WellDone
           </a>
+          </h2>
         </div>
-        <br></br>
+     <br></br>
         <div>
-          <ul class="link">
+          <div class="link">
             <a
               href="https://github.com/Lambda-School-Labs/well-done-fe"
               target="_blank"
@@ -43,7 +45,7 @@ const WellDone = () => {
             >
                <h2> Frontend Github Code</h2>
             </a>
-            <br></br>
+         
             <a
               href="https://github.com/Lambda-School-Labs/well-done-be"
               target="_blank"
@@ -51,7 +53,7 @@ const WellDone = () => {
             >
                <h2> Backend Github Code</h2>
             </a>
-          </ul>
+          </div>
         </div>
       </div>
       <div className="wellBody">
