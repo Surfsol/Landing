@@ -5,8 +5,11 @@ import wellDash from '../assets/images/wellDash.png'
 const WellImage = () => {
   return (
     <>
+    
     <div className="container">
+      
       <div class="bg">
+      <div className='clickDetails'><h2>Click for Details!</h2></div>
           <div className="wellImageTitle">
           <h1>Well Done</h1>
           <h2>React, Redux, ag-Grid-React, React-map, Node.js,  Heroku, PostgreSQL</h2>

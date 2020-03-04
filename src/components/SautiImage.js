@@ -7,6 +7,7 @@ const WellImage = () => {
     <>
     <div className="container">
       <div class="bg">
+      <div className='clickDetails'><h2>Click for Details!</h2></div>
           <div className="wellImageTitle">
           <h1>SautiDataBank</h1>
           <h2>React, GraphQL, Apollo, ag-Grid-React, Node.js, Heroku, MySQL</h2>

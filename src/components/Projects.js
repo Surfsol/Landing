@@ -37,7 +37,9 @@ const Projects = () => {
 
             {/* </div>
             <div className="fproject"> */}
+            
             <NavLink className="projectHover" to={`/project/welldone`}>
+            
               <WellImage />
             </NavLink>
           

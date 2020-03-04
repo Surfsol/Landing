@@ -1,5 +1,7 @@
 $bg: rgba(0, 0, 0, 0.2);
 $sea1: #96c4de;
+$phone:800px;
+
 *,
 *:before,
 *:after {
@@ -31,15 +33,28 @@ img,
   position: relative;
   margin: 10% auto;
   z-index: 1;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: $phone) {
+    // width: 85%;
+    // margin:8% auto;
+  }
   .wellImageTitle{
       background-color: white;
       h1{ 
           color:blue;
           font-size: 4rem;
+          @media (max-width: $phone) {
+            font-size:2rem;
+          }
       }
       h2{
-        font-size:2rem
+        font-size:2rem;
+        @media (max-width: $phone) {
+          font-size:1rem;
+        }
       }
+     
   }
   img {
     width: 100%;

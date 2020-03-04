@@ -18,9 +18,15 @@ $sea3: #d6e6f3;
   h1 {
     color: blue;
     font-size: 5rem;
+    @media (max-width: $phone) {
+      font-size:2rem;
+    }
   }
   h2 {
     font-size: 1.2rem;
+    @media (max-width: $phone) {
+      font-size:1rem;
+    }
   }
 }
 .sautiBody {
@@ -28,6 +34,7 @@ $sea3: #d6e6f3;
   @media (max-width: $phone) {
     margin-top: 40vh;
   }
+  
 }
 .sautiPhotos {
   background-color: white;
@@ -54,11 +61,17 @@ $sea3: #d6e6f3;
   h1 {
     color: blue;
     font-size: 3rem;
+    @media (max-width: $phone) {
+      font-size:2rem;
+    }
   }
   p {
     width: 60%;
     margin: auto;
     font-size: 2rem;
+    @media (max-width: $phone) {
+      font-size:1.2rem;
+    }
   }
 }
 .sautiProblem {
@@ -70,11 +83,17 @@ $sea3: #d6e6f3;
     color: blue;
     font-size: 3rem;
     text-align: center;
+    @media (max-width: $phone) {
+      font-size:2rem;
+    }
   }
   p {
     width: 60%;
     margin: auto;
     font-size: 2rem;
+    @media (max-width: $phone) {
+      font-size:1.2rem;
+    }
   }
 }
 .sautiSolution {
@@ -85,11 +104,17 @@ $sea3: #d6e6f3;
     color: blue;
     font-size: 3rem;
     text-align: center;
+    @media (max-width: $phone) {
+      font-size:2rem;
+    }
   }
   p {
     width: 60%;
     margin: auto;
     font-size: 2rem;
+    @media (max-width: $phone) {
+      font-size:1.2rem;
+    }
   }
 }
 .sautiTeam {
@@ -98,11 +123,18 @@ $sea3: #d6e6f3;
   h1 {
     color: blue;
     font-size: 3rem;
+    @media (max-width: $phone) {
+      font-size:2rem;
+    }
+   
   }
   p {
     width: 60%;
     margin: auto;
     font-size: 1.5rem;
+    @media (max-width: $phone) {
+      font-size:1.2rem;
+    }
   }
 }
 .sautiProcess {
@@ -121,6 +153,9 @@ $sea3: #d6e6f3;
     margin: auto;
     font-size: 1.5rem;
     padding: 1%;
+    @media (max-width: $phone) {
+      font-size: 1.2rem
+    }
   }
 }
 
@@ -137,6 +172,9 @@ $sea3: #d6e6f3;
     text-align: left;
     font-size: 1.5rem;
     padding: 1%;
+    @media (max-width: $phone) {
+      font-size: 1.2rem
+    }
   }
   .colorBlue {
     color: blue;
