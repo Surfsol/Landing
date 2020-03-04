@@ -20,6 +20,7 @@ $phone:800px;
 .bg,
 .overlay {
   text-align: center;
+  
 }
 
 img,
@@ -27,7 +28,9 @@ img,
   transition: .1s all;
   border-radius: 3px;
 }
-
+.borderImage{
+  border: 1px solid purple;
+}
 .bg {
   float: left;
   position: relative;
@@ -35,6 +38,7 @@ img,
   z-index: 1;
   justify-content: center;
   align-items: center;
+  border:purple;
   @media (max-width: $phone) {
     // width: 85%;
     // margin:8% auto;

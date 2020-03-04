@@ -28,13 +28,15 @@ const WellDone = () => {
         <div>
           <h1>Sauti DataBank</h1>
           {" "}
+          <h2>Deployed Site:
           <a href="https://blissful-pare-60612f.netlify.com/" target="_blank">
-          <h2>Deployed site: Sauti</h2>
+          Sauti
           </a>
+          </h2>
         </div>
         <br></br>
         <div>
-          <ul class="link">
+          <div class="link">
             <a
               href="https://github.com/Lambda-School-Labs/sauti-databank-fe"
               target="_blank"
@@ -42,7 +44,7 @@ const WellDone = () => {
             >
              <h2> Frontend Github Code</h2>
             </a>
-            <br></br>
+      
             <a
               href="https://github.com/Lambda-School-Labs/sauti-databank-be"
               target="_blank"
@@ -50,7 +52,7 @@ const WellDone = () => {
             >
              <h2> Backend Github Code</h2>
             </a>
-          </ul>
+          </div>
         </div>
       </div>
       <section className="sautiBody">
