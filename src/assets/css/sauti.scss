@@ -1,4 +1,5 @@
 $phone: 800px;
+$tab: 1100px;
 $sea1: #96c4de;
 $sea2: #486591;
 $sea3: #d6e6f3;
@@ -9,7 +10,13 @@ $sea3: #d6e6f3;
   position: fixed;
   width: 100%;
   top: 0;
-  height: 35vh;
+  height: 270px;
+  @media (max-width: $tab) {
+    height: 250px;
+  }
+  @media (max-width: $phone) {
+    height: 200px;
+  }
   .back {
     text-align: left;
     padding-top: 2%;
@@ -39,11 +46,14 @@ $sea3: #d6e6f3;
   }
 }
 .sautiBody {
-  margin-top: 33vh;
-  @media (max-width: $phone) {
-    margin-top: 40vh;
+  margin-top: 270px;
+
+  @media (max-width: $tab) {
+    margin-top: 250px;
   }
-  
+  @media (max-width: $phone) {
+    margin-top: 200px;
+  }
 }
 .sautiPhotos {
   background-color: white;
