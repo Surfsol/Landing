@@ -505,9 +505,15 @@ img,
       h1{ 
           color:blue;
           font-size: 4rem;
+          @media (max-width: $phone) {
+            font-size:2rem;
+          }
       }
       h2{
-        font-size:2rem
+        font-size:2rem;
+        @media (max-width: $phone) {
+          font-size:1rem;
+        }
       }
   }
   img {
