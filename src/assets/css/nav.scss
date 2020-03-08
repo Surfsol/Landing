@@ -1,4 +1,4 @@
-$phone: 700px;
+$phone: 600px;
 $tab: 1100px;
 $sea1: #96c4de;
 $sea2: #486591;
@@ -98,11 +98,6 @@ body {
     }
   }
 
-  p {
-    font-size: 2rem;
-    display: block;
-    font-family: "Bree Serif", serif;
-  }
   .nav-btn {
     background: $sea2;
     color: $sea3;
@@ -126,16 +121,17 @@ body {
     img {
       width: 2rem;
       height: 2rem;
-      @media (max-width: $tab) {
-        width: 1.5rem;
-        height: 1.5rem;
-      }
+   
       @media (max-width: $phone) {
         display: none;
       }
     }
     p {
       font-size: 1.5rem;
+      font-family: "Bree Serif", serif;
+      @media (max-width: $tab) {
+        display: none;
+      }
       @media (max-width: $phone) {
         display: none;
       }
