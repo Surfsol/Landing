@@ -40,7 +40,7 @@ const IconCard = props => {
         {projects.list.map(e => (
           <React.Fragment key={e.id}>
             <Grid list={e} />
-            <Comments item={e} />
+            {/* <Comments item={e} /> */}
           </React.Fragment>
         ))}
       </div>
