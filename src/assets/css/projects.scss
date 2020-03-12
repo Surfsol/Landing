@@ -124,7 +124,7 @@ table {
 }
 $bg: rgba(0, 0, 0, 0.2);
 $tab: 1100px;
-$phone:800px;
+$phone: 600px;
 $sea1: #96c4de;
 $sea2: #486591;
 $sea3: #d6e6f3;
@@ -150,18 +150,17 @@ $sea3: #d6e6f3;
   }
 
   .fproject {
-    
-    .projectHover{
+    .projectHover {
       background: #3e98d8;
       width: 60%;
-    height:400px;
+      height: 400px;
     }
 
     .projectHover:hover {
       background: #3e98d8;
-   
+
       width: 60%;
-    height:400px;
+      height: 400px;
     }
   }
 }
@@ -232,10 +231,8 @@ $sea3: #d6e6f3;
     justify-content: center;
   }
 
-
   .projectcontent,
-  .image-body
-  .container {
+  .image-body .container {
     width: 50%;
     background: $sea1;
     height: 100%;
@@ -453,11 +450,11 @@ $sea3: #d6e6f3;
   background-color: #486591;
 }
 
-.body-content-first{
+.body-content-first {
   margin-top: 5%;
 }
 
-.body-content-last{
+.body-content-last {
   margin-bottom: 0%;
 }
 
@@ -471,55 +468,50 @@ $sea3: #d6e6f3;
 // }
 .pgcontainer {
   margin: 1rem auto;
- 
+  max-width: 960px;
   background: $sea1;
-  width: 60%;
-height:400px;
+  width: 90%;
+  height: 400px;
 
-@media (max-width: $phone) {
-  width: 95%;
   
 }
-}
-
 
 .pgbg,
 .pgoverlay {
   text-align: center;
- 
 }
 
 img,
 .pgoverlay {
-  transition: .1s all;
+  transition: 0.1s all;
   border-radius: 3px;
 }
 
 .pgbg {
   float: left;
   position: relative;
-  margin:10% auto;
+  margin: 10% auto;
   z-index: 1;
-  .pgwellImageTitle{
-      background-color: white;
-      h1{ 
-          color:blue;
-          font-size: 4rem;
-          @media (max-width: $phone) {
-            font-size:2rem;
-          }
+  .pgwellImageTitle {
+    background-color: white;
+    h1 {
+      color: blue;
+      font-size: 4rem;
+      @media (max-width: $phone) {
+        font-size: 2rem;
       }
-      h2{
-        font-size:2rem;
-        @media (max-width: $phone) {
-          font-size:1rem;
-        }
+    }
+    h2 {
+      font-size: 2rem;
+      @media (max-width: $phone) {
+        font-size: 1rem;
       }
+    }
   }
   img {
     width: 100%;
     margin-bottom: -4px;
-    height:400px
+    height: 400px;
   }
   .pgoverlay {
     position: absolute;
@@ -532,12 +524,12 @@ img,
     opacity: 0;
     h2 {
       padding-top: 20%;
-      font-family: 'Droid Serif', serif;
+      font-family: "Droid Serif", serif;
       color: white;
       font-size: 4rem;
     }
     p {
-      font-family: 'Julius Sans One', sans-serif;
+      font-family: "Julius Sans One", sans-serif;
     }
   }
   &:hover {
@@ -550,4 +542,3 @@ img,
     }
   }
 }
-

@@ -11,8 +11,11 @@ $phone:800px;
 }
 
 .container {
-  width: 100%;
+  max-width: 960px;
+  width: 90%;
   margin: 1rem auto;
+  padding-left:0rem;
+  padding-right:0rem;
   background-color: $sea1;
 }
 

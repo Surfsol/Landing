@@ -13,25 +13,29 @@ import login from "../assets/images/sautiLogin.png";
 import sautiDisplay from "../assets/images/sautiDisplay.png";
 import Backbutton from "./BackButton";
 
-import netlify from '../assets/icons/netlify.png'
-import heroku from '../assets/icons/heroku.png'
-import postgres from '../assets/icons/post.png'
-import node from '../assets/icons/nodejs.png'
+import netlify from "../assets/icons/netlify.png";
+import heroku from "../assets/icons/heroku.png";
+import postgres from "../assets/icons/post.png";
+import node from "../assets/icons/nodejs.png";
 
 const WellDone = () => {
   return (
     <>
       <div className="sautiTitle">
         <div className="back">
-          <Backbutton />
+          <div className="buttonDiv">
+            <Backbutton />
+          </div>
+
+          <h1>Sauti DataBank</h1>
         </div>
         <div>
-          <h1>Sauti DataBank</h1>
           {" "}
-          <h2>Deployed Site:
-          <a href="https://blissful-pare-60612f.netlify.com/" target="_blank">
-          Sauti
-          </a>
+          <h2>
+            Deployed Site:
+            <a href="https://blissful-pare-60612f.netlify.com/" target="_blank">
+              Sauti
+            </a>
           </h2>
         </div>
         <br></br>
@@ -42,15 +46,15 @@ const WellDone = () => {
               target="_blank"
               class="button"
             >
-             <h2> Frontend Github Code</h2>
+              <h2> Frontend Github Code</h2>
             </a>
-      
+
             <a
               href="https://github.com/Lambda-School-Labs/sauti-databank-be"
               target="_blank"
               class="button"
             >
-             <h2> Backend Github Code</h2>
+              <h2> Backend Github Code</h2>
             </a>
           </div>
         </div>
