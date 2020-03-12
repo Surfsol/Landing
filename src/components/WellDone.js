@@ -14,28 +14,32 @@ import ag from "../assets/images/ag-grid-react.png";
 import material from "../assets/images/material-ui.png";
 import redux from "../assets/icons/redux.jpg";
 import react from "../assets/images/react.jpg";
-import netlify from '../assets/icons/netlify.png'
-import heroku from '../assets/icons/heroku.png'
-import postgres from '../assets/icons/post.png'
-import node from '../assets/icons/nodejs.png'
+import netlify from "../assets/icons/netlify.png";
+import heroku from "../assets/icons/heroku.png";
+import postgres from "../assets/icons/post.png";
+import node from "../assets/icons/nodejs.png";
 
 const WellDone = () => {
   return (
     <>
       <div className="wellTitle">
         <div className="back">
-          <Backbutton />
+          <div className="buttonDiv">
+            <Backbutton />
+          </div>
+
+          <h1>Well Done</h1>
         </div>
         <div>
-          <h1>Well Done</h1>
           {" "}
-          <h2>Deployed Site:
-          <a href="https://welldone.netlify.com/" target="_blank">
-           WellDone
-          </a>
+          <h2>
+            Deployed Site:
+            <a href="https://welldone.netlify.com/" target="_blank">
+              WellDone
+            </a>
           </h2>
         </div>
-     <br></br>
+        <br></br>
         <div>
           <div class="link">
             <a
@@ -43,15 +47,15 @@ const WellDone = () => {
               target="_blank"
               class="button"
             >
-               <h2> Frontend Github Code</h2>
+              <h2> Frontend Github Code</h2>
             </a>
-         
+
             <a
               href="https://github.com/Lambda-School-Labs/well-done-be"
               target="_blank"
               class="button"
             >
-               <h2> Backend Github Code</h2>
+              <h2> Backend Github Code</h2>
             </a>
           </div>
         </div>
@@ -240,7 +244,6 @@ const WellDone = () => {
             </li>
           </ul>
         </div>
-        
       </div>
     </>
   );

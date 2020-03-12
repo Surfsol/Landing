@@ -10,7 +10,7 @@ $sea3: #d6e6f3;
   position: fixed;
   width: 100%;
   top: 0;
-  height: 270px;
+  height: 200px;
   @media (max-width: $tab) {
     height: 250px;
   }
@@ -19,15 +19,25 @@ $sea3: #d6e6f3;
   }
 
   .back {
+    display: flex;
+    justify-content: flex-start;
     text-align: left;
     padding-top: 2%;
-    padding-left: 2%;
-  }
-  h1 {
-    color: blue;
-    font-size: 5rem;
-    @media (max-width: $phone) {
-      font-size: 2rem;
+
+    .buttonDiv {
+      width: 100px;
+      padding-left: 2%;
+    }
+
+    h1 {
+      position: relative;
+      margin: auto;
+      right: 50px;
+      color: blue;
+      font-size: 5rem;
+      @media (max-width: $phone) {
+        font-size: 2rem;
+      }
     }
   }
   h2 {
@@ -47,7 +57,7 @@ $sea3: #d6e6f3;
   }
 }
 .wellBody {
-  margin-top: 270px;
+  margin-top: 200px;
 
   @media (max-width: $tab) {
     margin-top: 250px;
