@@ -130,6 +130,12 @@ $sea2: #486591;
 $sea3: #d6e6f3;
 
 .projectsNav {
+  height: 20vh;
+
+
+  @media (max-width: $phone) {
+    height: 16vh;
+  }
 }
 
 .featured {
@@ -182,13 +188,8 @@ $sea3: #d6e6f3;
 }
 
 .project-wrap {
-  margin-top: 20vh;
   background: $sea1;
   width: 100%;
-
-  @media (max-width: $phone) {
-    margin-top: 16vh;
-  }
 }
 
 .lambdatitle {
