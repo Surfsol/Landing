@@ -1,6 +1,8 @@
 import React from "react";
 import Nav from "./Nav";
 
+import NavNew from './NavNew'
+
 import { NavLink } from "react-router-dom";
 
 import WellImage from "./WellImage";
@@ -16,18 +18,20 @@ import airbnb from "../assets/images/air2.png";
 import vr from "../assets/images/vr.png";
 import subReddit from "../assets/images/subreddit.png";
 import SautiImage from "./SautiImage";
+import HeroProject from './HeroProject'
 
 const Projects = () => {
   return (
     <>
       <div className="projectsNav">
-        <Nav />
+        <NavNew />
       </div>
+      <div><HeroProject/></div>
 
       <div className="project-wrap">
-        <div className="lambdatitle">
-          <h1>Projects</h1>
-        </div>
+        {/* <div className="lambdatitle">
+        
+        </div> */}
 
         <div className="featuredprojects">
           <div className="fproject">
