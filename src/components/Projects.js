@@ -29,9 +29,6 @@ const Projects = () => {
       <div><HeroProject/></div>
 
       <div className="project-wrap">
-        {/* <div className="lambdatitle">
-        
-        </div> */}
 
         <div className="featuredprojects">
           <div className="fproject">

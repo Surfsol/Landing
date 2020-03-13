@@ -48,6 +48,9 @@ img,
   }
   .clickDetails h2{
     font-size: 1.5rem;
+    @media (max-width: $phone) {
+      font-size: .7rem;
+    }
   }
   .wellImageTitle{
       background-color: white;

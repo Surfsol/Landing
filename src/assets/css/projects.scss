@@ -191,6 +191,9 @@ $sea3: #d6e6f3;
   background: whitesmoke;
   width: 100%;
   padding-top: 3%;
+  @media (max-width: $phone) {
+    padding-top: 7%;
+  }
 }
 
 .lambdatitle {
