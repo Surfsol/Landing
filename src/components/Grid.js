@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   },
 
   title: {
-    fontSize: 20
+    fontSize: 30
   }
 });
 
