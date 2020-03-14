@@ -22,6 +22,9 @@ import check from "../assets/icons/check.png";
 import graphql from "../assets/images/graphApollo.png";
 import netlify from "../assets/icons/netlify.png";
 
+import NavNew from './NavNew'
+import HeroIcons from './HeroIcons'
+
 import "../assets/css/icons.scss";
 
 import IconCard from "./IconCard";
@@ -36,10 +39,11 @@ const Icons = props => {
   return (
     <>
       <div className="navSkills">
-        <Nav />
+      <NavNew />
       </div>
+      <div><HeroIcons/></div>
       <div className="icon-wrapper">
-        <div className="techLink">
+        {/* <div className="techLink">
           <a href="#HTML" class="tlink">
             HTML / CSS
           </a>
@@ -55,8 +59,7 @@ const Icons = props => {
           <a href="#Hosting" class="tlink">
             Hosting
           </a>
-        </div>
-        <h1>Click to Discover Projects by Technology:</h1>
+        </div> */}
         <div className="icons">
           <div className="icon-name">
             <h2>HTML / CSS</h2>

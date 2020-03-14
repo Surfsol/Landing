@@ -17,7 +17,7 @@ padding:.7rem;
 
 .modal-fix:hover{
   color:$sea2;
-  background:$sea3;
+  background:$sea2;
 }
 
 .navSkills {
@@ -25,7 +25,7 @@ padding:.7rem;
 }
 .icon-wrapper {
   margin-top: 20vh;
-  background: $sea3;
+  background: whitesmoke;
   width: 100%;
 
   @media (max-width: $phone) {
@@ -60,6 +60,7 @@ padding:.7rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-top:3%;
 
     .icon-name {
       display: flex;

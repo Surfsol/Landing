@@ -188,8 +188,12 @@ $sea3: #d6e6f3;
 }
 
 .project-wrap {
-  background: $sea3;
+  background: whitesmoke;
   width: 100%;
+  padding-top: 1.5%;
+  @media (max-width: $phone) {
+    padding-top: 7%;
+  }
 }
 
 .lambdatitle {
@@ -470,7 +474,7 @@ $sea3: #d6e6f3;
 .pgcontainer {
   margin: 1rem auto;
   max-width: 960px;
-  background: $sea3;
+  background: whitesmoke;
   width: 90%;
   height: 400px;
 
