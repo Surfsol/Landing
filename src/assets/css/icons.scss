@@ -61,6 +61,9 @@ padding:.7rem;
     justify-content: center;
     flex-direction: column;
     padding-top:3%;
+    @media (max-width: $phone) {
+      padding-top:10%;
+    }
 
     .icon-name {
       display: flex;

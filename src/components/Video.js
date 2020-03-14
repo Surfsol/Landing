@@ -41,7 +41,7 @@ const Video = () => {
           </a>
           <div class="git">
             <a href="https://github.com/Surfsol" target="_blank">
-              <img src={git} />
+            <i class="fab fa-github"></i>
               <p>Github/surfsol</p>
             </a>
           </div>

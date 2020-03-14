@@ -19,7 +19,7 @@ body {
   color: #fff;
 
   @media (max-width: $phone) {
-    height: 15vh;
+    height: 10vh;
   }
 }
 
@@ -29,6 +29,9 @@ body {
   margin-top: 10vh;
   text-align: center;
   z-index: 3;
+  @media (max-width: $phone) {
+    margin-top: 12vh;
+  }
 }
 
 .nav {
@@ -38,7 +41,8 @@ body {
   overflow: hidden;
 
   @media (max-width: $phone) {
-    height: 16vh;
+    height: 10vh;
+    margin-top: 12vh;
   }
 
   video {
@@ -59,7 +63,7 @@ body {
   opacity: 0.85; //%see through
 
   @media (max-width: $phone) {
-    height: 16.1vh;
+    height: 10vh;
   }
 }
 

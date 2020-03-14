@@ -43,9 +43,9 @@ body {
   overflow: hidden;
   z-index: 3;
 
-//   @media (max-width: $phone) {
-//     height: 7vh;
-//   }
+  @media (max-width: $phone) {
+    height: 12vh;
+  }
 
   video {
     min-width: 100%;
