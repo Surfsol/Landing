@@ -5,7 +5,7 @@ import ModalContact from "./ContactModal";
 
 import videoDolphin from "../assets/images/Dolphin.mp4";
 
-import "../assets/css/HeroProject.scss";
+import "../assets/css/heroProject.scss";
 
 import git from "../assets/icons/github.png";
 
