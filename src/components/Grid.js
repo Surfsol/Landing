@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./Nav";
+import NavNew from "./NavNew";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -37,7 +37,7 @@ const Grid = props => {
   return (
     <>
       <div>
-        <Nav />
+        <NavNew />
       </div>
       <div style={listStyle}>
         <Card className={classes.card}>
