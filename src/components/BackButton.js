@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 
-import backbutton from '../assets/icons/backbutton.png'
+import leftarrow from '../assets/icons/leftarrow.png'
 
 import '../assets/css/backbutton.scss'
 
@@ -11,7 +11,7 @@ const Back = ()=> {
     return (
         <>
         <NavLink to='/projects'>
-        <img src={backbutton} alt="back button" />
+        <img src={leftarrow} alt="back button" />
           </NavLink>
           
         </>
