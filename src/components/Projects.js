@@ -26,7 +26,7 @@ const Projects = () => {
       <div className="projectsNav">
         <NavNew />
       </div>
-      <div><HeroProject/></div>
+      {/* <div><HeroProject/></div> */}
 
       <div className="project-wrap">
 
