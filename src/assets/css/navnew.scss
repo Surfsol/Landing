@@ -13,7 +13,7 @@ body {
 }
 
 .newnav {
-  height: 10vh;
+  height: 13vh;
   display: flex;
   align-items: center;
   color:$sea2;
@@ -26,8 +26,6 @@ body {
 }
 
 .newcontainer {
-  padding-left: 1rem;
-  padding-right: 1rem;
   margin: auto;
   text-align: center;
   z-index: 3;
@@ -39,17 +37,11 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 10vh;
-  overflow: hidden;
-  z-index: 3;
+  // overflow: hidden;
+  //z-index: 3;
 
   @media (max-width: $phone) {
     height: 12vh;
-  }
-
-  video {
-    min-width: 100%;
-    min-height: 100%;
   }
 }
 

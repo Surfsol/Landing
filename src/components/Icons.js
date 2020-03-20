@@ -38,28 +38,10 @@ const Icons = props => {
 
   return (
     <>
-      <div className="navSkills">
+    
       <NavNew />
-      </div>
-      <div><HeroIcons/></div>
+    
       <div className="icon-wrapper">
-        {/* <div className="techLink">
-          <a href="#HTML" class="tlink">
-            HTML / CSS
-          </a>
-          <a href="#Frontend" class="tlink">
-            Frontend
-          </a>
-          <a href="#Backend" class="tlink">
-            Backend
-          </a>
-          <a href="#Database" class="tlink">
-            Database
-          </a>
-          <a href="#Hosting" class="tlink">
-            Hosting
-          </a>
-        </div> */}
         <div className="icons">
           <div className="icon-name">
             <h2>HTML / CSS</h2>

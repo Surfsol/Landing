@@ -5,13 +5,13 @@ import sauti from "../assets/images/sautiData.png";
 const WellImage = () => {
   return (
     <>
-      <div className="container">
+      <div className="scontainer">
         <div class="bg">
           <div className="borderImage">
             <div className="sautiImageTitle">
               <h1>Sauti DataBank</h1>
               <h2>
-                React, GraphQL, Apollo, ag-Grid-React, Node.js, Heroku, MySQL
+                React, GraphQL, Apollo, ag-Grid-React, Node.js, AWS, MySQL
               </h2>
 
               <img src={sauti} alt="Sauti DataBank" />
