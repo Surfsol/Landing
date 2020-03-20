@@ -1,6 +1,7 @@
 $bg: rgba(0, 0, 0, 0.2);
 $sea1: #96c4de;
 $phone: 800px;
+$tab: 1100px;
 
 *,
 *:before,
@@ -58,6 +59,12 @@ img,
     align-items: flex-start;
     background-color: white;
     height: 550px;
+    @media (max-width: $tab) {
+      height: 500px;
+    }
+    @media (max-width: $phone) {
+      height: 450px;
+    }
     h1 {
       color: black;
       font-size: 4rem;
@@ -88,6 +95,13 @@ img,
       margin-top: 5%;
       background-color: black;
       color: white;
+      font-size: 1.2rem;
+      @media (max-width: $tab) {
+        font-size: 1rem;
+      }
+      @media (max-width: $phone) {
+        font-size: .7rem;
+      }
     }
   }
   
