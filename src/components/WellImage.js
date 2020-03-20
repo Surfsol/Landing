@@ -5,11 +5,8 @@ import wellDash from "../assets/images/wellDash.png";
 const WellImage = () => {
   return (
     <>
-      <div className="container">
+      <div className="wcontainer">
         <div class="bg">
-          <div className="clickDetails">
-            <h2>Click for Details!</h2>
-          </div>
           <div className="borderImage">
             <div className="wellImageTitle">
               <h1>Well Done</h1>
@@ -17,10 +14,12 @@ const WellImage = () => {
                 React, Redux, ag-Grid-React, React-map, Node.js, Heroku,
                 PostgreSQL
               </h2>
+              <img src={wellDash} alt="well done" />
+              <button>See Project</button>
             </div>
-            <img src={wellDash} alt="well done" />
+            
             <div class="overlay">
-              <h2>Project Overview</h2>
+              <h2>Well Done</h2>
             </div>
           </div>
         </div>

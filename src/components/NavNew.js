@@ -12,8 +12,8 @@ import git from "../assets/icons/github.png";
 const NavBar = () => {
   return (
     <>
-      <header class="newnav newcontainer">
-        <div class="newnav-content">
+      <header className="newnav newcontainer">
+        <div className="newnav-content">
           <div className="NavName">
             <h1>Russell Terry</h1>
           </div>

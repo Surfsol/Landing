@@ -1,25 +1,24 @@
 import React from "react";
-import "../assets/css/wellImage.scss";
+import "../assets/css/sautiImage.scss";
 import sauti from "../assets/images/sautiData.png";
 
 const WellImage = () => {
   return (
     <>
-      <div className="container">
+      <div className="scontainer">
         <div class="bg">
-          <div className="clickDetails">
-            <h2>Click for Details!</h2>
-          </div>
           <div className="borderImage">
-            <div className="wellImageTitle">
-              <h1>SautiDataBank</h1>
+            <div className="sautiImageTitle">
+              <h1>Sauti DataBank</h1>
               <h2>
-                React, GraphQL, Apollo, ag-Grid-React, Node.js, Heroku, MySQL
+                React, GraphQL, Apollo, ag-Grid-React, Node.js, AWS, MySQL
               </h2>
+
+              <img src={sauti} alt="Sauti DataBank" />
+              <button>See Project</button>
             </div>
-            <img src={sauti} alt="well done" />
             <div class="overlay">
-              <h2>Project Overview</h2>
+              <h2>Sauti DataBank</h2>
             </div>
           </div>
         </div>

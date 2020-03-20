@@ -20,17 +20,14 @@ padding:.7rem;
   background:$sea2;
 }
 
-.navSkills {
-  margin-bottom: 0;
-}
+
 .icon-wrapper {
-  margin-top: 20vh;
   background: whitesmoke;
   width: 100%;
 
-  @media (max-width: $phone) {
-    margin-top: 16vh;
-  }
+  // @media (max-width: $phone) {
+  //   margin-top: 16vh;
+  // }
 
   .techLink {
       display: none;
@@ -70,7 +67,13 @@ padding:.7rem;
       flex-wrap: wrap;
       justify-content: center;
       flex-direction: column;
-      margin-top: 3%;
+      margin-top: 5%;
+      @media (max-width: $tab) {
+        margin-top: 12%;
+      }
+      @media (max-width: $phone) {
+        margin-top: 13%;
+      }
       h2 {
         color: $sea1;
         font-size: 5rem;
