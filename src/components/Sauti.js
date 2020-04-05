@@ -29,12 +29,12 @@ const WellDone = () => {
 
           <h1>Sauti DataBank</h1>
         </div>
-        <div>
+        <div className="siteLink">
           {" "}
           <h2>
-            Deployed Site:
-            <a href="https://blissful-pare-60612f.netlify.com/" target="_blank">
-              Sauti
+            
+            <a href="http://databank.sautiafrica.org/" target="_blank">
+            http://databank.sautiafrica.org/
             </a>
           </h2>
         </div>
@@ -61,7 +61,7 @@ const WellDone = () => {
       </div>
       <section className="sautiBody">
         <div className="sautiTeam">
-          <h1>Our Team</h1>
+        
           <h1>Team Lead: Russell Terry</h1>
           <p>
             Our team consisted of 6 fullstack web developers. Everyone worked
