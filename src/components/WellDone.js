@@ -30,7 +30,7 @@ const WellDone = () => {
 
           <h1>Well Done</h1>
         </div>
-        <div>
+        <div className="siteLink">
           {" "}
           <h2>
             Deployed Site:

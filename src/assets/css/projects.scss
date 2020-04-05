@@ -528,13 +528,13 @@ img,
       font-family: "Julius Sans One", sans-serif;
     }
   }
-  &:hover {
-    .pgoverlay {
-      opacity: 1;
-    }
-    img {
-      -webkit-filter: blur(2px);
-      filter: blur(2px);
-    }
-  }
+  // &:hover {
+  //   .pgoverlay {
+  //     opacity: 1;
+  //   }
+  //   img {
+  //     -webkit-filter: blur(2px);
+  //     filter: blur(2px);
+  //   }
+  // }
 }

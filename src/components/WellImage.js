@@ -18,9 +18,9 @@ const WellImage = () => {
               <button>See Project</button>
             </div>
             
-            <div class="overlay">
+            {/* <div class="overlay">
               <h2>Well Done</h2>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

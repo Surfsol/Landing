@@ -6,8 +6,8 @@ img {
   height: 50px;
   background-color: whitesmoke;
   @media (max-width: $tab) {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
   @media (max-width: $phone) {
     width: 25px;

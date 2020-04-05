@@ -91,7 +91,7 @@ const Projects = () => {
                 </div>
                 <img src={airbnb} alt="airbnb" />
 
-                <div class="pgoverlay">
+                {/* <div class="pgoverlay">
                   <a
                     href="https://frontend-git-master.surfsol.now.sh/"
                     target="_blank"
@@ -99,7 +99,7 @@ const Projects = () => {
                   >
                     <h2> Deployed Site</h2>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
 
