@@ -7,9 +7,9 @@ import ag from "../assets/images/ag-grid-react.png";
 import material from "../assets/images/material-ui.png";
 import graphql from "../assets/images/graphApollo.png";
 import react from "../assets/images/react.jpg";
-import sautiAccounts from "../assets/images/sautiAccounts.png";
+import sautiAccounts from "../assets/images/sautiAccounts1.png";
 import filters from "../assets/images/sautifilter.png";
-import login from "../assets/images/sautiLogin.png";
+import line from "../assets/images/sautiLine.png";
 import sautiDisplay from "../assets/images/sautiDisplay.png";
 import Backbutton from "./BackButton";
 
@@ -73,7 +73,7 @@ const WellDone = () => {
             <img src={sautiDisplay} />
           </div>
           <div class="sautiPic">
-            <img src={login} />
+            <img src={line} />
           </div>
 
           <div class="sautiPic">
