@@ -6,11 +6,11 @@ img {
   height: 50px;
   background-color: whitesmoke;
   @media (max-width: $tab) {
-    width: 30px;
-    height: 30px;
-  }
-  @media (max-width: $phone) {
     width: 25px;
     height: 25px;
+  }
+  @media (max-width: $phone) {
+    width: 20px;
+    height: 20px;
   }
 }
