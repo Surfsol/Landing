@@ -13,7 +13,7 @@ import line from "../assets/images/sautiLine.png";
 import sautiDisplay from "../assets/images/sautiDisplay.png";
 import Backbutton from "./BackButton";
 
-import netlify from "../assets/icons/netlify.png";
+import aws from "../assets/icons/aws-icon.png";
 import heroku from "../assets/icons/heroku.png";
 import postgres from "../assets/icons/post.png";
 import node from "../assets/icons/nodejs.png";
@@ -136,15 +136,9 @@ const WellDone = () => {
             and accessing data. Also, due to its popularity it will be
             convenient for future database management.{" "}
           </h3>
-          <img className="techsUsed" src={heroku} />
+          <img className="techsUsed" src={aws} />
           <h3>
-            <span className="colorBlue">Heroku</span>: Free to deploy the
-            Backend, easy to test staging.
-          </h3>
-          <img className="techsUsed" src={netlify} />
-          <h3>
-            <span className="colorBlue">Netlify</span>: Free and easy to deploy
-            dynamic frontend sites.
+            <span className="colorBlue">AWS</span>: To deploy Frontend and Backend
           </h3>
         </div>
         <div className="sautiCurrent">
@@ -168,93 +162,56 @@ const WellDone = () => {
           </p>
         </div>
         <div className="sautiProblem">
-          <h1>The Problem</h1>
+          <h1>The Issues</h1>
 
           <p>
             Sauti has not implemented a user interface with proper filtering
-            features and displays for interested parties to utilize the data.
+            features and displays for interested parties to research the data.
             They would also like to have users log into the site, and make
             payment to gain access to special filtering and downloading
-            functions.{" "}
+            functions.
+            Additionally, they would like to expand their data search capabilities
+            by adding unlimited filters on the bar charts and adding a line graph.
+            Also, the Sauti staff needs administration tools to manage and track
+            user activities.{" "}
           </p>
           <br></br>
         </div>
         <div className="sautiSolution">
           <h1>The Solution</h1>
           <p>
-            Our team created a new Backend using Node.js to organize and store
-            data so it can easily be accessed. All sensor data is now being sent
-            through an api and is being stored in a PostgreSQL database.
+            We cleaned up the existing code, then dynamically enabled additional filtering 
+            on the bar chart. In addition to the date picker, we added buttons to quickly select
+            filtering by year and quarter.
           </p>
           <br></br>
           <p>
-            A new Frontend was created using React and Redux to access and
-            display present and historical data. Users can quickly see current
-            and historical performance of well pumps. This data is visualized
-            using maps, charts and calendar displays.
+            The url is now corresponds to the selected filters so users can share links
+            and filtering can easily be reproduced.  These links can also be shared on
+            twitter and facebook.
           </p>
           <br></br>
           <p>
-            NGOs that rely on Well Done's data can now access the site
-            themselves. They have access to all sensor and account information
-            related to their organization.
+            A line graph was added that enables users to see monthly and quarterly trends. 
           </p>
           <br></br>
           <p>
-            Well Done staff now has the ability to perform all crud operations
-            on sensors, organizations and user accounts. Data can be accessed by
-            WellDone staff, NGOs and technicians.{" "}
+            We added an administration page that enables the admin to monitor and or perform crud 
+            operations on user accounts.  The grid offers easy filtering to quickly 
+            locate accounts.
           </p>
           <br></br>
           <p>
-            WellDone staff has access to all data, NGOs are limited to viewing
-            only their pumps and account information. Technicians are only able
-            to access graphical pump displays and historical data related to
-            pumps.
+            Paypal was added, so users can pay to access all filtering features on the site.
+          </p>
+          <br></br>
+          <p>
+            Users are now only able to access data based upon their tier.  Limited
+            filtering options are available to non paying users.
           </p>
         </div>
 
-        <div className="sautiProcess">
-          <h1>The Process</h1>
-          <ul>
-            <li>
-              First, we took the time to understand the existing architecture.
-              The backend consisted of Node.js, Graphql and a MySQL database.
-              The Frontend was using React, Graphql and Nivo to display charts.
-            </li>
-            <li>
-              {" "}
-              After understanding the architecture, we took the time to research
-              ways we could improve upon it. We spent a lot of time researching
-              Graphql and Apollo, and Nivo for displaying graphs.
-            </li>
-            <li>
-              We performed user research with WellDone staff members to get
-              better insight as to how typical users would use the site.{" "}
-            </li>
-            <li>
-              This was followed up with technological research for potential
-              solutions. These options were then illustrated by the UX design
-              team.
-            </li>
-            <li>
-              We presented options to the stakeholder and agreed upon a
-              solution.
-            </li>
-            <li>
-              Created release canvases that were approved by the stakeholder.
-            </li>
-            <li>
-              Throughout development, only minor changes were requested by the
-              stakeholders, which were easily accommodated due to our detailed
-              planning, research and communication with the stakeholders.
-            </li>
-            <li>
-              We also collaborated with the Android team to provide android
-              specific endpoints in Node.js.
-            </li>
-          </ul>
-        </div>
+        
       </section>
     </>
   );
