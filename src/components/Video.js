@@ -5,6 +5,7 @@ import Techs from "./Techs";
 import ContactModal from "./ContactModal";
 
 import videoDolphin from "../assets/images/dolp2.mp4";
+import earth from "../assets/images/earth.mp4"
 
 import "../assets/css/video.scss";
 
@@ -19,7 +20,7 @@ const Video = () => {
         <div class="fullscreen">
           {/* must be muted to play when loaded on chrome */}
           <video
-            src={videoDolphin}
+            src={earth}
             autoPlay="true"
             loop="true"
             startTime="300"
