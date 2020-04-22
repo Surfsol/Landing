@@ -32,9 +32,8 @@ const WellDone = () => {
         <div className="siteLink">
           {" "}
           <h2>
-            
             <a href="http://databank.sautiafrica.org/" target="_blank">
-            http://databank.sautiafrica.org/
+              http://databank.sautiafrica.org/
             </a>
           </h2>
         </div>
@@ -61,7 +60,6 @@ const WellDone = () => {
       </div>
       <section className="sautiBody">
         <div className="sautiTeam">
-        
           <h1>Team Lead: Russell Terry</h1>
           <p>
             Our team consisted of 6 fullstack web developers. Everyone worked
@@ -138,7 +136,8 @@ const WellDone = () => {
           </h3>
           <img className="techsUsed" src={aws} />
           <h3>
-            <span className="colorBlue">AWS</span>: To deploy Frontend and Backend
+            <span className="colorBlue">AWS</span>: To deploy Frontend and
+            Backend
           </h3>
         </div>
         <div className="sautiCurrent">
@@ -154,64 +153,69 @@ const WellDone = () => {
           </p>
           <br></br>
           <p>
-            The organization has been collecting data related to individual
-            traders of produce, goods and materials throughout a Region of
-            Africa known as Sauti since 2017. This data is very valuable to
-            Government officials, researchers and developers for insight to
-            market trends, pricing and trader demographics.
+            The organization has been collecting data from informal trades
+            in Region of Africa known as Sauti since 2017. This data
+            is very valuable to Government officials, researchers and developers
+            for insight to market trends, pricing and trader demographics.
           </p>
         </div>
         <div className="sautiProblem">
           <h1>The Issues</h1>
 
           <p>
-            Sauti has not implemented a user interface with proper filtering
-            features and displays for interested parties to research the data.
-            They would also like to have users log into the site, and make
-            payment to gain access to special filtering and downloading
-            functions.
-            Additionally, they would like to expand their data search capabilities
-            by adding unlimited filters on the bar charts and adding a line graph.
-            Also, the Sauti staff needs administration tools to manage and track
-            user activities.{" "}
+            Since started the project as Team Lead, the site only consisted of 
+            a bar chart with three filtering options.  Our task was to make the
+            bar chart more dynamic by adding unlimited filtering options, a date
+            picker as well as fixing overlapping value displays.
+            In addition to the Bar Chart, the site needed other ways to display
+            data, such as in a line graph to show trends over time.
+            A long with displaying data, we wanted to make the UI more intuitive and informative.
+            Creating links to social media was also very important so the site could gain 
+            popularity. 
+            Sauti then decided to make this a standalone app, in which most of the data
+            would need to be accessed via a paywall.  So we needed to implement tiered access 
+            to certain types of data and filtering tools.  While creating register, login 
+            and an account page for users to manage their accounts.
+            Administration tools were also needed to manage
+            and track customer accounts. {" "}
           </p>
           <br></br>
         </div>
         <div className="sautiSolution">
           <h1>The Solution</h1>
           <p>
-            We cleaned up the existing code, then dynamically enabled additional filtering 
-            on the bar chart. In addition to the date picker, we added buttons to quickly select
-            filtering by year and quarter.
+            We cleaned up the existing code, then dynamically enabled additional
+            filtering on the bar chart. In addition to the date picker, we added
+            buttons to quickly select filtering by year and quarter.
           </p>
           <br></br>
           <p>
-            The url is now corresponds to the selected filters so users can share links
-            and filtering can easily be reproduced.  These links can also be shared on
-            twitter and facebook.
+            The url is now corresponds to the selected filters so users can
+            share links and filtering can easily be reproduced. These links can
+            also be shared on twitter and facebook.
           </p>
           <br></br>
           <p>
-            A line graph was added that enables users to see monthly and quarterly trends. 
+            A line graph was added that enables users to see monthly,
+            quarterly and yearly trends based off normalized data.
           </p>
           <br></br>
           <p>
-            We added an administration page that enables the admin to monitor and or perform crud 
-            operations on user accounts.  The grid offers easy filtering to quickly 
-            locate accounts.
+            We added an administration page that enables the admin to monitor
+            and or perform crud operations on user accounts. The grid offers
+            easy filtering to quickly locate accounts.
           </p>
           <br></br>
           <p>
-            Paypal was added, so users can pay to access all filtering features on the site.
+            Paypal was added, so users can pay to access all filtering features
+            on the site.
           </p>
           <br></br>
           <p>
-            Users are now only able to access data based upon their tier.  Limited
-            filtering options are available to non paying users.
+            Users are now only able to access data based upon their tier.
+            Limited filtering options are available to non paying users.
           </p>
         </div>
-
-        
       </section>
     </>
   );

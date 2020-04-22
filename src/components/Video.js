@@ -22,7 +22,7 @@ const Video = () => {
             src={videoDolphin}
             autoPlay="true"
             loop="true"
-            startTime="1100"
+            startTime="300"
             muted="true"
           ></video>
         </div>
