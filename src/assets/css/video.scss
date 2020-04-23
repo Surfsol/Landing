@@ -46,7 +46,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  //background: #225470;
+  background: #225470;
   z-index: 1; //positioning of content
   opacity: 0.85; //%see through
 }
@@ -60,15 +60,18 @@ body {
   h1 {
     font-size: 50px;
     margin-bottom: 0;
-    font-family: "Bree Serif", serif;
+      font-family: Arial, Helvetica, sans-serif;
+    
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 3rem;
     display: block;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .btn {
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     padding: 1rem 2rem;
     text-decoration: none;
@@ -80,7 +83,7 @@ body {
     color: white;
 
     p {
-      color: white;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     img {

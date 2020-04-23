@@ -1,6 +1,5 @@
 import React from "react";
-import Icons from "./Icons";
-import Techs from "./Techs";
+
 
 import ContactModal from "./ContactModal";
 
@@ -20,7 +19,7 @@ const Video = () => {
         <div class="fullscreen">
           {/* must be muted to play when loaded on chrome */}
           <video
-            src={earth}
+            src={videoDolphin}
             autoPlay="true"
             loop="true"
             startTime="300"
