@@ -1,10 +1,8 @@
 import React from "react";
 
-
 import ContactModal from "./ContactModal";
 
 import videoDolphin from "../assets/images/dolp2.mp4";
-import earth from "../assets/images/earth.mp4"
 
 import "../assets/css/video.scss";
 
@@ -41,7 +39,7 @@ const Video = () => {
           </a>
           <div class="git">
             <a href="https://github.com/Surfsol" target="_blank">
-            <i class="fab fa-github"></i>
+              <i class="fab fa-github"></i>
               <p>Github/surfsol</p>
             </a>
           </div>
