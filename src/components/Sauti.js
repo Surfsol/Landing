@@ -187,8 +187,8 @@ const WellDone = () => {
             would need to be accessed via a paywall.  So we needed to implement tiered access 
             to certain types of data and filtering tools.  </li>
             <br></br>
-            <li>F. Paypal was added, so users can pay to access all filtering features
-            on the site.  Paypal accounts are managed on a user Account page, enabling customers to 
+            <li>F. Paypal was added implemented, and enables customers to pay monthly, quarterly or 
+              yearly.  Accounts are managed on a user Account page, enabling customers to 
             buy, cancel and monitor their subscription.</li>
             <br></br>
             <li>G. We added an administration page that enables the admin to monitor
