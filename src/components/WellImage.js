@@ -11,16 +11,12 @@ const WellImage = () => {
             <div className="wellImageTitle">
               <h1>Well Done</h1>
               <h2>
-                React, Redux, ag-Grid-React, React-map, Node.js, Heroku,
+                React, Redux, MapBox, ag-Grid-React, Node.js, Heroku,
                 PostgreSQL
               </h2>
               <img src={wellDash} alt="well done" />
               <button>See Project</button>
             </div>
-            
-            {/* <div class="overlay">
-              <h2>Well Done</h2>
-            </div> */}
           </div>
         </div>
       </div>

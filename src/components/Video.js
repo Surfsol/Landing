@@ -24,18 +24,18 @@ const Video = () => {
             muted="true"
           ></video>
         </div>
-        <div class="header-overlay"></div>
-        <div class="header-content">
+        <div className="header-overlay"></div>
+        <div className="header-content">
           <h1>Russell Terry</h1>
 
-          <a href="/projects" class="btn">
-            Projects
+          <a href="/projects" className="btn">
+          <h2> Projects</h2>
           </a>
-          <a href="/skills" class="btn">
-            Skills
+          <a href="/skills" className="btn">
+          <h2> Skills</h2>
           </a>
-          <a class="btn">
-            <ContactModal />
+          <a className="btn">
+         <ContactModal />
           </a>
           <div class="git">
             <a href="https://github.com/Surfsol" target="_blank">
