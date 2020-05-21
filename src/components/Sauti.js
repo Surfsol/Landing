@@ -168,61 +168,46 @@ const WellDone = () => {
           </p>
         </div>
         <div className="sautiProblem">
-          <h1>The Issues</h1>
-
-          <p>
-            Since started the project as Team Lead, the site only consisted of 
-            a bar chart with three filtering options.  Our task was to make the
-            bar chart more dynamic by adding unlimited filtering options, a date
-            picker as well as fixing overlapping value displays.
-            In addition to the Bar Chart, the site needed other ways to display
-            data, such as in a line graph to show trends over time.
-            A long with displaying data, we wanted to make the UI more intuitive and informative.
-            Creating links to social media was also very important so the site could gain 
-            popularity. 
-            Sauti then decided to make this a standalone app, in which most of the data
+          <h1>Completed Tasks</h1>
+          <br></br>
+         <ol>
+          
+           <li> A. Made the bar chart more dynamic by adding unlimited filtering options, a date
+            picker as well as fixing overlapping value displays.</li>
+            <br></br>
+            <li> B. In addition to the Bar Chart, the site needed other visual data displays:
+            a Choropleth Map was added using D3.js to make statistical discrepancies more profound.</li>
+            <br></br>
+            <li> C. A Line Graph was added to show trends over time.  The data is normalized, and has an adjustable range slider.</li>
+            <br></br>
+            <li>D. Incoming data also needed additional parsing do display all data points.  Data is received in PHP format, then
+            converted and parsed json format.  Parsing is done on a cron job.  Additional parsing enabled us to increase the database by 50%.</li>
+            <br></br>
+            <li>E. Sauti then decided to make this a standalone app, in which most of the data
             would need to be accessed via a paywall.  So we needed to implement tiered access 
-            to certain types of data and filtering tools.  While creating register, login 
-            and an account page for users to manage their accounts.
-            Administration tools were also needed to manage
-            and track customer accounts. {" "}
-          </p>
-          <br></br>
-        </div>
-        <div className="sautiSolution">
-          <h1>The Solution</h1>
-          <p>
-            We cleaned up the existing code, then dynamically enabled additional
-            filtering on the bar chart. In addition to the date picker, we added
-            buttons to quickly select filtering by year and quarter.
-          </p>
-          <br></br>
-          <p>
-            The url is now corresponds to the selected filters so users can
-            share links and filtering can easily be reproduced. These links can
-            also be shared on twitter and facebook.
-          </p>
-          <br></br>
-          <p>
-            A line graph was added that enables users to see monthly,
-            quarterly and yearly trends based off normalized data.
-          </p>
-          <br></br>
-          <p>
-            We added an administration page that enables the admin to monitor
+            to certain types of data and filtering tools.  </li>
+            <br></br>
+            <li>F. Paypal was added implemented, and enables customers to pay monthly, quarterly or 
+              yearly.  Accounts are managed on a user Account page, enabling customers to 
+            buy, cancel and monitor their subscription.</li>
+            <br></br>
+            <li>G. We added an administration page that enables the admin to monitor
             and or perform crud operations on user accounts. The grid offers
-            easy filtering to quickly locate accounts.
-          </p>
+            easy filtering to quickly locate accounts.</li>
+            <br></br>
+            <li> H. Creating links to social media was also very important so the site could gain 
+            popularity. </li>
+            <br>
+            </br>
+            <li>I. Login and Register pages were created.  Giving user tiered access to certain features of the app.    </li>       
+          
           <br></br>
-          <p>
-            Paypal was added, so users can pay to access all filtering features
-            on the site.
-          </p>
-          <br></br>
-          <p>
-            Users are now only able to access data based upon their tier.
-            Limited filtering options are available to non paying users.
-          </p>
+          <li> J. Testing using Jest for both frontend and backend components.</li>
+            <br></br>
+           <li> k. The url is now corresponds to the selected filters so users can
+            share links and filtering can easily be reproduced. These links can
+            also be shared on twitter and facebook.</li>
+        </ol>
         </div>
       </section>
     </>
