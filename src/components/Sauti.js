@@ -12,6 +12,8 @@ import filters from "../assets/images/sautifilter.png";
 import line from "../assets/images/sautiLine.png";
 import sautiDisplay from "../assets/images/sautiDisplay.png";
 import Backbutton from "./BackButton";
+import choropleth from '../assets/images/choropleth.png'
+import d3 from '../assets/icons/d3js.png'
 
 import aws from "../assets/icons/aws-icon.png";
 import heroku from "../assets/icons/heroku.png";
@@ -32,7 +34,7 @@ const WellDone = () => {
         <div className="siteLink">
           {" "}
           <h2>
-            <a href="http://databank.sautiafrica.org/" target="_blank">
+            <a href="http://https://master.d27koej7wa8a94.amplifyapp.com/" target="_blank">
               http://databank.sautiafrica.org/
             </a>
           </h2>
@@ -78,7 +80,7 @@ const WellDone = () => {
             <img src={sautiAccounts} />
           </div>
           <div class="sautiPic">
-            <img src={filters} />
+            <img src={choropleth} />
           </div>
         </div>
         <div className="sautitech">
@@ -99,6 +101,12 @@ const WellDone = () => {
             this app due to its ability to query specific data. Whereas, on a
             REST framework we would have to deal with many endpoints and do .get
             requests on large amounts of unneeded data.
+          </h3>
+
+          <img className="techsUsed" src={d3} />
+          <h3>
+            <span className="colorBlue">D3.js</span>: D3.js was used to make the choropleth
+            map.  Map and a legend of results are dynamically rendered to the screen.
           </h3>
 
           <img className="techsUsed" src={ag} />
