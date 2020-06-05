@@ -15,7 +15,7 @@ const WellImage = () => {
                 PostgreSQL
               </h2>
               <img src={wellDash} alt="well done" />
-              <button>See Project</button>
+              <button>Project Details</button>
             </div>
           </div>
         </div>
