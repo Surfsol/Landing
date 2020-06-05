@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 
-import NavNew from './NavNew'
+import NavNew from "./NavNew";
 
 import { NavLink } from "react-router-dom";
 
@@ -18,7 +18,8 @@ import airbnb from "../assets/images/air2.png";
 import vr from "../assets/images/vr.png";
 import subReddit from "../assets/images/subreddit.png";
 import SautiImage from "./SautiImage";
-import HeroProject from './HeroProject'
+import SubReddit from "./SubReddit";
+import Yelp from "./Yelp";
 
 const Projects = () => {
   return (
@@ -28,7 +29,6 @@ const Projects = () => {
       </div>
 
       <div className="project-wrap">
-
         <div className="featuredprojects">
           <div className="fproject">
             <NavLink className="projectHover" to={`/project/sauti`}>
@@ -38,8 +38,9 @@ const Projects = () => {
             <NavLink className="projectHover" to={`/project/welldone`}>
               <WellImage />
             </NavLink>
-
-            <div className="pgcontainer">
+            <SubReddit />
+            <Yelp />
+            {/* <div className="pgcontainer">
               <div class="pgbg">
                 <div className="pgwellImageTitle">
                   <h1>SubReddit</h1>
@@ -91,15 +92,7 @@ const Projects = () => {
                 </div>
                 <img src={airbnb} alt="airbnb" />
 
-                {/* <div class="pgoverlay">
-                  <a
-                    href="https://frontend-git-master.surfsol.now.sh/"
-                    target="_blank"
-                    class="button"
-                  >
-                    <h2> Deployed Site</h2>
-                  </a>
-                </div> */}
+                
               </div>
             </div>
 
@@ -118,13 +111,10 @@ const Projects = () => {
                 </div>
                 <img src={vr} alt="airbnb" />
 
-                <div class="pgpg">
-                
-                </div>
+                <div class="pgpg"></div>
               </div>
             </div>
-
-            
+          </div> */}
           </div>
         </div>
       </div>
