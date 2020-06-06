@@ -33,6 +33,11 @@ body {
   height: 100vh;
   overflow: hidden;
 
+  .sea{
+    min-width: 100%;
+    min-height: 100%;
+  }
+
   video {
     min-width: 100%;
     min-height: 100%;
@@ -46,7 +51,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: #225470;
+  background: #bad2e0;
   z-index: 1; //positioning of content
   opacity: 0.85; //%see through
 }
@@ -60,7 +65,8 @@ body {
   h1 {
     font-size: 50px;
     margin-bottom: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: SANS-SERIF;
+    color: $sea2;
     
   }
 
@@ -73,7 +79,8 @@ body {
     font-family: SANS-SERIF;
   }
   .btn {
-    color: white;
+    color: $sea2
+    ;
     font-family: SANS-SERIF;
     font-size: 2rem;
     padding: 1rem 2rem;

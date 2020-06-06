@@ -4,6 +4,8 @@ import ContactModal from "./ContactModal";
 
 import videoDolphin from "../assets/images/dolp2.mp4";
 
+import sea from '../assets/images/sea.jpg'
+
 import "../assets/css/video.scss";
 
 import git from "../assets/icons/github.png";
@@ -16,13 +18,14 @@ const Video = () => {
       <header class="header container">
         <div class="fullscreen">
           {/* must be muted to play when loaded on chrome */}
-          <video
+          {/* <video
             src={videoDolphin}
             autoPlay="true"
             loop="true"
             startTime="300"
             muted="true"
-          ></video>
+          ></video> */}
+          <img class='sea' src={sea} alt="sea" />
         </div>
         <div className="header-overlay"></div>
         <div className="header-content">
