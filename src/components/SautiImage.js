@@ -17,9 +17,7 @@ const WellImage = () => {
               <img src={sauti} alt="Sauti DataBank" />
               <button>Project Details</button>
             </div>
-            {/* <div class="overlay">
-              <h2>Sauti DataBank</h2>
-            </div> */}
+
           </div>
         </div>
       </div>
