@@ -34,8 +34,8 @@ const WellDone = () => {
         <div className="siteLink">
           {" "}
           <h2>
-            <a href="http://databank.sautiafrica.org/" target="_blank">
-              http://databank.sautiafrica.org/
+            <a href="https://databank.sautiafrica.org/" target="_blank">
+              databank.sautiafrica.org/
             </a>
           </h2>
         </div>
