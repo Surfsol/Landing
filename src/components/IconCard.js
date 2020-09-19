@@ -1,13 +1,7 @@
 import React, { useEffect } from "react";
-
 import { fecthIconCard } from "../actions/iconCard-actions";
-
 import { useSelector, useDispatch } from "react-redux";
 import redux from "../assets/icons/reduxlogo.png";
-
-import Comments from "./CommentsModal";
-
-
 import Grid from "./Grid";
 
 import "../assets/css/iconCard.scss";
@@ -19,7 +13,7 @@ const IconCard = props => {
 
   useEffect(() => {
     dispatch(fecthIconCard(props.match.url));
-  }, id);
+  }, [id]);
 
   //show loading
   const projects = useSelector(state => state.iconCardReducer);
