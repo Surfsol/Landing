@@ -72,7 +72,6 @@ const ContactModal= (props) => {
   const eventHandler = event => {
     event.preventDefault();
     dispatch(mailerModal(contact));
-    
   };
 
   const modalReducer = useSelector(state => state.modalReducer);

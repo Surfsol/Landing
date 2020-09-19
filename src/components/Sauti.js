@@ -37,7 +37,7 @@ const WellDone = () => {
             {/* <a href="https://databank.sautiafrica.org/" target="_blank">
               http://databank.sautiafrica.org/
             </a> */}
-            databank.sautiafrica.org
+            Site: databank.sautiafrica.org
           </h2>
         </div>
         <br></br>

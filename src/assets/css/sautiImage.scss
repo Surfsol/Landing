@@ -60,6 +60,7 @@ img,
       flex-direction: column;
       align-items: flex-start;
       background-color: white;
+      font-family:"Bree Serif", serif;
       height: 550px;
       @media (max-width: $tab) {
         height: 500px;
@@ -70,6 +71,7 @@ img,
       h1{ 
           color:black;
           font-size: 4rem;
+          font-family:"Bree Serif", serif;
           margin-left: 5%;
           @media (max-width: $phone) {
             font-size:2rem;
@@ -119,12 +121,12 @@ img,
     opacity: 0;
     h2 {
       padding-top: 20%;
-      font-family: 'Droid Serif', serif;
+      font-family: "Bree Serif", serif;
       color: white;
       font-size: 4rem;
     }
     p {
-      font-family: 'Julius Sans One', sans-serif;
+      font-family: "Bree Serif", serif;
     }
   }
   &:hover {
