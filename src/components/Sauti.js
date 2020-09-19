@@ -1,14 +1,11 @@
 import React from "react";
 import "../assets/css/sauti.scss";
 
-import Nav from "./Nav";
-
 import ag from "../assets/images/ag-grid-react.png";
 import material from "../assets/images/material-ui.png";
 import graphql from "../assets/images/graphApollo.png";
 import react from "../assets/images/react.jpg";
 import sautiAccounts from "../assets/images/sautiAccounts1.png";
-import filters from "../assets/images/sautifilter.png";
 import line from "../assets/images/sautiLine.png";
 import sautiDisplay from "../assets/images/sautiDisplay.png";
 import Backbutton from "./BackButton";
@@ -37,7 +34,7 @@ const WellDone = () => {
             {/* <a href="https://databank.sautiafrica.org/" target="_blank">
               http://databank.sautiafrica.org/
             </a> */}
-            databank.sautiafrica.org
+            Site: databank.sautiafrica.org
           </h2>
         </div>
         <br></br>

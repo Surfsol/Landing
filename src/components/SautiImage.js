@@ -11,7 +11,7 @@ const WellImage = () => {
             <div className="sautiImageTitle">
               <h1>Sauti DataBank</h1>
               <h2>
-                React, GraphQL, Apollo, D3.js, Nivo, ag-Grid-React, Node.js, AWS, MySQL
+                React, GraphQL+Apollo, D3.js, Node.js, AWS, MySQL
               </h2>
 
               <img src={sauti} alt="Sauti DataBank" />

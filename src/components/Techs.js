@@ -4,8 +4,6 @@ import {fetchTechs} from '../actions/tech'
 
 
 const Techs = (props) => {
-    const [newT, setTech] = useState({tech:""})
-    console.log(props.allTechs)
 
     const fetchAll = (e) => {
         e.preventDefault()
