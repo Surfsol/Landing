@@ -1,11 +1,7 @@
 import React from "react";
 import "../assets/css/welldone.scss";
-
-import Nav from "./Nav";
-
 import wellSensor from "../assets/images/wellSensor.png";
 import wellDash from "../assets/images/wellDash.png";
-import wellMonitor from "../assets/images/wellDash.png";
 import wellStatusSensor from "../assets/images/wellStatusSensor.png";
 import wellModal from "../assets/images/wellModal.png";
 import Backbutton from "./BackButton";
